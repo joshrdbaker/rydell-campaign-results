@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log an event or presence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f5f8;--surface:#fff;--line:#dde2ea;--ink:#111722;--ink-2:#4a5363;--ink-3:#6f7888;--accent:#1f4e8c;--accent-soft:#e3ebf6;--warn:#b25e00;--warn-bg:#fff3e0;--display:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-family:var(--display);font-size:34px;line-height:1.1;margin:0}
+h2{font-family:var(--display);font-size:20px;margin:0}
+a{color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.note{color:var(--ink-2);font-size:14px}
+.warn{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:10px 12px;font-size:14px}
+form{display:flex;flex-direction:column;gap:18px;margin-top:18px}
+fieldset{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:14px 16px;margin:0;display:flex;flex-direction:column;gap:12px}
+legend{font-weight:600;padding:0 6px}
+label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--ink-2)}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+textarea{min-height:72px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.place{display:flex;flex-direction:column;gap:12px;padding-top:8px;border-top:1px solid var(--line)}
+.place:first-of-type{border-top:0;padding-top:0}
+button{font:inherit;cursor:pointer}
+.add,.send{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 12px}
+.send{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.out{background:var(--accent-soft);border-radius:8px;padding:12px 14px}
+.req{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Rydell · Example only</div>
+  <h1>Log an event or presence</h1>
+  <p class="warn">This page does not save and does not send anything. It shows the fields a real log would require.</p>
+  <p class="note"><a href="index.html">Back to campaign results</a></p>
+  <form id="form" novalidate>
+    <fieldset>
+      <legend>Event or sponsorship</legend>
+      <label>Name <input name="name" required placeholder="Fighting Hawks home game"></label>
+      <div class="row">
+        <label>Team <input name="team" placeholder="Fighting Hawks"></label>
+        <label>Venue <input name="venue" required placeholder="Ralph Engelstad Arena"></label>
+      </div>
+      <label>Dates
+        <textarea name="dates" required placeholder="One date per line, YYYY-MM-DD. A season is the game days, not every day in between."></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>What ran</legend>
+      <p class="note">Pick the ad. Then say what that ad actually did at this event. An intermission spot and a concourse banner are not the same thing. Each ad gets its own block.</p>
+      <div id="places"></div>
+      <button class="add" type="button" id="add">Add another ad</button>
+    </fieldset>
+    <fieldset>
+      <legend>Attendance <span style="font-weight:400;color:var(--ink-3)">(optional)</span></legend>
+      <div class="row">
+        <label>People at the event <input name="attendance" inputmode="numeric" placeholder="18000"></label>
+        <label>Where the number came from <input name="attendanceNote" placeholder="Box score, venue recap"></label>
+      </div>
+      <p class="note">Attendance is people in the building. It is not unique people who saw the ad, and it is not used for penetration.</p>
+    </fieldset>
+    <fieldset>
+      <legend>State</legend>
+      <label>How to mark it
+        <select name="state" required>
+          <option value="sample">Sample</option>
+          <option value="confirmed">Confirmed</option>
+        </select>
+      </label>
+      <p class="note">Confirmed covers both a booked sponsorship and a log someone typed in. Nothing is stored from this page either way.</p>
+    </fieldset>
+    <button class="send" type="submit">Check the log</button>
+  </form>
+  <p class="out" id="out" hidden></p>
+</div>
+<script>
+const CAMPS = [
+  'Chevy Silverado APR Offer','Chevy Silverado Lease','Chevy Traverse Lease','Chevy Equinox Lease',
+  'Toyota Tundra APR Offer','Toyota Camry PreOrder/Tires Offer','Nissan Murano Lease','Nissan Combined APR Offer',
+  'Nissan Armada APR Offer','Honda Ridgeline APR Offer','Honda Ridgeline Lease','Rydell Buys','Body Shop',
+  'Multi Point Winter Inspection','Get To Know A Sales Rep – Kevin','Get To Know A Sales Rep – Craig',
+  'Affordability – Sales – Market Wide'
+];
+const TYPES = ['Intermission video','PA read','Scoreboard or ribbon board','Concourse signage','Program ad','Booth or display','Giveaway','Other'];
+const places = document.getElementById('places');
+function block(){
+  const d=document.createElement('div');
+  d.className='place';
+  d.innerHTML=`
+    <label>Which ad <span class="req">required</span>
+      <select name="ad" required><option value="">Select an ad</option>${CAMPS.map(c=>`<option>${c}</option>`).join('')}</select>
+    </label>
+    <label>Placement <span class="req">required</span>
+      <select name="type" required><option value="">Select a placement</option>${TYPES.map(t=>`<option>${t}</option>`).join('')}</select>
+    </label>
+    <label>What actually ran <span class="req">required</span>
+      <textarea name="desc" required placeholder="30-second video on the center-hung board during the 2nd intermission."></textarea>
+    </label>
+    <div class="row">
+      <label>Plays <span style="font-weight:400;color:var(--ink-3)">optional</span><input name="plays" inputmode="numeric"></label>
+      <label>Duration <span style="font-weight:400;color:var(--ink-3)">optional</span><input name="duration" placeholder="30 seconds"></label>
+    </div>`;
+  return d;
+}
+places.appendChild(block());
+document.getElementById('add').onclick=()=>places.appendChild(block());
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const form=e.target;
+  const missing=[];
+  if(!form.name.value.trim()) missing.push('the event name');
+  if(!form.venue.value.trim()) missing.push('the venue');
+  const dates=form.dates.value.split(/\n+/).map(s=>s.trim()).filter(Boolean);
+  if(!dates.length || dates.some(d=>!/^\d{4}-\d{2}-\d{2}$/.test(d))) missing.push('at least one date as YYYY-MM-DD');
+  [...places.querySelectorAll('.place')].forEach((p,i)=>{
+    const n=i+1;
+    if(!p.querySelector('[name=ad]').value) missing.push('ad '+n);
+    if(!p.querySelector('[name=type]').value) missing.push('placement '+n);
+    if(!p.querySelector('[name=desc]').value.trim()) missing.push('a description of what ad '+n+' actually did');
+  });
+  const out=document.getElementById('out');
+  out.hidden=false;
+  out.textContent=missing.length
+    ? 'Still needed: '+missing.join(', ')+'. Nothing was saved.'
+    : 'The fields are complete. Example only: nothing was saved and nothing was sent.';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2061 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Rydell Campaign Results (Copy)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --surface-2:#eef1f5; --line:#dde2ea; --grid:#e8ebf0;
+  --ink:#111722; --ink-2:#4a5363; --ink-3:#6f7888;
+  --accent:#1f4e8c; --accent-soft:#e3ebf6;
+  --m1:#2a78d6; --m2:#eb6834; --m3:#1baf7a; --m4:#eda100; --m5:#e87ba4; --m6:#008300; --m7:#4a3aa7; --m8:#e34948; --m9:#8a6a3a; --m10:#0e7490; --m11:#3d5a80; --m12:#111722; --m13:#e03d00; --m14:#c9a800; --m15:#bd081c; --m16:#536471; --m17:#5a9e00;
+  --budget:#111722; --warn:#b25e00; --warn-bg:#fff3e0;
+  --tip-bg:#111722; --tip-ink:#ffffff;
+  --opp:#86b6ef; --sale:#1c5cab;
+  --good:#0e7a3e; --good-bg:#e3f4e9; --low:#9a5b00; --low-bg:#fdf0db; --mid:#4a5363; --mid-bg:#eceff3;
+  --display:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0f1318; --surface:#181d24; --surface-2:#222932; --line:#2e3642; --grid:#262d37;
+    --ink:#f2f4f7; --ink-2:#b8c0cc; --ink-3:#8b95a3;
+    --accent:#8db7ee; --accent-soft:#1d2a3c;
+    --m1:#3987e5; --m2:#d95926; --m3:#199e70; --m4:#c98500; --m5:#d55181; --m6:#008300; --m7:#9085e9; --m8:#e66767; --m9:#c4a06a; --m10:#5ec8d8; --m11:#8eadd4; --m12:#69c9d0; --m13:#ff5722; --m14:#f5d000; --m15:#e60023; --m16:#e7e9ea; --m17:#9fd356;
+    --budget:#f2f4f7; --warn:#f0a44b; --warn-bg:#33240f;
+    --tip-bg:#f2f4f7; --tip-ink:#111722;
+    --opp:#184f95; --sale:#5598e7;
+    --good:#6fd79a; --good-bg:#15301f; --low:#f2b35c; --low-bg:#35260f; --mid:#b8c0cc; --mid-bg:#262d37;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0f1318; --surface:#181d24; --surface-2:#222932; --line:#2e3642; --grid:#262d37;
+  --ink:#f2f4f7; --ink-2:#b8c0cc; --ink-3:#8b95a3;
+  --accent:#8db7ee; --accent-soft:#1d2a3c;
+  --m1:#3987e5; --m2:#d95926; --m3:#199e70; --m4:#c98500; --m5:#d55181; --m6:#008300; --m7:#9085e9; --m8:#e66767; --m9:#c4a06a; --m10:#5ec8d8; --m11:#8eadd4; --m12:#69c9d0; --m13:#ff5722; --m14:#f5d000; --m15:#e60023; --m16:#e7e9ea; --m17:#9fd356;
+  --budget:#f2f4f7; --warn:#f0a44b; --warn-bg:#33240f;
+  --tip-bg:#f2f4f7; --tip-ink:#111722;
+  --opp:#184f95; --sale:#5598e7;
+  --good:#6fd79a; --good-bg:#15301f; --low:#f2b35c; --low-bg:#35260f; --mid:#b8c0cc; --mid-bg:#262d37;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5;padding:0 16px}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 48px;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+h1{font-size:34px;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+.period{color:var(--ink-2);font-size:14px}
+.num{font-variant-numeric:tabular-nums}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.filters label.lbl{font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
+select{font:inherit;color:var(--ink);background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:6px 10px;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:4px 11px 4px 9px;cursor:pointer}
+.chip .sw{width:10px;height:10px;border-radius:3px;background:var(--c)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
+.chip[aria-pressed="false"] .sw{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c)}
+button:focus-visible,select:focus-visible,th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.reset{font:inherit;font-size:13px;background:none;border:none;color:var(--accent);cursor:pointer;padding:4px;margin-left:auto}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.kpi .k{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.kpi .v{font-family:var(--display);font-size:30px;font-weight:700;line-height:1.1}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+.meter{height:6px;background:var(--surface-2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:3px}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.kpis{grid-template-columns:repeat(2,1fr)}.kpi .v{font-size:26px}h1{font-size:28px}}
+
+/* highlights */
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hl{border-left:3px solid var(--accent);padding:4px 0 4px 12px}
+.hl .k{font-size:12px;color:var(--ink-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.hl .t{font-weight:600}
+.hl .d{color:var(--ink-2);font-size:13px}
+@media (max-width:760px){.highlights{grid-template-columns:1fr}}
+
+/* panels */
+.grid2{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 16px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.panel h2{font-size:20px;font-weight:600}
+.panel .sub{color:var(--ink-3);font-size:13px;margin-top:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;background:var(--c);display:inline-block}
+.legend .bud{width:2px;height:12px;border-radius:0;background:var(--budget)}
+
+/* hbar chart */
+.hbars{display:flex;flex-direction:column;gap:10px}
+.hrow{display:grid;grid-template-columns:minmax(120px,190px) 1fr 76px;gap:10px;align-items:center}
+.hrow .nm{font-size:13px;color:var(--ink);line-height:1.25}
+.hrow .nm small{display:block;color:var(--ink-3);font-size:11.5px}
+.hrow .val{font-size:13px;text-align:right;color:var(--ink-2)}
+.track{position:relative;height:20px}
+.stack{display:flex;height:100%;gap:2px}
+.seg{height:100%;background:var(--c);min-width:2px;cursor:default}
+.seg:last-child{border-radius:0 4px 4px 0}
+.budmark{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--budget);pointer-events:none}
+.axis{display:grid;grid-template-columns:minmax(120px,190px) 1fr 76px;gap:10px}
+.axis .ticks{position:relative;height:16px;font-size:11px;color:var(--ink-3)}
+.axis .ticks span{position:absolute;transform:translateX(-50%)}
+.axis .ticks span:first-child{transform:none}
+.axis .ticks span:last-child{transform:translateX(-100%)}
+@media (max-width:700px){.filters{position:static}}
+.gridlines{position:absolute;inset:0;pointer-events:none}
+.gridlines i{position:absolute;top:0;bottom:0;width:1px;background:var(--grid)}
+.hbars-wrap{position:relative}
+@media (max-width:560px){.hrow,.axis{grid-template-columns:100px 1fr 62px}}
+
+/* medium efficiency */
+.eff{display:flex;flex-direction:column;gap:16px}
+.eff h3{font-size:15px;font-weight:600;color:var(--ink-2)}
+.erow{display:grid;grid-template-columns:132px 1fr 58px;gap:8px;align-items:center;font-size:13px}
+.ebar{height:14px;background:var(--c);border-radius:0 4px 4px 0;min-width:2px}
+.erow .val{text-align:right;color:var(--ink-2)}
+.empty{color:var(--ink-3);font-size:13px;padding:8px 0}
+
+.ytnote{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--ink-2)}
+.ytnote b{color:var(--ink)}
+
+/* table */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:13px}
+th,td{padding:8px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+thead th{background:var(--surface-2);position:sticky;top:0;font-weight:600;color:var(--ink-2);font-size:12px}
+th button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;padding:0;display:inline-flex;gap:4px;align-items:center}
+th button[data-dir]::after{content:attr(data-dir);font-size:10px}
+tbody tr:hover{background:var(--surface-2)}
+td .mdot{display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--c);margin-right:7px}
+tr.grp td{background:var(--accent-soft);font-weight:600;color:var(--ink)}
+tr.tot td{font-weight:700;border-top:2px solid var(--ink-3);border-bottom:none}
+.dash{color:var(--ink-3)}
+.over{color:var(--warn);font-weight:600}
+footer{color:var(--ink-3);font-size:12.5px;display:flex;flex-direction:column;gap:4px}
+
+/* departments */
+.depts{overflow-x:auto}
+.dtable{min-width:860px}
+.dtable td:nth-child(2){width:30%;min-width:220px}
+.dtable td,.dtable th{vertical-align:middle}
+.dname{font-weight:600;color:var(--ink)}
+.dname small{display:block;font-weight:400;color:var(--ink-3);font-size:11.5px;white-space:normal;max-width:220px}
+.fbar{display:grid;grid-template-columns:1fr 48px;gap:4px 8px;align-items:center;font-size:12px;color:var(--ink-2);text-align:right}
+.fbar i{display:block;height:10px;background:var(--c);border-radius:0 3px 3px 0;min-width:2px}
+.fbar.wide{grid-template-columns:1fr 104px}
+.ftrack{position:relative;height:10px}
+.ftrack i{height:100%}
+.ftrack b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--budget)}
+.fbar .none{color:var(--ink-3);font-size:11.5px;text-align:left;font-style:italic}
+tr.dim td{opacity:.42}
+tr.sel td{background:var(--accent-soft)}
+.note{font-size:12.5px;color:var(--ink-3)}
+/* benchmarks */
+details.bench{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+details.bench>summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+details.bench>summary::-webkit-details-marker{display:none}
+details.bench>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:10px}
+.bsum-title{display:flex;align-items:center;gap:10px}
+.bsum-title h2{font-size:20px;font-weight:600}
+.chev{width:22px;height:22px;border-radius:6px;background:var(--surface-2);display:inline-grid;place-items:center;color:var(--ink-2);font-size:12px;transition:transform .2s}
+details[open] .chev{transform:rotate(90deg)}
+.bsum-counts{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+.bsum-hint{color:var(--ink-3);font-size:13px;width:100%}
+.bbody{padding:0 18px 18px;display:flex;flex-direction:column;gap:12px}
+.btable{min-width:820px}
+.btable td{white-space:normal;vertical-align:top}
+.btable td:nth-child(1){white-space:nowrap}
+.btable td:nth-child(5){min-width:280px;max-width:380px;text-align:left;color:var(--ink-2);font-size:12.5px}
+.btable th:nth-child(5){text-align:left}
+.btable td:nth-child(4){text-align:left}
+.btable th:nth-child(4){text-align:left}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap;color:var(--pc);background:var(--pb)}
+.pill.good{--pc:var(--good);--pb:var(--good-bg)}
+.pill.low{--pc:var(--low);--pb:var(--low-bg)}
+.pill.mid{--pc:var(--mid);--pb:var(--mid-bg)}
+.metric{font-weight:600;color:var(--ink)}
+.metric small{display:block;font-weight:400;color:var(--ink-3);font-size:11.5px}
+.sources{font-size:12.5px;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:4px 14px}
+.sources a{color:var(--accent)}
+.kpi .dl{font-size:12px;color:var(--ink-3)}
+.kpi .dl b{font-weight:600;color:var(--ink-2)}
+.monthsel{font-weight:600}
+.pending{background:var(--surface-2);border-radius:8px;padding:14px 16px;color:var(--ink-2);font-size:13.5px}
+.gtrack{position:relative;height:12px;background:var(--surface-2);border-radius:3px}
+.gtrack i{position:absolute;left:0;top:0;bottom:0;background:var(--sale);border-radius:3px 0 0 3px}
+.gtrack b{position:absolute;right:-1px;top:-3px;bottom:-3px;width:2px;background:var(--budget)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:14px}
+.acard{font:inherit;color:inherit;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
+.acard:hover{border-color:var(--accent);transform:translateY(-1px)}
+.acard:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.athumb{position:relative;aspect-ratio:1/1;background:var(--surface-2);display:grid;place-items:center;overflow:hidden;max-width:100%}
+.athumb img{width:100%;height:100%;object-fit:cover;display:block}
+.athumb.wide img{object-fit:contain}
+.athumb .noimg{color:var(--ink-3);font-size:13px}
+.badges{position:absolute;left:8px;bottom:8px;display:flex;gap:4px;flex-wrap:wrap}
+.badge{font-size:11px;font-weight:600;background:rgba(17,23,34,.82);color:#fff;border-radius:4px;padding:2px 6px}
+.ameta{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px}
+.ameta .an{font-weight:600;font-size:13.5px;line-height:1.3}
+.ameta .as{font-size:12px;color:var(--ink-2)}
+.ameta .match{font-size:12px;color:var(--ink-2);margin-top:4px;padding-top:6px;border-top:1px solid var(--line)}
+.ameta .match b{font-family:var(--display);font-size:16px;color:var(--ink)}
+.subhead{font-family:var(--display);font-size:17px;font-weight:600;margin:6px 0 0}
+.adlink{font:inherit;color:var(--ink);background:none;border:none;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.adlink:hover{text-decoration-color:var(--accent);color:var(--accent)}
+.viewchip{display:inline-block;margin-left:6px;font-size:11px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:1px 6px;vertical-align:1px}
+tr.hasad{cursor:pointer}
+dialog.viewer{border:none;border-radius:12px;padding:0;width:min(1000px,calc(100% - 32px));max-height:calc(100% - 32px);background:var(--surface);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog.viewer::backdrop{background:rgba(10,14,20,.6)}
+.vwrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+@media (max-width:760px){.vwrap{grid-template-columns:1fr}}
+.vmedia{background:#0d1117;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px;min-height:280px}
+.vmedia img,.vmedia video{max-width:100%;max-height:68vh;display:block;border-radius:4px}
+.vmedia audio{width:100%;max-width:420px}
+.audiocard{color:#dfe5ee;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center;width:100%}
+.audiocard .ic{width:64px;height:64px;border-radius:50%;background:#1f2a3a;display:grid;place-items:center;font-size:26px}
+.vthumbs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.vthumb{font:inherit;font-size:12px;border:1px solid #39424f;background:#161c25;color:#dfe5ee;border-radius:6px;padding:5px 10px;cursor:pointer}
+.vthumb[aria-pressed="true"]{background:#dfe5ee;color:#111722;border-color:#dfe5ee}
+.vinfo{padding:18px 20px;display:flex;flex-direction:column;gap:12px;overflow:auto;max-height:calc(100vh - 64px)}
+.vinfo h2{font-size:22px}
+.vhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.vclose{font:inherit;font-size:20px;line-height:1;background:var(--surface-2);border:none;border-radius:6px;width:34px;height:34px;cursor:pointer;color:var(--ink);flex:none}
+.vstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.vstat{background:var(--surface-2);border-radius:8px;padding:8px 10px}
+.vstat .k{font-size:11px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.vstat .v{font-family:var(--display);font-size:20px;font-weight:700}
+.vtable{width:100%;min-width:0;font-size:12.5px}
+.vtable th,.vtable td{padding:6px 6px}
+.vtable tr.cur td{background:var(--accent-soft)}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-weight:600;font-size:14px;background:none;border:none;border-bottom:3px solid transparent;color:var(--ink-3);padding:8px 14px 9px;cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+body.trend .fm-only{display:none!important}
+body.definitions .fm-only{display:none!important}
+body.definitions .filters{display:none!important}
+.tview{display:flex;flex-direction:column;gap:20px}
+.defcopy{display:flex;flex-direction:column;gap:16px;font-size:14px;color:var(--ink-2)}
+.defcopy h3{font-size:16px;font-weight:600;font-family:var(--display);color:var(--ink);margin:0}
+.defcopy ul{margin:4px 0 0;padding:0 0 0 1.15em;display:flex;flex-direction:column;gap:10px}
+.defcopy li::marker{color:var(--ink-3)}
+.defcopy li b{color:var(--ink);font-weight:600}
+.tview[hidden]{display:none!important}
+.viewby{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.viewby .lbl{font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
+.viewby button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 14px;cursor:pointer}
+.viewby button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.cols{display:flex;align-items:flex-end;gap:18px;height:200px;padding:0 4px;border-bottom:1px solid var(--line);position:relative}
+.cols .col{flex:1;max-width:120px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.cols .stk{width:100%;max-width:64px;display:flex;flex-direction:column-reverse;gap:2px}
+.cols .stk i{display:block;background:var(--c);min-height:2px}
+.cols .stk i:last-child{border-radius:4px 4px 0 0}
+.cols .cv{font-size:12.5px;font-weight:600;color:var(--ink)}
+.colx{display:flex;gap:18px;padding:6px 4px 0}
+.colx span{flex:1;max-width:120px;text-align:center;font-size:12px;color:var(--ink-3)}
+.mcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.mcard{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.mcard .mt{font-weight:600;font-size:13.5px;line-height:1.25}
+.mcard .ms{font-size:11.5px;color:var(--ink-3)}
+.mbars{display:flex;align-items:flex-end;gap:10px;height:110px;border-bottom:1px solid var(--line)}
+.mgrp{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:3px;height:100%;position:relative}
+.mgrp i{display:block;width:16px;max-width:45%;background:var(--c);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+.mgrp .gl{position:absolute;left:8%;right:8%;height:2px;background:var(--budget)}
+.mlab{display:flex;gap:10px}
+.mlab span{flex:1;text-align:center;font-size:11.5px;color:var(--ink-3)}
+.mnums{font-size:12px;color:var(--ink-2);display:flex;flex-direction:column;gap:2px}
+.mnums b{color:var(--ink);font-weight:600}
+.chg{font-size:11.5px;font-weight:600;color:var(--ink-2)}
+.tgroup{display:flex;flex-direction:column;gap:10px}
+.tgroup+.tgroup{margin-top:14px}
+.tgroup h3{font-size:16px;font-weight:600;font-family:var(--display);margin:0}
+.ttable{min-width:0;font-size:12.5px}
+.tkpi .mon{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)}
+.acell{border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--surface);transition:border-color .15s}
+.acell:hover{border-color:var(--accent)}
+.acell .acard{border:none;border-radius:0;flex:1;transform:none!important}
+.votes{display:flex;gap:8px;padding:8px 12px 10px;border-top:1px solid var(--line)}
+.vinfo .votes{border-top:none;padding:0}
+.vb{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:3px 11px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.vb:hover:not(:disabled){border-color:var(--accent)}
+.vb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vb.up[aria-pressed="true"]{background:var(--good-bg);border-color:var(--good);color:var(--good);font-weight:600}
+.vb.down[aria-pressed="true"]{background:var(--low-bg);border-color:var(--low);color:var(--low);font-weight:600}
+.vb:disabled{cursor:default;opacity:.75}
+.votenote{font-size:13px;color:var(--ink-2);background:var(--surface-2);border-radius:8px;padding:8px 12px}
+.viewcount{display:block;text-align:right;font-size:12px;color:var(--accent);font-weight:600;margin-bottom:2px}
+.micons{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 3px}
+.mi{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;background:var(--surface-2);color:var(--ink);box-shadow:inset 0 -3px 0 var(--c)}
+.mi svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:2px}
+.medkey{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:12.5px;color:var(--ink-2)}
+.medkey .mk{display:inline-flex;align-items:center;gap:6px}
+.medkey .mk-l{font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em}
+.fl{color:inherit;font-weight:600;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.fl:hover{text-decoration-color:currentColor}
+.fo{position:fixed;inset:0;z-index:10;background:rgba(0,0,0,.45);display:flex;align-items:flex-start;justify-content:center;padding:4vh 12px;overflow:auto}
+.fo[hidden]{display:none}
+.fp{background:var(--surface);color:var(--ink);border-radius:12px;max-width:1180px;width:100%;padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.fp .fh{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.fp .fh h2{font-size:20px;font-weight:600}
+.fp .fh .eyebrow{margin:0 0 4px}
+.fp .fx,.fdetail .fx{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 12px;cursor:pointer;font:inherit}
+.fdetail .fdh{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.fdetail .fdh h3{margin:0}
+.fp .fs{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.fg{display:grid;min-width:max-content;font-size:12px}
+.fg>div{display:flex;align-items:center;justify-content:center;min-height:52px;border-top:1px solid var(--line);color:var(--ink-3)}
+.fg>.fl0{justify-content:flex-start;gap:8px;padding:0 10px;color:var(--ink-2);position:sticky;left:0;background:var(--surface);z-index:1;font-size:13px}
+.fg>.fl0 i{width:10px;height:10px;border-radius:3px;background:var(--c);flex:none}
+.fg>.fl0.ft{flex-direction:column;align-items:flex-start;gap:1px;line-height:1.15}
+.fg>.fhd{border-top:0;min-height:36px;font-weight:600;line-height:1.15;text-align:center}
+.fg>.wk{background:var(--surface-2)}
+.fg>.ft{font-weight:600;color:var(--ink-2);font-size:10.5px}
+.fg>.fr{flex-direction:column;align-items:flex-end;gap:1px;padding:4px 8px;line-height:1.15;text-align:right}
+.fg>.fr2{justify-content:flex-start;gap:4px;padding:4px 8px}
+.fg .spark{display:flex;align-items:center}
+.fg .spark svg{display:block;flex:none}
+.fg .fxn{font-weight:700;font-size:14px;color:var(--ink)}
+.fg .fxn.over,.fg .bf.over{color:var(--good)}
+.fg .fxn.under,.fg .bf.under{color:var(--low)}
+.fg .fsub{font-size:10px;font-weight:500;color:var(--ink-3)}
+.fg .bf{font-size:9px;font-weight:700;white-space:nowrap}
+.fg .dt{border-radius:50%;background:var(--c)}
+.fg .dt.est{background:transparent;border:2px solid var(--c)}
+.fg .dt.hit{background:var(--c);box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--good)}
+.fg .stt{width:4px;height:18px;border-radius:2px;background:var(--c)}
+.fstats{display:flex;flex-wrap:wrap;gap:12px 22px}
+.fstats:empty{display:none}
+.fdefs{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--ink-2);line-height:1.4;padding:2px 0 4px}
+.fdefs b{color:var(--ink);font-weight:600}
+.ftrend .key{position:sticky;left:0;width:max-content;display:flex;flex-wrap:wrap;gap:12px 18px;font-size:11px;color:var(--ink-3);padding:6px 8px 2px}
+.fg.trend>div{min-height:0;border-top:0}
+.fg.trend .plot{padding:0;line-height:0}
+.fg.trend .plot svg{display:block}
+.fg.trend .ystick{align-self:stretch;background:var(--surface)}
+.fg.trend .ystick.l{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;position:sticky;left:0;z-index:2;padding:0}
+.fg.trend .ystick.r{position:relative}
+.fg.trend .ystick-cap{flex:none;position:relative}
+.fg.trend .ystick-cap b{display:block;padding:2px 8px 0 0;text-align:right;font-size:10px;font-weight:600;color:var(--m10)}
+.fg.trend .ystick-ticks{position:relative;flex:none}
+.fg.trend .ystick span{position:absolute;font-size:10px;line-height:1;transform:translateY(-50%)}
+.fg.trend .ystick.l span{right:8px;color:var(--m10)}
+.fg.trend .ystick.r span{left:8px;color:var(--m2)}
+.ftrend .key i{display:inline-block;width:16px;height:3px;margin-right:6px;vertical-align:middle;border-radius:2px}
+.ftrend .key i.b{background:var(--m10)}
+.ftrend .key i.d{background:var(--m2)}
+.fstat .k{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.fstat .v{font-family:var(--display);font-size:22px;font-weight:700;line-height:1.1}
+.fstat .s{font-size:12px;color:var(--ink-2);max-width:240px}
+.tagp{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:1px 6px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.tagp.sample{background:var(--low-bg);color:var(--low)}
+.tagp.nodata{background:transparent;color:var(--ink-3);box-shadow:inset 0 0 0 1px var(--line)}
+.tagp.ok{background:var(--good-bg);color:var(--good)}
+.ftags{display:flex;flex-wrap:wrap;gap:3px;justify-content:flex-end;max-width:156px}
+.fg .on{width:8px;height:8px;border-radius:2px;background:var(--c)}
+.fg .spot{font-size:10px;font-weight:700;color:var(--ink);line-height:1}
+.fg .spot.samp{color:var(--low)}
+.fg .att{font-size:9px;font-weight:700;color:var(--ink);line-height:1.15;text-align:center}
+.q{font-weight:700;color:var(--accent);cursor:help}
+.fg>div.clk{cursor:pointer}
+.fg>div.clk:hover{background:var(--accent-soft)}
+.fg>.fl0.wrap{white-space:normal;line-height:1.2;text-align:left}
+.fdetail{background:var(--surface-2);border-radius:8px;padding:12px 14px;font-size:13px;display:flex;flex-direction:column;gap:8px}
+.fdetail h3{font-size:16px;font-weight:600}
+.dchips{display:flex;flex-wrap:wrap;gap:6px}
+.dchip{font-size:12.5px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;color:var(--ink)}
+details.cat{border:1px solid var(--line);border-radius:8px}
+details.cat>summary{cursor:pointer;padding:10px 12px;font-weight:600;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
+details.cat>summary::-webkit-details-marker{display:none}
+details.cat>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+details.cat>summary .cat-toggle{display:inline-flex;align-items:center;gap:6px;flex:none;font-size:12px;font-weight:600;color:var(--ink-2);border:1px solid var(--line);background:var(--surface-2);border-radius:999px;padding:3px 10px 3px 8px}
+details.cat>summary .cat-toggle i{display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid var(--ink-2);transition:transform .15s}
+details.cat[open]>summary .cat-toggle i{transform:rotate(180deg)}
+details.cat>summary .cat-toggle .on{display:none}
+details.cat[open]>summary .cat-toggle .off{display:none}
+details.cat[open]>summary .cat-toggle .on{display:inline}
+.catbody{padding:0 12px 12px;display:flex;flex-direction:column;gap:12px}
+.catg h3{font-size:13px;font-weight:600;margin:0}
+.catg ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2px}
+.catg li{font-size:13px;color:var(--ink-2)}
+.catg li b{color:var(--ink);font-weight:600}
+footer a{color:var(--accent)}
+#tip{position:fixed;pointer-events:none;background:var(--tip-bg);color:var(--tip-ink);font-size:12.5px;padding:8px 10px;border-radius:6px;line-height:1.45;z-index:20;max-width:280px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+#tip b{font-weight:600}
+@media (prefers-reduced-motion:no-preference){.seg,.ebar,.meter i{transition:width .25s ease}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Rydell Marketing · Campaign Report</div>
+      <h1 id="title">Campaign Results</h1>
+    </div>
+    <div class="period"><span class="viewcount" id="viewCount" hidden title="Visible only to you. Counts opens by others and time on screen per visit; no names are recorded."></span><span class="fm-only">Flight dates </span><span id="period"></span><span class="fm-only"> · <span id="campCount" class="num"></span></span></div>
+  </header>
+  <div class="tabs" role="tablist" aria-label="Report view">
+    <button type="button" role="tab" id="tabMonth" data-tab="month" aria-selected="true">Monthly report</button>
+    <button type="button" role="tab" id="tabTrend" data-tab="trend" aria-selected="false">Trends</button>
+    <button type="button" role="tab" id="tabDefinitions" data-tab="definitions" aria-selected="false">Definitions</button>
+  </div>
+
+  <div id="viewDefinitions" class="tview" hidden>
+    <section class="panel" aria-labelledby="defHeading">
+      <div>
+        <h2 id="defHeading">Flight view metrics</h2>
+        <div class="sub">Click any ad on the monthly report to open its flight view—the grid with one column per day.</div>
+      </div>
+      <div class="defcopy">
+        <div>
+          <h3>Breadth</h3>
+          <p>How many <b>media</b> were active on a given day—the count of channels, placements, and linked live events (such as UND hockey) that ran that day. The teal <b>Media</b> line at the top of the flight view charts this day by day.</p>
+        </div>
+        <div>
+          <h3>Depth</h3>
+          <p><b>Depth</b> is the times-seen ratio: how often an account in a medium’s audience is estimated to have been exposed to the ad (saturation), not raw impressions.</p>
+          <p>The <b>×</b> numbers in the flight grid are depth at a finer grain—not a raw impression count.</p>
+          <h4 style="margin:1em 0 .35em;font-size:14px;font-weight:600">Where each × appears</h4>
+          <ul>
+            <li><b>Day cells</b> — times seen on that calendar day. On digital/social lines, hover for the <b>7-day running average</b>. Radio shows that day’s × only.</li>
+            <li><b>7-day column</b> — sparkline of daily × for digital/social (not radio). No end number on the spark—Lifetime holds the flight total; hover a day cell for the numeric 7-day average.</li>
+            <li><b>Lifetime column</b> — times seen across the <b>whole flight</b> for this campaign (from first day on air to last), not lifetime in the abstract.</li>
+          </ul>
+        </div>
+        <p><b>Reach</b> in the Lifetime column is how many <b>accounts</b> (unique viewers or profiles) were reached in that medium—not raw impressions. Radio uses <b>spots</b> in that column instead of account counts; direct mail uses <b>households</b>. Some lines are tagged <span class="tagp sample">Sample</span> (Meta and YouTube windows built from flight totals) or <span class="tagp" style="background:var(--surface-2)">Estimated</span> (radio listeners and AET account stand-ins until platform or rate-card numbers replace them).</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filters">
+    <div class="fm-only"><label class="lbl" for="fMonth">Month</label><select id="fMonth" class="monthsel"></select></div>
+    <div><label class="lbl" for="fStore">Store</label><select id="fStore"></select></div>
+    <div><label class="lbl" for="fBrand">Brand</label><select id="fBrand"></select></div>
+    <div><label class="lbl" for="fDept">Department</label><select id="fDept"></select></div>
+    <div class="fm-only"><label class="lbl" for="fCamp">Campaign</label><select id="fCamp"></select></div>
+    <div class="fm-only" style="display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span class="lbl" style="font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-right:6px">Medium</span><div class="chips" id="fMed"></div></div>
+    <button class="reset" id="reset" type="button">Reset filters</button>
+  </div>
+
+  <div id="viewTrend" class="tview" hidden>
+    <section class="kpis" id="tKpis" aria-label="Trend totals"></section>
+    <div class="viewby" role="group" aria-label="View by">
+      <span class="lbl">View by</span>
+      <button type="button" data-vb="store" aria-pressed="true">Store</button>
+      <button type="button" data-vb="brand" aria-pressed="false">Brand</button>
+      <button type="button" data-vb="dept" aria-pressed="false">Department</button>
+    </div>
+    <div class="grid2">
+      <section class="panel">
+        <div><h2>Media spend by medium</h2><div class="sub">Actual ad spend each month, split by medium</div></div>
+        <div class="legend" id="tMedLeg"></div>
+        <div id="tSpendMed"></div>
+        <div class="tablewrap"><table class="ttable" id="tSpendMedTbl"></table></div>
+      </section>
+      <section class="panel">
+        <div><h2>Media spend by <span class="vbl">store</span></h2><div class="sub">Ad spend each month for each group. All groups share one scale.</div></div>
+        <div class="mcards" id="tSpendGrp"></div>
+      </section>
+    </div>
+    <section class="panel mgrid">
+<style>
+.mgrid .mg{display:grid;gap:0;overflow-x:auto}
+.mgrid .mgh,.mgrid .mgl,.mgrid .mgc{padding:8px 6px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;min-height:62px;min-width:0}
+.mgrid .mgh{border-top:0;min-height:0;flex-direction:column;gap:2px;font-weight:600;font-size:13px}
+.mgrid .mgh small{font-weight:400;color:var(--ink-3);font-size:12px}
+.mgrid .mgl{justify-content:flex-start;gap:8px;font-size:13px;color:var(--ink-2)}
+.mgrid .mgl i{width:10px;height:10px;border-radius:3px;background:var(--c);flex:none}
+.mgrid .bub{border-radius:50%;background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:600}
+.mgrid .bub.zero{background:transparent;border:2px solid var(--c);width:14px;height:14px}
+.mgrid .ev{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.mgrid .ev span{font-size:12px;color:var(--ink-2);border:1px solid var(--ink-3);border-radius:6px;padding:1px 7px;background:var(--surface-2)}
+.mgrid .ev span::before{content:"\25C6  ";font-size:9px;color:var(--ink-3)}
+.mgrid .evband .mgl,.mgrid .evband .mgc{background:var(--surface-2)}
+</style>
+      <div><h2>Where we advertised each month</h2><div class="sub">Every medium we used, by month. Bubble area shows spend, so a big buy stands out from a small test. Live events are marked separately because they have no ad spend attached.</div></div>
+      <div class="legend"><span><i style="--c:var(--ink-3);border-radius:50%"></i>Bubble area = spend</span><span><i style="--c:transparent;border:2px solid var(--ink-3);border-radius:50%;width:6px;height:6px"></i>Ran with no spend</span><span>&#9670; Live event</span></div>
+      <div id="tMedGrid"></div>
+    </section>
+
+    <section class="panel">
+      <div><h2>Lead generation and sales by <span class="vbl">store</span></h2><div class="sub">Opportunities (lead gen) and results (sales, ROs, purchases) each month for every department</div></div>
+      <div class="legend"><span><i style="--c:var(--opp)"></i>Opportunities</span><span><i style="--c:var(--sale)"></i>Results</span><span><i class="bud"></i>Opportunity goal</span></div>
+      <div id="tLeads"></div>
+      <div class="note" id="tLeadNote"></div>
+    </section>
+  </div>
+
+  <div id="viewMonth" class="tview">
+  <section class="kpis" id="kpis" aria-label="Totals"></section>
+  <section class="highlights" id="hls" aria-label="Highlights"></section>
+
+  <section class="panel msg" id="msgPanel" aria-label="Spend by message type">
+<style>
+.msg .mix{display:flex;height:34px;border-radius:8px;overflow:hidden;gap:2px;background:var(--surface-2)}
+.msg .mix i{background:var(--c);display:block}
+.msg .mcols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:start}
+.msg .mcol{border:1px solid var(--line);border-top:4px solid var(--c);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0;background:var(--surface)}
+.msg .mcol h3{font-size:18px;font-weight:600}
+.msg .mcol .def{color:var(--ink-2);font-size:13px}
+.msg .mcol .tag{align-self:flex-start;font-size:11.5px;font-weight:600;color:var(--ink-3);background:var(--surface-2);border-radius:999px;padding:2px 9px}
+.msg .big{font-size:30px;font-weight:700;line-height:1.1}
+.msg .row{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.msg .meter{height:6px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+.msg .meter i{display:block;height:100%;background:var(--c)}
+.msg .it{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:8px;font-size:13px}
+.msg .it small{display:block;color:var(--ink-3);font-size:12px;margin-top:1px}
+.msg .it span{white-space:nowrap;font-weight:600}
+.msg .it.nosp span{font-weight:400;color:var(--ink-3)}
+@media (max-width:760px){.msg .mcols{grid-template-columns:1fr}}
+</style>
+    <div><h2>What we're saying in market</h2><div class="sub" id="msgSub"></div></div>
+    <div class="legend" id="msgLeg"></div>
+    <div class="mix" id="msgMix" role="img" aria-label="Share of spend by message type"></div>
+    <div class="mcols" id="msgCols"></div>
+    <div class="note" id="msgNote"></div>
+  </section>
+
+  <section class="panel">
+    <div><h2>Opportunities and sales by department</h2><div class="sub" id="deptSub"></div></div>
+    <div class="legend" id="deptLeg"><span><i style="--c:var(--opp)"></i>Opportunities</span><span><i style="--c:var(--sale)"></i>Sales (Body Shop: ROs)</span></div>
+    <div class="pending" id="deptPending" hidden></div>
+    <div class="depts tablewrap" id="deptWrap"><table class="dtable" id="dtbl"></table></div>
+    <div class="note" id="deptNote">Opportunities and sales are department totals for the month from all sources, not only these ads, so the spend-per figures are a blended view. They are not split by medium, so the medium filter doesn't change this section.<span id="roNote"></span></div>
+  </section>
+
+  <details class="bench" id="bench">
+    <summary>
+      <div class="bsum-title"><span class="chev" aria-hidden="true">▶</span><h2>How we compare to industry benchmarks</h2></div>
+      <div class="bsum-counts" id="bCounts"></div>
+      <div class="bsum-hint">Automotive averages from published 2025 studies. Click to show or hide.</div>
+    </summary>
+    <div class="bbody">
+      <div class="tablewrap"><table class="btable" id="btbl"></table></div>
+      <div class="note">Benchmarks are averages across many advertisers and vary by region, campaign goal and ad format. Use them as a guide, not a pass/fail line. "Near average" means within 15% of the benchmark. Results follow the campaign filter.</div>
+      <div class="sources"><span>Sources:</span>
+        <a href="https://www.wordstream.com/blog/facebook-ads-benchmarks-2025" target="_blank" rel="noopener">WordStream, Facebook Ads Benchmarks 2025</a>
+        <a href="https://influee.co/gb/blog/facebook-ads-benchmarks" target="_blank" rel="noopener">Triple Whale 2025 data (via Influee)</a>
+        <a href="https://adbacklog.com/blog/youtube-ads-benchmarks-per-industry-2025" target="_blank" rel="noopener">AdBacklog, YouTube Benchmarks 2025</a>
+        <a href="https://www.foureyes.io/blog/30-day-dealer-close-rate" target="_blank" rel="noopener">Foureyes, 30-Day Close Rate study</a>
+        <a href="https://www.demandlocal.com/blog/lead-to-sale-conversion-statistics/" target="_blank" rel="noopener">Demand Local, Lead-to-Sale Statistics</a>
+      </div>
+    </div>
+  </details>
+
+  <section class="panel" id="adsPanel">
+    <div><h2>Ads that ran</h2><div class="sub">Click an ad to see its artwork with its results. Rows in the charts and the detail table open the same view.</div><div class="note" id="matchNote" hidden>Matching sales are sales of the advertised make and model with the matching deal type: leases are credited to lease ads and retail purchases to APR offers. Ads can also bring in buyers who choose a different vehicle or financing, so these counts are conservative.</div></div>
+    <div class="votenote" id="voteNote"></div>
+    <div class="medkey" id="medKey"></div>
+    <div class="gallery" id="gallery"></div>
+    <div id="othersWrap"><h3 class="subhead">Other offers</h3><div class="sub" style="color:var(--ink-3);font-size:13px;margin-bottom:10px">Offers that ran this month without spend or delivery results in the campaign spreadsheet</div><div class="gallery" id="others"></div></div>
+  </section>
+
+  <div class="grid2">
+    <section class="panel">
+      <div><h2>Spend by campaign</h2><div class="sub">Actual spend split by medium, with the campaign budget marked</div></div>
+      <div class="legend" id="leg1"></div>
+      <div class="hbars-wrap" id="spendChart"></div>
+    </section>
+    <section class="panel">
+      <div><h2>How each medium performed</h2><div class="sub">Paid mediums that report clicks. Lower cost per click is better; higher click-through rate is better.</div></div>
+      <div class="eff" id="effChart"></div>
+      <div class="ytnote" id="ytNote"></div>
+      <div class="ytnote" id="dmNote" hidden></div>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="panel">
+      <div><h2>Clicks by campaign</h2><div class="sub">Ad clicks split by medium</div></div>
+      <div class="hbars-wrap" id="clickChart"></div>
+    </section>
+    <section class="panel">
+      <div><h2>Website specials page views</h2><div class="sub">Page views on each campaign or specials page. Active users shown where tracked.</div></div>
+      <div class="hbars-wrap" id="webChart"></div>
+    </section>
+  </div>
+
+  <section class="panel">
+    <div><h2>Campaign detail</h2><div class="sub">Every campaign and medium. Click a column heading to sort.</div></div>
+    <div class="tablewrap"><table id="tbl"></table></div>
+  </section>
+
+  </div>
+
+  <footer>
+    <div><a href="event-entry.html">Event and presence log (example form)</a> · <a href="automation-roadmap.html">Data automation notes</a>. Nothing on those pages is sent.</div>
+    <div>CTR = clicks ÷ impressions. Cost per click = spend ÷ clicks. CPM = spend per 1,000 impressions. CTR and cost per click only count rows where clicks were reported.</div>
+    <div>CPV = YouTube spend ÷ TrueViews. Direct mail cost per piece = spend ÷ mailers sent. Broadcast radio is reported as spots aired (no impressions), so it isn't included in impression, CTR or CPM figures.</div>
+    <div id="source"></div>
+  </footer>
+</div>
+<div class="fo" id="flt" hidden><div class="fp" role="dialog" aria-modal="true" aria-labelledby="fTitle">
+  <div class="fh"><div><div class="eyebrow">Saturation Snapshot</div><h2 id="fTitle"></h2><div class="sub" id="fSub"></div></div><button class="fx" id="fClose" type="button">Close</button></div>
+  <div class="fdefs" id="fDefs"></div>
+  <div class="fstats" id="fStats"></div>
+  <div class="note" id="fSeg"></div>
+  <div class="fs"><div class="ftrend" id="fTrend"></div><div id="fChart"></div></div>
+  <div class="fdetail" id="fDay" hidden></div>
+  <details class="cat" id="fCat"></details>
+  <div class="note" id="fNote"></div>
+</div></div>
+<div id="tip" hidden></div>
+<dialog class="viewer" id="viewer" aria-labelledby="vTitle">
+  <div class="vwrap">
+    <div class="vmedia" id="vMedia"></div>
+    <div class="vinfo" id="vInfo"></div>
+  </div>
+</dialog>
+
+<script>
+const MONTHS = [{"key": "2026-08", "label": "August 2026", "short": "Aug", "period": "Aug 1 \u2013 Aug 31, 2026", "source": "August 2026 Marketing Results workbook", "rows": [{"name": "Chevy Silverado Lease", "sub": null, "m": "AET", "b": 1500, "s": 1499.49, "start": "Aug 6", "imp": 29160, "reach": null, "clk": 1349, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "Meta - Video", "b": 1000, "s": 984.49, "start": "Aug 6", "imp": 135133, "reach": 47088, "clk": 5880, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "YouTube", "b": 2500, "s": 2000, "start": "Aug 6", "imp": 195000, "reach": null, "clk": 269, "tv": 127000, "wv": null, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "Meta - Static", "b": 1000, "s": 749.67, "start": "Aug 6", "imp": 404286, "reach": null, "clk": 1772, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "Website", "b": null, "s": 0, "start": "Aug 6", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 618, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "AET", "b": 1500, "s": 1499.62, "start": "Aug 7", "imp": 35955, "reach": null, "clk": 469, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "YouTube", "b": 2000, "s": 2000.74, "start": "Aug 7", "imp": 179792, "reach": null, "clk": 261, "tv": 119236, "wv": null, "wu": null, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "Meta - Static", "b": 1000, "s": 1000, "start": "Aug 7", "imp": 464031, "reach": 67340, "clk": 2049, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "Meta - Video", "b": 1000, "s": 999.96, "start": "Aug 7", "imp": 71690, "reach": 26180, "clk": 1684, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "Website", "b": null, "s": null, "start": "Aug 7", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 216, "wu": 160, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Armada APR Offer", "sub": null, "m": "Meta - Static", "b": 500, "s": 500, "start": "Aug 7", "imp": 201507, "reach": 42276, "clk": 948, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Nissan Armada APR Offer", "sub": null, "m": "Website", "b": null, "s": null, "start": "Aug 7", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 140, "wu": 104, "mail": null, "sd": "2026-08-07", "ed": "2026-08-31"}, {"name": "Honda Ridgeline APR Offer", "sub": null, "m": "Website", "b": null, "s": null, "start": "Aug 6", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 150, "wu": 124, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Honda Ridgeline APR Offer", "sub": null, "m": "Meta - Static", "b": 500, "s": 401.75, "start": "Aug 6", "imp": 156235, "reach": 26410, "clk": 756, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-06", "ed": "2026-08-31"}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "Meta - Static", "b": 500, "s": 499.94, "start": "Aug 12", "imp": 73307, "reach": 10310, "clk": 695, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-12", "ed": "2026-08-31"}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "Website", "b": null, "s": null, "start": "Aug 12", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 464, "wu": 388, "mail": null, "sd": "2026-08-12", "ed": "2026-08-31"}, {"name": "Get To Know A Sales Rep \u2013 Craig", "sub": null, "m": "Meta - Static", "b": 500, "s": 496.34, "start": "Aug 3", "imp": 200556, "reach": 65913, "clk": 172, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-03", "ed": "2026-08-31"}, {"name": "Rydell Buys", "sub": "All Makes", "m": "Meta - Static", "b": 500, "s": 228.03, "start": "Aug 1", "imp": 119977, "reach": 11639, "clk": 719, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-01", "ed": "2026-08-31"}, {"name": "Rydell Buys", "sub": null, "m": "Website", "b": null, "s": null, "start": "Aug 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 125, "wu": null, "mail": null, "sd": "2026-08-01", "ed": "2026-08-31"}, {"name": "Body Shop", "sub": "Calibration", "m": "Website", "b": null, "s": null, "start": "Aug 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 120, "wu": null, "mail": null, "sd": "2026-08-01", "ed": "2026-08-31"}, {"name": "Body Shop", "sub": "Calibration", "m": "Meta - Static", "b": 500, "s": 391.99, "start": "Aug 1", "imp": 273354, "reach": 18424, "clk": 773, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-01", "ed": "2026-08-31"}, {"name": "Affordability \u2013 Sales \u2013 Market Wide", "sub": null, "m": "Meta - Static", "b": 1000, "s": 715, "start": "Aug 1", "imp": 73307, "reach": 10310, "clk": 695, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-08-01", "ed": "2026-08-31"}], "depts": [{"d": "GM Sales", "opp": 937, "sale": 280, "camps": ["Chevy Silverado Lease", "Get To Know A Sales Rep \u2013 Craig"], "kind": "sales", "unit": "sales", "store": "GM", "type": "Sales"}, {"d": "Honda Nissan Sales", "opp": 284, "sale": 65, "camps": ["Nissan Combined APR Offer", "Nissan Armada APR Offer", "Honda Ridgeline APR Offer"], "kind": "sales", "unit": "sales", "store": "Honda Nissan", "type": "Sales"}, {"d": "Toyota Sales", "opp": 294, "sale": 102, "camps": ["Toyota Tundra APR Offer"], "kind": "sales", "unit": "sales", "store": "Toyota", "type": "Sales"}, {"d": "Body Shop", "opp": 196, "sale": 314, "ro": true, "camps": ["Body Shop"], "unit": "ROs", "store": "GM", "type": "Body Shop"}, {"d": "Rydell Buys", "opp": 215, "sale": null, "camps": ["Rydell Buys"], "unit": null, "store": "Market Wide", "type": "Rydell Buys"}], "meta": {"Chevy Silverado Lease": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Nissan Combined APR Offer": {"store": "Honda Nissan", "brand": "Nissan", "dept": "Sales"}, "Nissan Armada APR Offer": {"store": "Honda Nissan", "brand": "Nissan", "dept": "Sales"}, "Honda Ridgeline APR Offer": {"store": "Honda Nissan", "brand": "Honda", "dept": "Sales"}, "Toyota Tundra APR Offer": {"store": "Toyota", "brand": "Toyota", "dept": "Sales"}, "Get To Know A Sales Rep \u2013 Craig": {"store": "GM", "brand": null, "dept": "Sales"}, "Rydell Buys": {"store": "Market Wide", "brand": null, "dept": "Rydell Buys"}, "Body Shop": {"store": "GM", "brand": null, "dept": "Body Shop"}, "Affordability \u2013 Sales \u2013 Market Wide": {"store": "Market Wide", "brand": null, "dept": "Sales"}}}, {"key": "2026-09", "label": "September 2026", "short": "Sep", "period": "Sep 1 \u2013 Sep 30, 2026", "source": "September Ad Results workbook", "rows": [{"name": "Rydell Buys", "sub": "No Hassel", "m": "Meta - Static", "b": 500, "s": 427.4, "start": "Sep 1", "imp": 215849, "reach": 21888, "clk": 883, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Private Sale", "m": "Meta - Static", "b": 350, "s": 349.51, "start": "Sep 1", "imp": 135645, "reach": 22263, "clk": 840, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Ad 1", "m": "Meta - Video", "b": 750, "s": 749.8, "start": "Sep 9", "imp": 45572, "reach": 10195, "clk": 616, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Ad 2", "m": "Meta - Video", "b": 750, "s": 749.06, "start": "Sep 10", "imp": 43300, "reach": 13343, "clk": 617, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-10", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Ad 2", "m": "YouTube", "b": 2000, "s": 1000.41, "start": "Sep 10", "imp": 59881, "reach": 16742, "clk": 93, "tv": 38895, "wv": null, "wu": null, "mail": null, "sd": "2026-09-10", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Ad 1", "m": "YouTube", "b": 1000, "s": 1000.68, "start": "Sep 9", "imp": 63122, "reach": 18101, "clk": 98, "tv": 42223, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30"}, {"name": "Rydell Buys", "sub": "Ad 1", "m": "AET - Streaming Radio", "b": 1000, "s": 761.99, "start": "Sep 24", "imp": 22508, "reach": null, "clk": 49, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-24", "ed": "2026-09-30", "live": {"2026-09-24": 1579, "2026-09-25": 4064, "2026-09-26": 3444, "2026-09-27": 3882, "2026-09-28": 3808, "2026-09-29": 3722, "2026-09-30": 2009}}, {"name": "Rydell Buys", "sub": "Ad 2", "m": "AET - Streaming Radio", "b": 1000, "s": 810.54, "start": "Sep 24", "imp": 24167, "reach": null, "clk": 37, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-24", "ed": "2026-09-30", "live": {"2026-09-24": 1695, "2026-09-25": 4382, "2026-09-26": 3906, "2026-09-27": 4273, "2026-09-28": 3980, "2026-09-29": 3893, "2026-09-30": 2038}}, {"name": "Rydell Buys", "sub": "Ad 1", "m": "AET - Streaming TV", "b": 2000, "s": 1701.66, "start": "Sep 9", "imp": 35067, "reach": null, "clk": 626, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30", "live": {"2026-09-09": 289, "2026-09-10": 1794, "2026-09-11": 1971, "2026-09-12": 1090, "2026-09-13": 1303, "2026-09-14": 1146, "2026-09-15": 1170, "2026-09-16": 1004, "2026-09-17": 1246, "2026-09-18": 1326, "2026-09-19": 1852, "2026-09-20": 1916, "2026-09-21": 1688, "2026-09-22": 1756, "2026-09-23": 1742, "2026-09-24": 1560, "2026-09-25": 1642, "2026-09-26": 1435, "2026-09-27": 1471, "2026-09-28": 1251, "2026-09-29": 3283, "2026-09-30": 3132}}, {"name": "Rydell Buys", "sub": "Ad 2", "m": "AET - Streaming TV", "b": 2000, "s": 1729.68, "start": "Sep 10", "imp": 34903, "reach": null, "clk": 650, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-10", "ed": "2026-09-30", "live": {"2026-09-10": 202, "2026-09-11": 1522, "2026-09-12": 1390, "2026-09-13": 1351, "2026-09-14": 1248, "2026-09-15": 1399, "2026-09-16": 1162, "2026-09-17": 1263, "2026-09-18": 1390, "2026-09-19": 1923, "2026-09-20": 2015, "2026-09-21": 1796, "2026-09-22": 1907, "2026-09-23": 1940, "2026-09-24": 1723, "2026-09-25": 1795, "2026-09-26": 1520, "2026-09-27": 1609, "2026-09-28": 1410, "2026-09-29": 3164, "2026-09-30": 3174}}, {"name": "Rydell Buys", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 495, "wu": 217, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Get To Know A Sales Rep \u2013 Kevin", "sub": null, "m": "Meta - Static", "b": 350, "s": 346.7, "start": "Sep 1", "imp": 47566, "reach": 28316, "clk": 1725, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Body Shop", "sub": null, "m": "Meta - Static", "b": 350, "s": 348.37, "start": "Sep 1", "imp": 172246, "reach": 16144, "clk": 690, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Body Shop", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 178, "wu": 88, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Chevy Silverado APR Offer", "sub": null, "m": "Meta - Static", "b": 350, "s": 349, "start": "Sep 16", "imp": 44904, "reach": 18670, "clk": 475, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-16", "ed": "2026-09-30"}, {"name": "Chevy Silverado APR Offer", "sub": null, "m": "Meta - Video", "b": 500, "s": 499.93, "start": "Sep 16", "imp": 53957, "reach": 23584, "clk": 689, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-16", "ed": "2026-09-30"}, {"name": "Chevy Silverado APR Offer", "sub": null, "m": "AET - Streaming TV", "b": 1500, "s": 1202.65, "start": "Sep 21", "imp": 24184, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-21", "ed": "2026-09-30", "live": {"2026-09-21": 1350, "2026-09-22": 3056, "2026-09-23": 3196, "2026-09-24": 2859, "2026-09-25": 3047, "2026-09-26": 2295, "2026-09-27": 2809, "2026-09-28": 2200, "2026-09-29": 2243, "2026-09-30": 1129}}, {"name": "Chevy Silverado Lease", "sub": null, "m": "Meta - Static", "b": 500, "s": 494.63, "start": "Sep 1", "imp": 209677, "reach": 31663, "clk": 926, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "Meta - Video", "b": 750, "s": 749.9, "start": "Sep 4", "imp": 85665, "reach": 30118, "clk": 1331, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-04", "ed": "2026-09-30"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "YouTube", "b": 2500, "s": 2499.92, "start": "Sep 4", "imp": 113680, "reach": 26912, "clk": 1016, "tv": 26912, "wv": null, "wu": null, "mail": null, "sd": "2026-09-04", "ed": "2026-09-30"}, {"name": "Chevy Silverado Lease", "sub": null, "m": "AET - Streaming TV", "b": 2500, "s": 2291.67, "start": "Sep 4", "imp": 45235, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-04", "ed": "2026-09-30", "live": {"2026-09-04": 1475, "2026-09-05": 1308, "2026-09-06": 1306, "2026-09-07": 1272, "2026-09-08": 1195, "2026-09-09": 1151, "2026-09-10": 1150, "2026-09-11": 1249, "2026-09-12": 1037, "2026-09-13": 1268, "2026-09-14": 1113, "2026-09-15": 1167, "2026-09-16": 1095, "2026-09-17": 1119, "2026-09-18": 1247, "2026-09-19": 924, "2026-09-20": 1199, "2026-09-21": 2164, "2026-09-22": 3020, "2026-09-23": 3096, "2026-09-24": 2860, "2026-09-25": 3107, "2026-09-26": 2213, "2026-09-27": 2866, "2026-09-28": 2204, "2026-09-29": 2259, "2026-09-30": 1171}}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "Meta - Video", "b": 750, "s": 749.82, "start": "Sep 5", "imp": 82689, "reach": 27367, "clk": 1033, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-05", "ed": "2026-09-30"}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "Meta - Static", "b": 350, "s": 349.92, "start": "Sep 3", "imp": 105627, "reach": 30857, "clk": 860, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-03", "ed": "2026-09-30"}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "YouTube", "b": 1500, "s": 1500.78, "start": "Sep 9", "imp": 113334, "reach": 43140, "clk": 125, "tv": 75915, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30"}, {"name": "Toyota Tundra APR Offer", "sub": null, "m": "AET - Streaming TV", "b": 1000, "s": 998.78, "start": "Sep 9", "imp": 20837, "reach": null, "clk": 79, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30", "live": {"2026-09-09": 1275, "2026-09-10": 1298, "2026-09-11": 1251, "2026-09-12": 947, "2026-09-13": 1099, "2026-09-14": 946, "2026-09-15": 1155, "2026-09-16": 899, "2026-09-17": 962, "2026-09-18": 1158, "2026-09-19": 909, "2026-09-20": 1006, "2026-09-21": 926, "2026-09-22": 1016, "2026-09-23": 927, "2026-09-24": 911, "2026-09-25": 857, "2026-09-26": 758, "2026-09-27": 848, "2026-09-28": 755, "2026-09-29": 646, "2026-09-30": 288}}, {"name": "Toyota Camry PreOrder/Tires Offer", "sub": null, "m": "Meta - Static", "b": 500, "s": 499.9, "start": "Sep 4", "imp": 57487, "reach": 21103, "clk": 657, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-04", "ed": "2026-09-30"}, {"name": "Service Specials Webpage", "sub": null, "m": "Website", "b": null, "s": null, "start": null, "imp": null, "reach": null, "clk": null, "tv": null, "wv": 28, "wu": 18, "mail": null}, {"name": "Honda Specials Webpage", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 134, "wu": 93, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Toyota Specials Webpage", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 658, "wu": 393, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Nissan Specials Webpage", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 132, "wu": 89, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Chevy Specials Webpage", "sub": null, "m": "Website", "b": null, "s": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": 937, "wu": 584, "mail": null, "sd": "2026-09-01", "ed": "2026-09-30"}, {"name": "Multi Point Winter Inspection", "sub": null, "m": "Direct Mail", "b": null, "s": 1966, "start": null, "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": 2768}, {"name": "Nissan Murano Lease", "sub": null, "m": "Meta - Static", "b": 500, "s": 499.96, "start": "Sep 9", "imp": 56708, "reach": 21739, "clk": 621, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30"}, {"name": "Nissan Combined APR Offer", "sub": null, "m": "Meta - Static", "b": 750, "s": 749.93, "start": "Sep 9", "imp": 74407, "reach": 26320, "clk": 966, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-09", "ed": "2026-09-30"}, {"name": "Chevy Traverse Lease", "sub": null, "m": "Meta - Static", "b": 350, "s": 349.1, "start": "Sep 17", "imp": 52487, "reach": 36343, "clk": 1331, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-17", "ed": "2026-09-30"}, {"name": "Chevy Equinox Lease", "sub": null, "m": "Meta - Static", "b": 350, "s": 349.86, "start": "Sep 17", "imp": 48901, "reach": 28997, "clk": 786, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-17", "ed": "2026-09-30"}, {"name": "Honda Ridgeline Lease", "sub": null, "m": "Meta - Static", "b": 750, "s": 749.35, "start": "Sep 10", "imp": 87513, "reach": 32129, "clk": 964, "tv": null, "wv": null, "wu": null, "mail": null, "sd": "2026-09-10", "ed": "2026-09-30"}, {"b": null, "start": null, "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "name": "Rydell Buys", "sub": "Ad 1", "m": "Radio", "s": 550, "rimp": 22, "vendor": "KROX", "days": {"2026-09-01": 1, "2026-09-02": 1, "2026-09-03": 1, "2026-09-04": 1, "2026-09-07": 1, "2026-09-08": 1, "2026-09-09": 1, "2026-09-10": 1, "2026-09-11": 1, "2026-09-14": 1, "2026-09-15": 1, "2026-09-16": 1, "2026-09-17": 1, "2026-09-18": 1, "2026-09-21": 1, "2026-09-22": 1, "2026-09-23": 1, "2026-09-24": 1, "2026-09-25": 1, "2026-09-28": 1, "2026-09-29": 1, "2026-09-30": 1}, "sd": "2026-09-01", "ed": "2026-09-30", "script": "91531 (:30)"}, {"b": null, "start": "Sep 2", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "name": "Rydell Buys", "sub": null, "m": "Radio", "s": 4200, "rimp": 210, "vendor": "KROX", "note": "co-op, GMC Acadia script", "days": {"2026-09-02": 6, "2026-09-03": 7, "2026-09-04": 9, "2026-09-05": 8, "2026-09-06": 9, "2026-09-07": 7, "2026-09-08": 5, "2026-09-09": 6, "2026-09-10": 6, "2026-09-11": 6, "2026-09-12": 11, "2026-09-13": 8, "2026-09-14": 8, "2026-09-15": 6, "2026-09-16": 7, "2026-09-17": 5, "2026-09-18": 7, "2026-09-19": 9, "2026-09-20": 9, "2026-09-21": 7, "2026-09-22": 8, "2026-09-23": 5, "2026-09-24": 7, "2026-09-25": 7, "2026-09-26": 8, "2026-09-27": 9, "2026-09-28": 6, "2026-09-29": 9, "2026-09-30": 5}, "sd": "2026-09-02", "ed": "2026-09-30"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 1320.0, "rimp": 88, "vendor": "KNOX-AM", "days": {"2026-09-16": 8, "2026-09-17": 8, "2026-09-18": 6, "2026-09-21": 8, "2026-09-22": 8, "2026-09-23": 9, "2026-09-24": 9, "2026-09-25": 8, "2026-09-28": 8, "2026-09-29": 8, "2026-09-30": 8}, "sd": "2026-09-16", "ed": "2026-09-30"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 791.8, "rimp": 45, "vendor": "KNOX-AM", "days": {"2026-09-16": 4, "2026-09-17": 4, "2026-09-18": 4, "2026-09-21": 4, "2026-09-22": 4, "2026-09-23": 4, "2026-09-24": 4, "2026-09-25": 4, "2026-09-28": 4, "2026-09-29": 4, "2026-09-30": 5}, "sd": "2026-09-16", "ed": "2026-09-30", "note": "co-op HR \u00b7 town spots"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 1320.0, "rimp": 88, "vendor": "KYCK-FM", "days": {"2026-09-16": 8, "2026-09-17": 8, "2026-09-18": 8, "2026-09-21": 8, "2026-09-22": 8, "2026-09-23": 8, "2026-09-24": 8, "2026-09-25": 8, "2026-09-28": 8, "2026-09-29": 8, "2026-09-30": 8}, "sd": "2026-09-16", "ed": "2026-09-30"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 791.8, "rimp": 45, "vendor": "KYCK-FM", "days": {"2026-09-16": 4, "2026-09-17": 4, "2026-09-18": 4, "2026-09-21": 4, "2026-09-22": 4, "2026-09-23": 4, "2026-09-24": 4, "2026-09-25": 4, "2026-09-28": 4, "2026-09-29": 4, "2026-09-30": 5}, "sd": "2026-09-16", "ed": "2026-09-30", "note": "co-op HR \u00b7 town spots"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 880.0, "rimp": 88, "vendor": "KZGF-FM", "days": {"2026-09-16": 8, "2026-09-17": 8, "2026-09-18": 8, "2026-09-21": 8, "2026-09-22": 8, "2026-09-23": 8, "2026-09-24": 8, "2026-09-25": 8, "2026-09-28": 8, "2026-09-29": 8, "2026-09-30": 8}, "sd": "2026-09-16", "ed": "2026-09-30"}, {"b": null, "start": "Sep 16", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Chevy Silverado APR Offer", "s": 880.0, "rimp": 88, "vendor": "KZLT-FM", "days": {"2026-09-16": 8, "2026-09-17": 8, "2026-09-18": 8, "2026-09-21": 8, "2026-09-22": 8, "2026-09-23": 8, "2026-09-24": 8, "2026-09-25": 8, "2026-09-28": 8, "2026-09-29": 8, "2026-09-30": 8}, "sd": "2026-09-16", "ed": "2026-09-30"}, {"b": null, "start": "Sep 3", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 1080.0, "rimp": 72, "vendor": "KNOX-AM", "days": {"2026-09-03": 8, "2026-09-04": 8, "2026-09-07": 8, "2026-09-08": 8, "2026-09-09": 8, "2026-09-10": 8, "2026-09-11": 8, "2026-09-14": 8, "2026-09-15": 8}, "sd": "2026-09-03", "ed": "2026-09-15"}, {"b": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 783.2, "rimp": 44, "vendor": "KNOX-AM", "days": {"2026-09-01": 4, "2026-09-02": 4, "2026-09-03": 4, "2026-09-04": 4, "2026-09-07": 4, "2026-09-08": 4, "2026-09-09": 4, "2026-09-10": 4, "2026-09-11": 4, "2026-09-14": 4, "2026-09-15": 4}, "sd": "2026-09-01", "ed": "2026-09-15", "note": "co-op HR \u00b7 town spots"}, {"b": null, "start": "Sep 3", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 1080.0, "rimp": 72, "vendor": "KYCK-FM", "days": {"2026-09-03": 8, "2026-09-04": 8, "2026-09-07": 8, "2026-09-08": 8, "2026-09-09": 8, "2026-09-10": 8, "2026-09-11": 8, "2026-09-14": 8, "2026-09-15": 8}, "sd": "2026-09-03", "ed": "2026-09-15"}, {"b": null, "start": "Sep 1", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 783.2, "rimp": 44, "vendor": "KYCK-FM", "days": {"2026-09-01": 4, "2026-09-02": 4, "2026-09-03": 4, "2026-09-04": 4, "2026-09-07": 4, "2026-09-08": 4, "2026-09-09": 4, "2026-09-10": 4, "2026-09-11": 4, "2026-09-14": 4, "2026-09-15": 4}, "sd": "2026-09-01", "ed": "2026-09-15", "note": "co-op HR \u00b7 town spots"}, {"b": null, "start": "Sep 3", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 720.0, "rimp": 72, "vendor": "KZGF-FM", "days": {"2026-09-03": 8, "2026-09-04": 8, "2026-09-07": 8, "2026-09-08": 8, "2026-09-09": 8, "2026-09-10": 8, "2026-09-11": 8, "2026-09-14": 8, "2026-09-15": 8}, "sd": "2026-09-03", "ed": "2026-09-15"}, {"b": null, "start": "Sep 3", "imp": null, "reach": null, "clk": null, "tv": null, "wv": null, "wu": null, "mail": null, "sub": null, "m": "Radio", "name": "Rydell Buys", "s": 720.0, "rimp": 72, "vendor": "KZLT-FM", "days": {"2026-09-03": 8, "2026-09-04": 8, "2026-09-07": 8, "2026-09-08": 8, "2026-09-09": 8, "2026-09-10": 8, "2026-09-11": 8, "2026-09-14": 8, "2026-09-15": 8}, "sd": "2026-09-03", "ed": "2026-09-15"}], "depts": [{"store": "GM", "d": "GM Sales", "goal": 1249, "opp": 881, "sale": 220, "camps": ["Chevy Silverado APR Offer", "Chevy Silverado Lease", "Chevy Traverse Lease", "Chevy Equinox Lease", "Chevy Specials Webpage", "Get To Know A Sales Rep \u2013 Kevin"], "kind": "sales", "unit": "sales", "type": "Sales"}, {"store": "GM", "d": "GM Service", "goal": 9428, "opp": 7741, "sale": 1027, "camps": [], "shared": "service", "unit": "ROs", "ro": true, "type": "Service"}, {"store": "GM", "d": "GM Quick Lube", "goal": 2500, "opp": 1780, "sale": 1966, "camps": [], "unit": "ROs", "ro": true, "type": "Quick Lube"}, {"store": "GM", "d": "Body Shop", "goal": 264, "opp": 192, "sale": 332, "camps": ["Body Shop"], "unit": "ROs", "ro": true, "type": "Body Shop"}, {"store": "GM", "d": "Detail", "goal": 132, "opp": 91, "sale": 91, "camps": [], "unit": "ROs", "same": true, "type": "Detail", "ro": true}, {"store": "GM", "d": "Car Wash", "goal": 55000, "opp": 39414, "sale": 39414, "camps": [], "unit": "washes", "same": true, "type": "Car Wash"}, {"store": "Toyota", "d": "Toyota Sales", "goal": 338, "opp": 299, "sale": 70, "camps": ["Toyota Tundra APR Offer", "Toyota Camry PreOrder/Tires Offer", "Toyota Specials Webpage"], "kind": "sales", "unit": "sales", "type": "Sales"}, {"store": "Toyota", "d": "Toyota Service", "goal": 4916, "opp": 1271, "sale": 489, "camps": [], "shared": "service", "unit": "ROs", "ro": true, "type": "Service"}, {"store": "Toyota", "d": "Toyota Quick Lube", "goal": 564, "opp": 489, "sale": 482, "camps": [], "unit": "ROs", "ro": true, "type": "Quick Lube"}, {"store": "Honda Nissan", "d": "Honda Nissan Sales", "goal": 307, "opp": 287, "sale": 106, "camps": ["Nissan Murano Lease", "Nissan Combined APR Offer", "Honda Ridgeline Lease", "Honda Specials Webpage", "Nissan Specials Webpage"], "kind": "sales", "unit": "sales", "type": "Sales"}, {"store": "Honda Nissan", "d": "Honda Nissan Service", "goal": 4515, "opp": 1833, "sale": 446, "camps": [], "shared": "service", "unit": "ROs", "ro": true, "type": "Service"}, {"store": "Honda Nissan", "d": "Honda Nissan Quick Lube", "goal": 800, "opp": 612, "sale": 566, "camps": [], "unit": "ROs", "ro": true, "type": "Quick Lube"}, {"store": "Market Wide", "d": "Rydell Buys \u2013 KBB ICO", "goal": null, "opp": 202, "sale": 30, "camps": ["Rydell Buys"], "unit": "purchases", "type": "Rydell Buys"}], "shared": [{"key": "service", "label": "All service departments", "camps": ["Multi Point Winter Inspection", "Service Specials Webpage"], "store": "Market Wide", "type": "Service"}], "creatives": [{"camp": "Chevy Silverado APR Offer", "type": "image", "src": "media/chevy-silverado-apr.jpg", "title": "Static ad \u00b7 0% APR for 5 years", "meds": ["Meta - Static"]}, {"camp": "Chevy Silverado APR Offer", "type": "video", "src": "media/chevy-silverado-apr.mp4", "title": "Video ad", "meds": ["Meta - Video", "YouTube", "AET - Streaming TV"], "poster": "media/chevy-silverado-apr-poster.jpg"}, {"camp": "Chevy Silverado APR Offer", "type": "audio", "src": "media/chevy-silverado-apr-radio.mp3", "title": "Radio spot \u00b7 APR + Lease offers", "meds": ["Radio"]}, {"camp": "Chevy Silverado Lease", "type": "image", "src": "media/chevy-silverado-lease.jpg", "title": "Static ad \u00b7 Silverado LT $549/mo", "meds": ["Meta - Static"]}, {"camp": "Chevy Silverado Lease", "type": "video", "src": "media/chevy-silverado-lease.mp4", "title": "Video ad", "meds": ["Meta - Video", "YouTube", "AET - Streaming TV"], "poster": "media/chevy-silverado-lease-poster.jpg"}, {"camp": "Chevy Silverado Lease", "type": "audio", "src": "media/chevy-silverado-lease-radio.mp3", "title": "Radio spot \u00b7 APR + Lease offers (aired under APR Offer)", "meds": []}, {"camp": "Chevy Equinox Lease", "type": "image", "src": "media/chevy-equinox-lease.jpg", "title": "Static ad \u00b7 $499/mo for 36 months", "meds": ["Meta - Static"]}, {"camp": "Chevy Traverse Lease", "type": "image", "src": "media/chevy-traverse-lease.jpg", "title": "Static ad \u00b7 $699/mo for 36 months", "meds": ["Meta - Static"]}, {"camp": "Toyota Tundra APR Offer", "type": "image", "src": "media/toyota-tundra-apr.jpg", "title": "Static ad \u00b7 0% APR for 72 months", "meds": ["Meta - Static"]}, {"camp": "Toyota Camry PreOrder/Tires Offer", "type": "image", "src": "media/toyota-camry-tires.jpg", "title": "Static ad \u00b7 Free winter tires", "meds": ["Meta - Static"]}, {"camp": "Nissan Murano Lease", "type": "image", "src": "media/nissan-murano-lease.jpg", "title": "Static ad \u00b7 Murano Platinum $549/mo", "meds": ["Meta - Static"]}, {"camp": "Nissan Combined APR Offer", "type": "image", "src": "media/nissan-combined-apr.jpg", "title": "Static ad \u00b7 0% APR on 4 models", "meds": ["Meta - Static"]}, {"camp": "Honda Ridgeline Lease", "type": "image", "src": "media/honda-ridgeline-lease.jpg", "title": "Static ad \u00b7 Ridgeline RTL $479/mo", "meds": ["Meta - Static"]}, {"camp": "Body Shop", "type": "image", "src": "media/body-shop.jpg", "title": "Static ad \u00b7 Auto Body & Glass Experts", "meds": ["Meta - Static"]}, {"camp": "Get To Know A Sales Rep \u2013 Kevin", "type": "image", "src": "media/sales-rep-kevin.jpg", "title": "Static ad \u00b7 Real People: Kevin Flanagan", "meds": ["Meta - Static"]}, {"camp": "Rydell Buys", "type": "image", "src": "media/rydell-buys-no-hassle.jpg", "title": "No Hassel \u00b7 No Payoff Hassles", "meds": ["Meta - Static"], "sub": "No Hassel"}, {"camp": "Rydell Buys", "type": "image", "src": "media/rydell-buys-private-sale.jpg", "title": "Private Sale \u00b7 Safer Than Selling Privately", "meds": ["Meta - Static"], "sub": "Private Sale"}, {"camp": "Rydell Buys", "type": "video", "src": "media/rydell-buys-ad1.mp4", "title": "Ad 1 \u00b7 Video", "meds": ["Meta - Video", "YouTube", "AET - Streaming TV"], "sub": "Ad 1", "poster": "media/rydell-buys-ad1-poster.jpg"}, {"camp": "Rydell Buys", "type": "audio", "src": "media/rydell-buys-ad1-radio.mp3", "title": "Ad 1 \u00b7 Radio spot", "meds": ["AET - Streaming Radio", "Radio"], "sub": "Ad 1"}, {"camp": "Rydell Buys", "type": "video", "src": "media/rydell-buys-ad2.mp4", "title": "Ad 2 \u00b7 Video", "meds": ["Meta - Video", "YouTube", "AET - Streaming TV"], "sub": "Ad 2", "poster": "media/rydell-buys-ad2-poster.jpg"}, {"camp": "Rydell Buys", "type": "audio", "src": "media/rydell-buys-ad2-radio.mp3", "title": "Ad 2 \u00b7 Radio spot", "meds": ["AET - Streaming Radio"], "sub": "Ad 2"}, {"camp": "Multi Point Winter Inspection", "type": "image", "src": "media/multi-point-mailer-1.jpg", "title": "Mailer \u00b7 front", "meds": ["Direct Mail"], "wide": true}, {"camp": "Multi Point Winter Inspection", "type": "image", "src": "media/multi-point-mailer-2.jpg", "title": "Mailer \u00b7 back", "meds": ["Direct Mail"], "wide": true}], "others": [{"title": "2026 GMC Sierra 2.7L", "offer": "$3,500 trade assistance", "src": "media/gmc-sierra-27.jpg", "store": "GM", "brand": "GMC", "dept": "Sales", "match": 3}, {"title": "2026 GMC Sierra 5.3L", "offer": "$3,000 trade assistance", "src": "media/gmc-sierra-53.jpg", "store": "GM", "brand": "GMC", "dept": "Sales", "match": 2}, {"title": "2026 GMC Sierra 6.2L", "offer": "$4,000 trade assistance", "src": "media/gmc-sierra-62.jpg", "store": "GM", "brand": "GMC", "dept": "Sales", "match": 4}], "meta": {"Rydell Buys": {"store": "Market Wide", "brand": null, "dept": "Rydell Buys"}, "Get To Know A Sales Rep \u2013 Kevin": {"store": "GM", "brand": null, "dept": "Sales"}, "Body Shop": {"store": "GM", "brand": null, "dept": "Body Shop"}, "Chevy Silverado APR Offer": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Chevy Silverado Lease": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Chevy Traverse Lease": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Chevy Equinox Lease": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Chevy Specials Webpage": {"store": "GM", "brand": "Chevrolet", "dept": "Sales"}, "Toyota Tundra APR Offer": {"store": "Toyota", "brand": "Toyota", "dept": "Sales"}, "Toyota Camry PreOrder/Tires Offer": {"store": "Toyota", "brand": "Toyota", "dept": "Sales"}, "Toyota Specials Webpage": {"store": "Toyota", "brand": "Toyota", "dept": "Sales"}, "Service Specials Webpage": {"store": "Market Wide", "brand": null, "dept": "Service"}, "Multi Point Winter Inspection": {"store": "Market Wide", "brand": null, "dept": "Service"}, "Honda Specials Webpage": {"store": "Honda Nissan", "brand": "Honda", "dept": "Sales"}, "Honda Ridgeline Lease": {"store": "Honda Nissan", "brand": "Honda", "dept": "Sales"}, "Nissan Specials Webpage": {"store": "Honda Nissan", "brand": "Nissan", "dept": "Sales"}, "Nissan Murano Lease": {"store": "Honda Nissan", "brand": "Nissan", "dept": "Sales"}, "Nissan Combined APR Offer": {"store": "Honda Nissan", "brand": "Nissan", "dept": "Sales"}}, "matched": {"Chevy Silverado Lease": 8, "Toyota Tundra APR Offer": 2, "Chevy Silverado APR Offer": 6, "Nissan Combined APR Offer": 16, "Honda Ridgeline Lease": 1, "Nissan Murano Lease": 1, "Toyota Camry PreOrder/Tires Offer": 2, "Chevy Equinox Lease": 4, "Chevy Traverse Lease": 0, "Multi Point Winter Inspection": 108, "Body Shop": 53}, "matchedUnit": {"Multi Point Winter Inspection": "RO", "Body Shop": "glass repair"}}];
+const MEDIUMS = [
+  {k:"Meta - Static",         label:"Meta Static",         c:"--m1"},
+  {k:"Meta - Video",          label:"Meta Video",          c:"--m2"},
+  {k:"YouTube",               label:"YouTube",             c:"--m3"},
+  {k:"TikTok",                label:"TikTok",              c:"--m12"},
+  {k:"Reddit",                label:"Reddit",              c:"--m13"},
+  {k:"Snapchat",              label:"Snapchat",            c:"--m14"},
+  {k:"Pinterest",             label:"Pinterest",           c:"--m15"},
+  {k:"X",                     label:"X",                   c:"--m16"},
+  {k:"Nextdoor",              label:"Nextdoor",            c:"--m17"},
+  {k:"AET",                   label:"AET",                 c:"--m4"},
+  {k:"Website",               label:"Website",             c:"--m5"},
+  {k:"AET - Streaming TV",    label:"AET Streaming TV",    c:"--m6"},
+  {k:"AET - Streaming Radio", label:"AET Streaming Radio", c:"--m7"},
+  {k:"Direct Mail",           label:"Direct Mail",         c:"--m8"},
+  {k:"Radio",                 label:"Radio",               c:"--m9"},
+  {k:"Print Billboard",       label:"Print billboards",    c:"--m10"},
+  {k:"Digital Billboard",     label:"Digital billboards",  c:"--m11"},
+];
+const MED = Object.fromEntries(MEDIUMS.map(m=>[m.k,m]));
+MONTHS.forEach(mo=>mo.rows.forEach(r=>{ if(!MED[r.m]){ const m={k:r.m,label:r.m,c:"--ink-3"}; MEDIUMS.push(m); MED[r.m]=m; } }));
+
+/* month-dependent data */
+let M, MI, rows, CAMPS, DEPTS, VEH, DETAIL, PRESENT, SHARED;
+function loadMonth(key){
+  MI = Math.max(0, MONTHS.findIndex(m=>m.key===key)); if(MONTHS[MI].key!==key) MI = MONTHS.length-1;
+  M = MONTHS[MI]; rows = M.rows;
+  CAMPS = [...new Set(rows.map(r=>r.name))];
+  DEPTS = M.depts || [];
+  VEH = DEPTS.filter(d=>d.kind==='sales'&&d.sale!=null);
+  SHARED = (M.shared||[]).map(s=>{ const mem=DEPTS.filter(d=>d.shared===s.key);
+    const ws=mem.filter(d=>d.sale!=null); return {...s, d:s.label, members:mem, opp:sum(mem,d=>d.opp), goal:sum(mem.filter(d=>d.opp!=null),d=>d.goal), sale:ws.length?sum(ws,d=>d.sale):null, unit:ws.length?ws[0].unit:null, ro:true, isShared:true}; });
+  DETAIL = {};
+  CAMPS.forEach(c=>{ const subs=[...new Set(rows.filter(r=>r.name===c&&r.sub).map(r=>r.sub))]; if(subs.length===1) DETAIL[c]=subs[0]; });
+  PRESENT = MEDIUMS.filter(m=>rows.some(r=>r.m===m.k));
+}
+const crTxt = d => d.sale>d.opp? null : (d.sale/d.opp*100).toFixed(1)+'%';
+const META = Object.assign({}, ...MONTHS.map(m=>m.meta||{}));
+const BRAND_STORE = {Chevrolet:'GM', GMC:'GM', Cadillac:'GM', Toyota:'Toyota', Honda:'Honda Nissan', Nissan:'Honda Nissan'};
+const NOBRAND='none';
+function metaOK(m){ m=m||{}; return (state.store==='all'||m.store===state.store) && (state.brand==='all'||(state.brand===NOBRAND?!m.brand:m.brand===state.brand)) && (state.dept==='all'||m.dept===state.dept); }
+const campOK = name => metaOK(META[name]);
+const scoped = name => state.camp==='all'? campOK(name) : name===state.camp;
+const groupFilter = () => state.store!=='all'||state.brand!=='all'||state.dept!=='all';
+function deptOK(d){ return (state.store==='all'||d.store===state.store) && (state.dept==='all'||d.type===state.dept) &&
+  (state.brand==='all'||(state.brand===NOBRAND? d.store==='Market Wide' : d.store===BRAND_STORE[state.brand])); }
+const deptOf = name => DEPTS.find(d=>d.camps.includes(name)) || (SHARED||[]).find(s=>s.camps.includes(name));
+
+const state = {tab:"month", vb:"store", month:MONTHS[MONTHS.length-1].key, camp:"all", store:"all", brand:"all", dept:"all", meds:null, sort:{key:null,dir:1}};
+try{ const s=JSON.parse(localStorage.getItem("rydellDash")||"null"); if(s&&MONTHS.some(m=>m.key===s.month)){ state.month=s.month; state.camp=s.camp||"all"; ['store','brand','dept'].forEach(k=>{ if(typeof s[k]==='string') state[k]=s[k]; }); } }catch(e){}
+loadMonth(state.month);
+if(state.camp!=="all"&&!(CAMPS.includes(state.camp)&&campOK(state.camp))) state.camp="all";
+state.meds=new Set(PRESENT.map(m=>m.k));
+function save(){ try{ localStorage.setItem("rydellDash",JSON.stringify({month:state.month,camp:state.camp,store:state.store,brand:state.brand,dept:state.dept})); }catch(e){} }
+
+const $ = s=>document.querySelector(s);
+const fmt$ = (v,d=0)=> v==null||!isFinite(v)?'—':(v<0?'−':'')+'$'+Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmtN = v=> v==null?'—':Math.round(v).toLocaleString('en-US');
+const fmtK = v=> v>=1e6?(v/1e6).toFixed(2)+'M': v>=1e4?(v/1e3).toFixed(0)+'K' : Math.round(v).toLocaleString('en-US');
+const fmtP = (v,d=2)=> v==null||!isFinite(v)?'—':v.toFixed(d)+'%';
+const col = k => `var(${MED[k].c})`;
+function sum(a,f){ return a.reduce((t,r)=>t+(f(r)||0),0); }
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+
+function filtered(src){
+  return (src||rows).filter(r=>scoped(r.name)&&state.meds.has(r.m));
+}
+function agg(rs){
+  const withClk = rs.filter(r=>r.clk!=null&&r.imp), withImp = rs.filter(r=>r.imp);
+  const clk=sum(rs,r=>r.clk), imp=sum(rs,r=>r.imp), cImp=sum(withClk,r=>r.imp), cClk=sum(withClk,r=>r.clk);
+  const budgeted=rs.filter(r=>r.b!=null);
+  return {spend:sum(rs,r=>r.s), budget:sum(rs,r=>r.b), bSpend:sum(budgeted,r=>r.s), imp, clk,
+    reach:sum(rs,r=>r.reach), wv:sum(rs,r=>r.wv), wu:sum(rs,r=>r.wu), tv:sum(rs,r=>r.tv), mail:sum(rs,r=>r.mail), rimp:sum(rs,r=>r.rimp),
+    ctr: cImp? cClk/cImp*100 : null,
+    cpc: cClk? sum(withClk.filter(r=>r.clk),r=>r.s)/cClk : null,
+    cpm: imp? sum(withImp,r=>r.s)/imp*1000 : null};
+}
+
+/* ---------- filters ---------- */
+function buildFilters(){
+  const ms=$("#fMonth");
+  ms.innerHTML = MONTHS.map(m=>`<option value="${m.key}">${m.label}</option>`).join('');
+  ms.onchange=()=>{ state.month=ms.value; loadMonth(state.month); if(state.camp!=="all"&&!(CAMPS.includes(state.camp)&&campOK(state.camp))) state.camp="all";
+    state.meds=new Set(PRESENT.map(m=>m.k)); state.sort={key:null,dir:1}; buildMonthFilters(); save(); render(); };
+  $("#fCamp").onchange=e=>{state.camp=e.target.value;save();render();};
+  ['store','brand','dept'].forEach(k=>{ $("#f"+k[0].toUpperCase()+k.slice(1)).onchange=e=>{ state[k]=e.target.value; if(state.camp!=='all'&&!campOK(state.camp)) state.camp='all'; buildMonthFilters(); save(); render(); }; });
+  $("#fMed").onclick=e=>{const b=e.target.closest('.chip'); if(!b) return; const k=b.dataset.m;
+    if(state.meds.has(k)){ if(state.meds.size>1) state.meds.delete(k);} else state.meds.add(k); render(); };
+  $("#reset").onclick=()=>{state.camp="all";state.store=state.brand=state.dept="all";buildMonthFilters();state.meds=new Set(PRESENT.map(m=>m.k));save();render();};
+  buildMonthFilters();
+}
+function opts(sel, allLbl, vals, cur){ const v=[...new Set(vals)].filter(Boolean); if(cur!=='all'&&!v.includes(cur)) v.push(cur);
+  $(sel).innerHTML=`<option value="all">${allLbl}</option>`+v.map(x=>`<option value="${esc(x)}">${x===NOBRAND?'No specific brand':esc(x)}</option>`).join(''); $(sel).value=cur; }
+function buildMonthFilters(){
+  const metas = CAMPS.map(c=>META[c]||{}).concat(M.others||[]);
+  const SORDER=['GM','Toyota','Honda Nissan','Market Wide'], DORDER=['Sales','Service','Quick Lube','Body Shop','Detail','Car Wash','Rydell Buys'];
+  const ord=(arr,o)=>[...new Set(arr)].filter(Boolean).sort((a,b)=>(o.indexOf(a)+1||99)-(o.indexOf(b)+1||99)||a.localeCompare(b));
+  opts('#fStore','All stores', ord(metas.map(m=>m.store).concat(DEPTS.map(d=>d.store)),SORDER), state.store);
+  opts('#fBrand','All brands', ord(metas.map(m=>m.brand),[]).concat(metas.some(m=>!m.brand)?[NOBRAND]:[]), state.brand);
+  opts('#fDept','All departments', ord(metas.map(m=>m.dept).concat(DEPTS.map(d=>d.type)),DORDER), state.dept);
+  const cs = CAMPS.filter(campOK);
+  $("#fCamp").innerHTML = `<option value="all">All campaigns (${cs.length})</option>` + cs.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');
+  $("#fMed").innerHTML = PRESENT.map(m=>`<button type="button" class="chip" data-m="${esc(m.k)}" style="--c:var(${m.c})"><span class="sw"></span>${m.label}</button>`).join('');
+}
+function syncFilters(){
+  document.querySelectorAll('#fMed .chip').forEach(b=>b.setAttribute('aria-pressed',state.meds.has(b.dataset.m)));
+  $("#fCamp").value=state.camp; $("#fMonth").value=state.month; $("#fStore").value=state.store; $("#fBrand").value=state.brand; $("#fDept").value=state.dept;
+  $("#title").textContent=`${M.label} Campaign Results`;
+  $("#period").textContent=M.period;
+  $("#source").textContent=`Source: ${M.source}.`;
+}
+
+/* ---------- KPIs ---------- */
+function delta(cur, prev, mode){
+  if(cur==null||prev==null||!isFinite(cur)||!isFinite(prev)||prev===0) return '';
+  const P = MONTHS[MI-1].short;
+  if(mode==='pts'){ const d=cur-prev; if(Math.abs(d)<0.005) return `<div class="dl">No change vs ${P}</div>`;
+    return `<div class="dl"><b>${d>0?'▲':'▼'} ${Math.abs(d).toFixed(2)} pts</b> vs ${P}</div>`; }
+  const d=(cur-prev)/prev*100; if(Math.abs(d)<0.5) return `<div class="dl">No change vs ${P}</div>`;
+  return `<div class="dl"><b>${d>0?'▲':'▼'} ${Math.abs(d).toFixed(0)}%</b> vs ${P} (${mode==='$'?fmt$(prev):mode==='$2'?fmt$(prev,2):fmtN(prev)})</div>`;
+}
+function renderKPIs(){
+  const rs=filtered(), a=agg(rs);
+  const prevM = MI>0? MONTHS[MI-1] : null, cmp = prevM && state.camp==="all";
+  const allMeds = state.meds.size===PRESENT.length;
+  const p = cmp? agg(prevM.rows.filter(r=>campOK(r.name)&&(allMeds||state.meds.has(r.m)))) : null;
+  const pct = a.budget? a.bSpend/a.budget*100 : null, unb=a.spend-a.bSpend;
+  let opp=null,sale=null,os,ss,saleLbl='Vehicle sales', oppLbl='Sales opportunities', pOpp=null, pSale=null, oppMeter=null;
+  const mon=M.label.split(' ')[0];
+  const SCOPE=DEPTS.filter(deptOK), SALESD=SCOPE.filter(d=>d.kind==='sales'), VS=SALESD.filter(d=>d.sale!=null);
+  const scopeTxt = groupFilter()? [state.store!=='all'?state.store:'', state.brand!=='all'&&state.brand!==NOBRAND?state.brand:''].filter(Boolean).join(' · ') : '';
+  if(!M.depts){ os=ss=`${mon} results not added yet`; }
+  else if(state.camp==="all" && SALESD.length){
+    opp=sum(SALESD,d=>d.opp); const goal=sum(SALESD,d=>d.goal);
+    const who = groupFilter()? SALESD.map(d=>d.d).join(', ') : 'GM, Toyota and Honda Nissan sales';
+    if(goal){ oppMeter=opp/goal*100; os=`${oppMeter.toFixed(0)}% of ${fmtN(goal)} goal · ${who}`; }
+    else os=groupFilter()? who : 'GM, Toyota and Honda Nissan sales departments';
+    if(VS.length){ sale=sum(VS,d=>d.sale); const roD=SCOPE.filter(d=>d.ro&&d.sale!=null), ros=sum(roD,d=>d.sale);
+      ss=`${(sale/sum(VS,d=>d.opp)*100).toFixed(1)}% close rate${ros?` · plus ${fmtN(ros)} ${roD.length===1?roD[0].d+' ':''}ROs${roD.length>1?' across service, quick lube and body shop':''}`:''}`; }
+    else ss=`${mon} sales not added yet`;
+    if(cmp&&prevM.depts){ const pd=prevM.depts.filter(d=>d.kind==='sales'&&deptOK(d)); pOpp=sum(pd,d=>d.opp); if(VS.length) pSale=sum(pd.filter(d=>d.sale!=null),d=>d.sale); } }
+  else if(state.camp==="all" && SCOPE.length){
+    oppLbl='Opportunities'; const withO=SCOPE.filter(d=>d.opp!=null); opp=withO.length?sum(withO,d=>d.opp):null; const goal=sum(withO,d=>d.goal);
+    const names=SCOPE.map(d=>d.d).join(', ');
+    os = goal&&opp!=null? (oppMeter=opp/goal*100, `${oppMeter.toFixed(0)}% of ${fmtN(goal)} goal · ${names}`) : names;
+    const res=SCOPE.filter(d=>d.sale!=null), units=[...new Set(res.map(d=>d.unit))];
+    if(res.length){ sale=sum(res,d=>d.sale); saleLbl = units.length===1? ({ROs:'Repair orders',purchases:'Vehicles purchased',washes:'Washes',jobs:'Jobs completed'}[units[0]]||'Results') : 'Results';
+      const conv=res.filter(d=>d.opp!=null&&!d.same&&d.sale<=d.opp);
+      ss = conv.length? `${(sum(conv,d=>d.sale)/sum(conv,d=>d.opp)*100).toFixed(1)}% close rate${conv.length<res.length?' where comparable':''}` : names; }
+    else ss=`${mon} results not added yet`; }
+  else if(state.camp==="all"){ oppLbl='Opportunities'; os=ss='No department results for this filter'; }
+  else { const d=deptOf(state.camp); oppLbl='Opportunities';
+    if(d){ opp=d.opp; sale=d.sale; saleLbl=d.ro?'Repair orders':d.unit==='purchases'?'Vehicles purchased':d.unit==='washes'?'Washes':d.unit==='jobs'?'Jobs completed':'Sales';
+      if(d.goal&&d.opp!=null){ oppMeter=d.opp/d.goal*100; os=`${oppMeter.toFixed(0)}% of ${fmtN(d.goal)} goal · ${d.d}`; }
+      else os=d.opp==null?`${d.d} actual not reported yet`:`${d.d} department total`;
+      ss=d.sale==null?(M.depts.some(x=>x.sale!=null)?'Not reported for this department':`${mon} sales not added yet`): d.same?`${d.d} · same as opportunities`: d.opp==null?`${d.d} · no opportunity count`: crTxt(d)?`${crTxt(d)} close rate · ${d.d}`:`${d.d} · more ROs than logged opportunities`; }
+    else { os=ss='Not tied to one department'; } }
+  const tiles=[
+    {k:"Spend", v:fmt$(a.spend), s: a.budget? `${pct.toFixed(0)}% of ${fmt$(a.budget)} budget used${unb>0.5?` · plus ${fmt$(unb)} with no budget set`:''}`:'No budget set', m:pct, d:cmp?delta(a.spend,p.spend,'$'):''},
+    {k:oppLbl, v:fmtN(opp), s:os, d:cmp?delta(opp,pOpp):'', m:oppMeter},
+    {k:saleLbl, v:fmtN(sale), s:ss, d:cmp?delta(sale,pSale):''},
+    {k:"Website views", v:fmtN(a.wv), s:a.wu?`${fmtN(a.wu)} active users where tracked`:'&nbsp;', d:cmp?delta(a.wv,p.wv):''},
+    {k:"Impressions", v:fmtK(a.imp), s:`${fmtN(a.imp)} total`, d:cmp?delta(a.imp,p.imp):''},
+    {k:"Clicks", v:fmtN(a.clk), s:a.reach?`Reach ${fmtN(a.reach)} where reported`:'&nbsp;', d:cmp?delta(a.clk,p.clk):''},
+    {k:"Click-through rate", v:fmtP(a.ctr), s:`CPM ${a.cpm!=null?fmt$(a.cpm,2):'—'}`, d:cmp?delta(a.ctr,p.ctr,'pts'):''},
+    {k:"Cost per click", v:a.cpc!=null?fmt$(a.cpc,2):'—', s:'Across mediums that report clicks', d:cmp?delta(a.cpc,p.cpc,'$2'):''},
+  ];
+  $("#kpis").innerHTML=tiles.map(t=>`<div class="kpi"><div class="k">${t.k}</div><div class="v num">${t.v}</div><div class="s num">${t.s}</div>${t.d||''}${t.m!=null?`<div class="meter" aria-hidden="true"><i style="width:${Math.min(100,t.m)}%"></i></div>`:''}</div>`).join('');
+  const n=new Set(rs.map(r=>r.name)).size;
+  $("#campCount").textContent = `${n} campaign${n===1?'':'s'} shown`;
+}
+
+/* ---------- departments ---------- */
+function renderDepts(){
+  const has = !!M.depts;
+  $("#deptPending").hidden = has; $("#deptWrap").hidden = !has; $("#deptLeg").hidden = !has; $("#deptNote").hidden = !has;
+  $("#deptSub").textContent = `${M.label.split(' ')[0]} totals for each department, with the ad spend from that department's campaigns`;
+  if(!has){ $("#deptPending").textContent = `${M.label.split(' ')[0]} opportunities and sales haven't been added yet. Ad results for the month are below.`; return; }
+  if(DEPTS.some(d=>d.goal!=null)) return renderGoalDepts();
+  $("#deptLeg").innerHTML='<span><i style="--c:var(--opp)"></i>Opportunities</span><span><i style="--c:var(--sale)"></i>Sales (Body Shop: ROs)</span>';
+  const sel = state.camp==="all"?null:deptOf(state.camp);
+  const DS = DEPTS.filter(deptOK);
+  if(!DS.length){ $("#dtbl").innerHTML='<tbody><tr><td class="note">No department results for this filter.</td></tr></tbody>'; $("#roNote").textContent=''; return; }
+  const max = Math.max(...DS.map(d=>Math.max(d.opp,d.sale||0)));
+  const spendOf = d => sum(rows.filter(r=>d.camps.includes(r.name)),r=>r.s);
+  const rowsH = DS.map(d=>{
+    const sp=spendOf(d), cls = state.camp==="all"?'':(sel===d?'sel':'dim');
+    const campsTxt = d.camps.filter(c=>CAMPS.includes(c)).map(c=>esc(c)+(DETAIL[c]?` (${esc(DETAIL[c])})`:'')).join(', ');
+    const tipO=encodeURIComponent(`<b>${d.d}</b><br>${fmtN(d.opp)} opportunities<br>${fmt$(sp/d.opp,2)} ad spend per opportunity`);
+    const tipS=d.sale!=null?encodeURIComponent(`<b>${d.d}</b><br>${fmtN(d.sale)} ${d.ro?'repair orders':'sales'} · ${fmtN(d.opp)} opportunities<br>${crTxt(d)?crTxt(d)+' close rate · ':''}${fmt$(sp/d.sale,2)} ad spend per ${d.ro?'RO':'sale'}${crTxt(d)?'':'<br>More ROs than opportunities, so many ROs came from sources not logged as opportunities'}`):'';
+    return `<tr class="${cls}"><td><div class="dname">${d.d}<small>${campsTxt||'No campaigns this month'}</small></div></td>
+      <td><div class="fbar"><i style="--c:var(--opp);width:${d.opp/max*100}%" data-tip="${tipO}"></i><span class="num">${fmtN(d.opp)}</span>
+      ${d.sale!=null?`<i style="--c:var(--sale);width:${d.sale/max*100}%" data-tip="${tipS}"></i><span class="num">${fmtN(d.sale)}${d.ro?' RO':''}</span>`:`<span class="none">No sales count for this department</span><span></span>`}</div></td>
+      <td class="num">${fmt$(sp,2)}</td><td class="num">${d.sale==null?'<span class="dash">—</span>':crTxt(d)?crTxt(d):'<span class="dash" title="More ROs than logged opportunities">n/a*</span>'}</td>
+      <td class="num">${sp?fmt$(sp/d.opp,2):'<span class="dash">—</span>'}</td><td class="num">${d.sale!=null&&sp?fmt$(sp/d.sale,2)+(d.ro?' <small class="dash">per RO</small>':''):'<span class="dash">—</span>'}</td></tr>`;
+  }).join('');
+  const unassigned = rows.filter(r=>!deptOf(r.name)&&campOK(r.name));
+  const uSp=sum(unassigned,r=>r.s), uNames=[...new Set(unassigned.map(r=>r.name))].map(esc).join(', ');
+  const VD=DS.filter(d=>d.kind==='sales'&&d.sale!=null);
+  const tO=sum(DS,d=>d.opp), tS=sum(VD,d=>d.sale), tRO=sum(DS.filter(d=>d.ro),d=>d.sale), tSp=sum(DS,d=>spendOf(d));
+  const salesOpp=sum(VD,d=>d.opp);
+  const uCls = state.camp==="all"?'':(sel?'dim':'sel');
+  $("#dtbl").innerHTML=`<thead><tr><th scope="col">Department</th><th scope="col">Opportunities → Sales</th><th scope="col">Ad spend</th><th scope="col">Close rate</th><th scope="col">Spend per opportunity</th><th scope="col">Spend per sale / RO</th></tr></thead>
+  <tbody>${rowsH}
+  ${unassigned.length?`<tr class="${uCls}"><td><div class="dname">Not assigned to a department<small>${uNames}</small></div></td><td><span class="note">No department results</span></td><td class="num">${fmt$(uSp,2)}</td><td class="dash">—</td><td class="dash">—</td><td class="dash">—</td></tr>`:''}
+  <tr class="tot"><td>Total</td><td class="num" style="text-align:left">${fmtN(tO)} opportunities · ${fmtN(tS)} vehicle sales${tRO?` · ${fmtN(tRO)} ROs`:''}</td><td class="num">${fmt$(tSp+uSp,2)}</td><td class="num">${salesOpp?(tS/salesOpp*100).toFixed(1)+'%':'—'}</td><td class="num">${fmt$((tSp+uSp)/tO,2)}</td><td class="num">${tS?fmt$((sum(VD,d=>spendOf(d))+uSp)/tS,2)+' <small class="dash">per vehicle sale</small>':'—'}</td></tr></tbody>`;
+  const ro=DS.find(d=>d.ro&&d.sale>d.opp);
+  $("#roNote").textContent = (VD.length&&DS.some(d=>d.ro)?" Vehicle totals and close rates exclude ROs.":"") + (ro?` *${ro.d} logged more ROs (${fmtN(ro.sale)}) than opportunities (${fmtN(ro.opp)}), so many ROs came from sources not tracked as opportunities, such as insurance referrals, walk-ins and repeat customers. A close rate isn't meaningful there, so spend per RO is shown instead.`:'');
+}
+
+function renderGoalDepts(){
+  const mon=M.label.split(' ')[0], hasRes=DEPTS.some(d=>d.sale!=null);
+  $("#deptSub").textContent=`${mon} opportunities against each department's goal${hasRes?', with results (sales, ROs, purchases)':''} and the ad spend from that department's campaigns`;
+  $("#deptLeg").innerHTML='<span><i style="--c:var(--opp)"></i>Opportunities</span><span><i style="--c:var(--sale)"></i>Results (sales, ROs, purchases)</span><span><i class="bud"></i>Opportunity goal</span>';
+  const sel = state.camp==="all"?null:deptOf(state.camp);
+  const spendOf = d => sum(rows.filter(r=>d.camps.includes(r.name)),r=>r.s);
+  const st = p => p>=100?{c:'good',i:'▲',t:'Goal met'}: p>=85?{c:'mid',i:'●',t:'Close to goal'}:{c:'low',i:'▼',t:'Below goal'};
+  const dash='<span class="dash">—</span>';
+  const conv = d => d.sale==null||d.opp==null? dash : d.same? '<span class="dash" title="Results equal opportunities">same</span>' : d.sale>d.opp? '<span class="dash" title="More results than logged opportunities">n/a*</span>' : (d.sale/d.opp*100).toFixed(1)+'%';
+  const per = (sp,d) => sp&&d.sale? `${fmt$(sp/d.sale,2)} <small class="dash">per ${d.unit==='ROs'?'RO':d.unit==='purchases'?'purchase':'sale'}</small>` : dash;
+  const row = (d, sp, cls, tipExtra='') => {
+    const pct = d.goal&&d.opp!=null? d.opp/d.goal*100 : null, s=pct!=null?st(pct):null;
+    const sh = d.shared? SHARED.find(x=>x.key===d.shared) : null;
+    const campsTxt = d.isShared? d.camps.filter(c=>CAMPS.includes(c)).map(esc).join(', ') : (d.camps.filter(c=>CAMPS.includes(c)&&c!==d.d).map(esc).join(', ') || (sh?`Shared: ${sh.camps.filter(c=>CAMPS.includes(c)).map(esc).join(', ')}`:''));
+    const tipT=encodeURIComponent(`<b>${esc(d.d)}</b>${tipExtra}<br>${d.opp!=null?fmtN(d.opp)+' opportunities':'No opportunity count'}${d.goal?` of ${fmtN(d.goal)} goal`:''}${pct!=null?` (${pct.toFixed(0)}%)`:''}${d.goal&&d.opp!=null&&d.opp<d.goal?`<br>${fmtN(d.goal-d.opp)} short of goal`:''}${d.sale!=null?`<br>${fmtN(d.sale)} ${d.unit}`:''}`);
+    const mx = Math.max(d.goal||0, d.opp||0, d.sale||0) || 1;
+    const bar = `<div class="fbar wide" data-tip="${tipT}">
+        ${d.opp!=null?`<div class="ftrack"><i style="--c:var(--opp);width:${d.opp/mx*100}%"></i>${d.goal?`<b style="left:calc(${d.goal/mx*100}% - 1px)"></b>`:''}</div><span class="num">${fmtN(d.opp)}</span>`
+          :`<span class="none">No opportunity count${d.goal?` (goal ${fmtN(d.goal)})`:''}</span><span></span>`}
+        ${d.sale!=null?`<div class="ftrack"><i style="--c:var(--sale);width:${d.sale/mx*100}%"></i></div><span class="num">${fmtN(d.sale)} <small class="dash">${d.unit}</small></span>`
+          :`<span class="none">No results reported</span><span></span>`}</div>`;
+    return `<tr class="${cls}"><td><div class="dname">${esc(d.d)}${campsTxt?`<small>${campsTxt}</small>`:''}</div></td>
+      <td>${bar}</td>
+      <td class="num" style="text-align:left">${s?`<span class="pill ${s.c}"><span aria-hidden="true">${s.i}</span>${pct.toFixed(0)}%</span> <small class="dash">of ${fmtN(d.goal)}</small>`:d.goal==null?'<small class="dash">No goal set</small>':dash}</td>
+      <td class="num">${conv(d)}</td>
+      <td class="num">${sp?fmt$(sp,2):dash}</td><td class="num">${sp&&d.opp?fmt$(sp/d.opp,2):dash}</td><td class="num">${per(sp,d)}</td></tr>`;
+  };
+  let body='', store=null;
+  const DS=DEPTS.filter(deptOK);
+  DS.forEach(d=>{
+    if(d.store!==store){ store=d.store; body+=`<tr class="grp"><td colspan="7">${esc(store)}</td></tr>`; }
+    body+=row(d, spendOf(d), state.camp==="all"?'':(sel===d||(sel&&sel.isShared&&d.shared===sel.key)?'sel':'dim'));
+  });
+  const SH=SHARED.filter(deptOK);
+  if(SH.length){ if(store!=='Market Wide') body+=`<tr class="grp"><td colspan="7">Market Wide</td></tr>`;
+    SH.forEach(s=>{ body+=row(s, spendOf(s), state.camp==="all"?'':(sel===s?'sel':'dim'), '<br>'+s.members.map(m=>`${esc(m.d)}: ${fmtN(m.opp)}`).join('<br>')); }); }
+  const unassigned=rows.filter(r=>!deptOf(r.name)&&campOK(r.name));
+  if(!body&&!unassigned.length) body='<tr><td colspan="7" class="note">No department results for this filter.</td></tr>';
+  if(unassigned.length){ const uCls=state.camp==="all"?'':(sel?'dim':'sel');
+    body+=`<tr class="grp"><td colspan="7">Not assigned to a department</td></tr><tr class="${uCls}"><td><div class="dname">Other campaigns<small>${[...new Set(unassigned.map(r=>r.name))].map(esc).join(', ')}</small></div></td><td><span class="note">No department results</span></td><td></td><td></td><td class="num">${fmt$(sum(unassigned,r=>r.s),2)}</td><td class="dash">—</td><td class="dash">—</td></tr>`; }
+  $("#dtbl").innerHTML=`<thead><tr><th scope="col">Department</th><th scope="col">Opportunities → Results</th><th scope="col" style="text-align:left">Opportunities vs goal</th><th scope="col">Close rate</th><th scope="col">Ad spend</th><th scope="col">Spend per opportunity</th><th scope="col">Spend per result</th></tr></thead><tbody>${body}</tbody>`;
+  const missing=DEPTS.filter(d=>d.opp==null).map(d=>d.d), over=DEPTS.filter(d=>d.sale!=null&&d.opp!=null&&!d.same&&d.sale>d.opp);
+  $("#roNote").textContent=`${SHARED.length?' Service campaigns support every store, so their spend is measured against all service departments combined rather than split between them.':''} Each department's bars are scaled to its own goal (or its largest number) so departments of very different size stay readable; compare them by the numbers, not bar length. "Close to goal" means 85–99%.${missing.length?` No ${mon} opportunity count was reported for ${missing.join(', ')}.`:''}${over.length?` *${over.map(d=>d.d).join(', ')} logged more ROs than opportunities, so many ROs came from sources not tracked as opportunities; a close rate isn't meaningful there.`:''} Detail and Car Wash report the same number for opportunities and results, so no close rate is shown. ${hasRes?'':mon+' sales and ROs haven\'t been added yet.'}`;
+}
+
+/* ---------- benchmarks ---------- */
+const AETS = () => MEDIUMS.filter(m=>m.k.startsWith("AET")).map(m=>m.k);
+const BENCH = [
+  {id:"mv_ctr", med:"Meta - Video", metric:"CTR", label:"Meta Video click-through rate", bench:1.48, benchTxt:"1.48% – 2.22%", hi:true, fmt:v=>fmtP(v), range:[1.48,2.22],
+   note:"Automotive Meta ads average 1.48% (WordStream, traffic campaigns) to 2.22% (Triple Whale)."},
+  {id:"mv_cpc", med:"Meta - Video", metric:"CPC", label:"Meta Video cost per click", bench:0.79, benchTxt:"$0.79", hi:false, fmt:v=>fmt$(v,2),
+   note:"Average for automotive-for-sale Meta traffic campaigns."},
+  {id:"ms_ctr", med:"Meta - Static", metric:"CTR", label:"Meta Static click-through rate", bench:1.48, benchTxt:"1.48% – 2.22%", hi:true, fmt:v=>fmtP(v), range:[1.48,2.22],
+   note:"A very low CPM usually means the campaign is set for reach, where a low CTR is expected. If the goal is website traffic, test new creative or a traffic objective."},
+  {id:"ms_cpc", med:"Meta - Static", metric:"CPC", label:"Meta Static cost per click", bench:0.79, benchTxt:"$0.79", hi:false, fmt:v=>fmt$(v,2),
+   note:"Average for automotive-for-sale Meta traffic campaigns."},
+  {id:"meta_cpm", med:["Meta - Static","Meta - Video"], metric:"CPM", label:"Meta cost per 1,000 impressions", sub:"Static and Video combined", bench:10.01, benchTxt:"$10.01", hi:false, fmt:v=>fmt$(v,2),
+   note:"Automotive has the lowest CPM of any industry on Meta. Lower means cheaper reach."},
+  {id:"yt_cpv", med:"YouTube", metric:"CPV", label:"YouTube cost per view", sub:"Spend ÷ TrueViews", bench:0.058, benchTxt:"$0.058", hi:false, fmt:v=>fmt$(v,3),
+   note:"Automotive average cost per view. This is the main measure for a YouTube video buy."},
+  {id:"yt_ctr", med:"YouTube", metric:"CTR", label:"YouTube click-through rate", bench:0.65, benchTxt:"0.65%", hi:true, fmt:v=>fmtP(v),
+   note:"Clicks are not the goal of a video-view buy, so judge YouTube mainly on cost per view and reach."},
+  {id:"close", metric:"CLOSE", label:"Opportunity close rate", sub:"Sales ÷ opportunities", bench:16.2, benchTxt:"16.2% overall · ~6% internet leads", hi:true, fmt:v=>fmtP(v,1),
+   note:"Foureyes found a 16.2% 30-day close rate across 8M+ opportunities; internet leads alone close near 6%. A much higher rate can also mean opportunities are counted differently in the CRM."},
+  {id:"aet", med:AETS, metric:"NONE", label:"AET", sub:"All AET formats · cost per click and CTR", benchTxt:"No reliable benchmark", note:"Benchmarks depend on the ad format AET delivers (streaming TV, streaming radio). Ask the AET rep for typical results on their platform."},
+];
+function benchValue(b, rs){
+  const meds = b.med==null?[]:[].concat(typeof b.med==='function'?b.med():b.med);
+  const r = rs.filter(x=>meds.includes(x.m));
+  if(b.metric==="CLOSE"){
+    if(!VEH.length) return null;
+    if(state.camp==="all"){ const vs=VEH.filter(deptOK); return vs.length? {v:sum(vs,d=>d.sale)/sum(vs,d=>d.opp)*100, who:groupFilter()?vs.map(d=>d.d).join(', '):"Sales departments"} : null; }
+    const d=deptOf(state.camp); if(!d||d.sale==null||d.ro) return null; return {v:d.sale/d.opp*100, who:d.d};
+  }
+  const a=agg(r);
+  if(b.metric==="NONE") return a.cpc!=null? {v:null, txt:`${fmt$(a.cpc,2)} CPC · ${fmtP(a.ctr)} CTR`}:null;
+  if(b.metric==="CTR") return a.ctr!=null? {v:a.ctr}:null;
+  if(b.metric==="CPC") return a.cpc!=null? {v:a.cpc}:null;
+  if(b.metric==="CPM") return a.imp? {v:a.cpm}:null;
+  if(b.metric==="CPV"){ const tv=sum(r,x=>x.tv); return tv? {v:sum(r.filter(x=>x.tv),x=>x.s)/tv}:null; }
+  return null;
+}
+function status(b,v){
+  if(v==null||b.bench==null) return {c:"mid",t:"No benchmark",i:"●"};
+  const lo = b.range?b.range[0]:b.bench, hi = b.range?b.range[1]:b.bench;
+  if(b.hi){ if(v>hi*1.15) return {c:"good",t:"Above average",i:"▲"}; if(v<lo*0.85) return {c:"low",t:"Below average",i:"▼"}; }
+  else { if(v<lo*0.85) return {c:"good",t:"Better than average",i:"▲"}; if(v>hi*1.15) return {c:"low",t:"Costlier than average",i:"▼"}; }
+  return {c:"mid",t:"Near average",i:"●"};
+}
+function renderBench(){
+  const rs=rows.filter(r=>scoped(r.name));
+  let good=0,low=0,mid=0; let body='';
+  BENCH.forEach(b=>{
+    const val=benchValue(b,rs); if(!val) return;
+    const st=status(b,val.v); if(b.metric!=="NONE"){ st.c==="good"?good++:st.c==="low"?low++:mid++; }
+    const yours = val.v!=null? b.fmt(val.v) : val.txt;
+    body+=`<tr><td><div class="metric">${b.label}${b.sub||val.who?`<small>${[b.sub,val.who].filter(Boolean).join(' · ')}</small>`:''}</div></td>
+      <td class="num"><b>${yours}</b></td><td class="num">${b.benchTxt}</td>
+      <td><span class="pill ${st.c}"><span aria-hidden="true">${st.i}</span>${st.t}</span></td><td>${b.note}</td></tr>`;
+  });
+  $("#btbl").innerHTML = body? `<thead><tr><th scope="col">Metric</th><th scope="col">Ours</th><th scope="col">Industry benchmark</th><th scope="col">Status</th><th scope="col">What it means</th></tr></thead><tbody>${body}</tbody>`
+    : `<tbody><tr><td>No benchmarked metrics for this campaign.</td></tr></tbody>`;
+  const pill=(c,i,n,t)=>n?`<span class="pill ${c}"><span aria-hidden="true">${i}</span>${n} ${t}</span>`:'';
+  $("#bCounts").innerHTML = pill('good','▲',good,'better than average')+pill('mid','●',mid,'near average')+pill('low','▼',low,'below average');
+}
+
+/* ---------- highlights ---------- */
+function renderHighlights(){
+  // one entry per campaign + medium so split ads (Ad 1 / Ad 2) are judged together
+  const groups={}; filtered().forEach(r=>{ if(r.clk==null||!r.imp||!r.s) return; const k=r.name+'|'+r.m; (groups[k]=groups[k]||[]).push(r); });
+  const gs=Object.values(groups).map(g=>({name:g[0].name,m:g[0].m,s:sum(g,r=>r.s),clk:sum(g,r=>r.clk),imp:sum(g,r=>r.imp)})).filter(g=>g.clk>0);
+  const out=[];
+  if(gs.length){
+    const bestCpc=[...gs].sort((a,b)=>a.s/a.clk-b.s/b.clk)[0];
+    const bestCtr=[...gs].sort((a,b)=>b.clk/b.imp-a.clk/a.imp)[0];
+    out.push({k:"Lowest cost per click",t:`${esc(bestCpc.name)} · ${MED[bestCpc.m].label}`,d:`${fmt$(bestCpc.s/bestCpc.clk,2)} per click on ${fmtN(bestCpc.clk)} clicks`});
+    out.push({k:"Highest click-through rate",t:`${esc(bestCtr.name)} · ${MED[bestCtr.m].label}`,d:`${fmtP(bestCtr.clk/bestCtr.imp*100)} CTR on ${fmtN(bestCtr.imp)} impressions`});
+  }
+  const web={}; filtered().forEach(r=>{ if(r.wv) web[r.name]=(web[r.name]||0)+r.wv; });
+  const top=Object.entries(web).sort((a,b)=>b[1]-a[1])[0];
+  if(top) out.push({k:"Most website views",t:esc(top[0]),d:`${fmtN(top[1])} page views`});
+  $("#hls").innerHTML=out.map(h=>`<div class="hl"><div class="k">${h.k}</div><div class="t">${h.t}</div><div class="d num">${h.d}</div></div>`).join('');
+}
+
+/* ---------- shared stacked bar builder ---------- */
+function niceMax(v){ if(v<=0) return 1; const p=Math.pow(10,Math.floor(Math.log10(v))); const n=v/p; const step=[1,1.2,1.5,2,2.5,3,4,5,6,8,10].find(s=>n<=s); return step*p; }
+function stackedChart(el, metric, fmtVal, withBudget, tipExtra){
+  const rs=filtered();
+  const byC=CAMPS.map(name=>{
+    const cr=rs.filter(r=>r.name===name);
+    const segs=MEDIUMS.map(m=>{const sr=cr.filter(r=>r.m===m.k); return {m:m.k, v:sum(sr,metric), b:sum(sr,r=>r.b), a:agg(sr), n:sr.length};}).filter(s=>s.v>0);
+    return {name,segs,total:sum(segs,s=>s.v),bud:sum(cr,r=>r.b)};
+  }).filter(c=>c.segs.length).sort((a,b)=>b.total-a.total);
+  if(!byC.length){el.innerHTML='<div class="empty">No data for this filter.</div>';return;}
+  const max=niceMax(Math.max(...byC.map(c=>Math.max(c.total, withBudget?c.bud:0))));
+  const ticks=[0,.5,1].map(f=>f*max);
+  el.innerHTML = `<div class="hbars">`+byC.map(c=>{
+    const sub = DETAIL[c.name]?`<small>${esc(DETAIL[c.name])}</small>`:'';
+    return `<div class="hrow"><div class="nm">${adName(c.name)}${sub}</div><div class="track">
+      <div class="gridlines">${ticks.map(t=>`<i style="left:${t/max*100}%"></i>`).join('')}</div>
+      <div class="stack" style="width:${c.total/max*100}%;position:relative">${c.segs.map(s=>`<div class="seg" style="--c:${col(s.m)};flex:${s.v} 0 0" data-tip="${encodeURIComponent(tipExtra(c,s))}"></div>`).join('')}</div>
+      ${withBudget&&c.bud?`<div class="budmark" style="left:calc(${Math.min(100,c.bud/max*100)}% - 1px)" title="Budget ${fmt$(c.bud)}"></div>`:''}
+    </div><div class="val num">${fmtVal(c.total)}</div></div>`;}).join('')+`</div>
+    <div class="axis" aria-hidden="true"><div></div><div class="ticks">${ticks.map(t=>`<span style="left:${t/max*100}%">${fmtVal(t,true)}</span>`).join('')}</div><div></div></div>`;
+}
+function renderSpend(){
+  const rs=filtered();
+  const legendMeds=MEDIUMS.filter(m=>rs.some(r=>r.m===m.k&&r.s>0));
+  $("#leg1").innerHTML=legendMeds.map(m=>`<span><i style="--c:var(${m.c})"></i>${m.label}</span>`).join('')+`<span><i class="bud"></i>Budget</span>`;
+  stackedChart($("#spendChart"), r=>r.s, (v,ax)=>ax? (v>=1000?'$'+(v/1000)+'K':'$'+v) : fmt$(v), true,
+    (c,s)=>`<b>${esc(c.name)}</b><br>${MED[s.m].label}${s.n>1?` (${s.n} ads)`:''}: ${fmt$(s.v,2)}${s.b?` of ${fmt$(s.b)} budget (${(s.v/s.b*100).toFixed(0)}%)`:' · no budget set'}${s.a.mail?`<br>${fmtN(s.a.mail)} mailers · ${fmt$(s.v/s.a.mail,2)} each`:''}<br>Campaign total ${fmt$(c.total,2)}${c.bud?` / ${fmt$(c.bud)}`:''}`);
+}
+function renderClicks(){
+  stackedChart($("#clickChart"), r=>r.clk, (v,ax)=>ax? fmtK(v) : fmtN(v), false,
+    (c,s)=>`<b>${esc(c.name)}</b><br>${MED[s.m].label}: ${fmtN(s.v)} clicks${s.a.ctr!=null?`<br>CTR ${fmtP(s.a.ctr)}`:''}${s.a.cpc!=null?` · ${fmt$(s.a.cpc,2)} per click`:''}`);
+}
+
+/* ---------- web views (single series) ---------- */
+function renderWeb(){
+  const el=$("#webChart");
+  if(!state.meds.has("Website")){el.innerHTML=`<div class="empty">${PRESENT.some(m=>m.k==="Website")?'Turn on the Website medium to see page views.':'No website data this month.'}</div>`;return;}
+  const rs=filtered();
+  const data=CAMPS.map(name=>({name,wv:sum(rs.filter(r=>r.name===name),r=>r.wv),wu:sum(rs.filter(r=>r.name===name),r=>r.wu)})).filter(d=>d.wv>0).sort((a,b)=>b.wv-a.wv);
+  if(!data.length){el.innerHTML='<div class="empty">No website data for this filter.</div>';return;}
+  const max=niceMax(Math.max(...data.map(d=>d.wv))); const ticks=[0,.5,1].map(f=>f*max);
+  el.innerHTML=`<div class="hbars">`+data.map(d=>`<div class="hrow"><div class="nm">${adName(d.name)}${DETAIL[d.name]?`<small>${esc(DETAIL[d.name])}</small>`:''}</div><div class="track">
+    <div class="gridlines">${ticks.map(t=>`<i style="left:${t/max*100}%"></i>`).join('')}</div>
+    <div class="stack" style="width:${d.wv/max*100}%;position:relative"><div class="seg" style="--c:var(--m5);flex:1" data-tip="${encodeURIComponent(`<b>${esc(d.name)}</b><br>${fmtN(d.wv)} page views${d.wu?`<br>${fmtN(d.wu)} active users`:'<br>Active users not tracked'}`)}"></div></div>
+  </div><div class="val num">${fmtN(d.wv)}</div></div>`).join('')+`</div>
+  <div class="axis" aria-hidden="true"><div></div><div class="ticks">${ticks.map(t=>`<span style="left:${t/max*100}%">${fmtN(t)}</span>`).join('')}</div><div></div></div>`;
+}
+
+/* ---------- medium efficiency ---------- */
+function renderEff(){
+  const rs=filtered();
+  const data=MEDIUMS.filter(m=>state.meds.has(m.k)).map(m=>({...m,...agg(rs.filter(r=>r.m===m.k))})).filter(d=>d.cpc!=null&&d.clk>0);
+  const el=$("#effChart");
+  if(!data.length) el.innerHTML='<div class="empty">No click-reporting media for this filter.</div>';
+  else {
+    const block=(title,key,fmtv,better)=>{
+      const ds=data.filter(d=>d[key]!=null);
+      const sorted=[...ds].sort((a,b)=>better==='low'?a[key]-b[key]:b[key]-a[key]);
+      const max=Math.max(...ds.map(d=>d[key]));
+      return `<div><h3>${title}</h3><div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">`+sorted.map(d=>
+        `<div class="erow"><div>${d.label}</div><div><div class="ebar" style="--c:var(${d.c});width:${d[key]/max*100}%" data-tip="${encodeURIComponent(`<b>${d.label}</b><br>${fmtv(d[key])} · ${fmt$(d.spend,2)} spend<br>${fmtN(d.clk)} clicks · ${fmtN(d.imp)} impressions`)}"></div></div><div class="val num">${fmtv(d[key])}</div></div>`).join('')+`</div></div>`;
+    };
+    el.innerHTML=block("Cost per click","cpc",v=>fmt$(v,2),'low')+block("Click-through rate","ctr",v=>fmtP(v),'high')+block("Cost per 1,000 impressions (CPM)","cpm",v=>fmt$(v,2),'low');
+  }
+  const yt=rs.filter(r=>r.m==="YouTube"&&r.tv), note=$("#ytNote");
+  if(yt.length){const tv=sum(yt,r=>r.tv), s=sum(yt,r=>r.s); note.hidden=false;
+    note.innerHTML=`<b>YouTube TrueViews:</b> <span class="num">${fmtN(tv)}</span> completed views at <span class="num">${fmt$(s/tv,3)}</span> per view. YouTube is a video-view buy, so its low CTR is expected.`;}
+  else note.hidden=true;
+  const dm=rs.filter(r=>r.m==="Direct Mail"), dn=$("#dmNote");
+  if(dm.length){const mail=sum(dm,r=>r.mail), s=sum(dm,r=>r.s); dn.hidden=false;
+    dn.innerHTML=`<b>Direct mail:</b> <span class="num">${fmtN(mail)}</span> mailers sent for <span class="num">${fmt$(s,2)}</span>, or <span class="num">${mail?fmt$(s/mail,2):'—'}</span> per piece. Mail doesn't report clicks, so it isn't in the charts above.`;}
+  else dn.hidden=true;
+  const noClk=rs.filter(r=>r.imp&&r.clk==null&&r.s);
+  if(noClk.length) el.insertAdjacentHTML('beforeend',`<div class="note">Not counted above: ${[...new Set(noClk.map(r=>`${esc(r.name)} (${MED[r.m].label})`))].join(', ')}, which reported impressions but no clicks.</div>`);
+}
+
+/* ---------- table ---------- */
+const COLS=[
+  {k:"name",h:"Campaign"},{k:"sub",h:"Ad"},{k:"m",h:"Medium"},{k:"start",h:"Launch"},
+  {k:"b",h:"Budget",f:v=>fmt$(v)},{k:"s",h:"Spend",f:v=>fmt$(v,2)},{k:"left",h:"Left",f:v=>v<0?`<span class="over">${fmt$(v,2)}</span>`:fmt$(v,2)},
+  {k:"imp",h:"Impressions",f:fmtN},{k:"reach",h:"Reach",f:fmtN},{k:"clk",h:"Clicks",f:fmtN},
+  {k:"ctr",h:"CTR",f:v=>fmtP(v)},{k:"cpc",h:"CPC",f:v=>fmt$(v,2)},
+  {k:"tv",h:"TrueViews",f:fmtN},{k:"rimp",h:"Spots aired",f:fmtN},{k:"wv",h:"Web views",f:fmtN},{k:"wu",h:"Active users",f:fmtN},{k:"mail",h:"Mailers",f:fmtN},
+];
+function renderTable(){
+  const rs=filtered().map(r=>({...r,left:r.b!=null?r.b-(r.s||0):null,ctr:r.imp&&r.clk!=null?r.clk/r.imp*100:null,cpc:r.clk&&r.s?r.s/r.clk:null}));
+  const cols = COLS.filter(c=>!['sub','mail','tv','rimp'].includes(c.k) || rs.some(r=>r[c.k]));
+  const {key,dir}=state.sort;
+  const cell=(c,r)=>{const v=r[c.k]; if(c.k==="m") return v?`<span class="mdot" style="--c:${col(v)}"></span>${MED[v].label}${r.vendor?' · '+esc(r.vendor):''}`:''; if(v==null||v==='') return '<span class="dash">—</span>'; return c.f? c.f(v,r) : esc(v);};
+  const trAttr = r => CRE(r.name).length? ` class="hasad" data-row="${esc(r.name)}"${r.sub?` data-sub="${esc(r.sub)}"`:''} data-med="${esc(r.m)}" title="View ad"`:'';
+  const nameCell = (r) => CRE(r.name).length? `${esc(r.name)}<span class="viewchip">View ad</span>` : esc(r.name);
+  let body='';
+  if(key){
+    const sorted=[...rs].sort((a,b)=>{const x=a[key],y=b[key]; if(x==null) return 1; if(y==null) return -1; return (typeof x==='string'?x.localeCompare(y):x-y)*dir;});
+    body=sorted.map(r=>`<tr${trAttr(r)}>${cols.map(c=>`<td class="num">${c.k==='name'?nameCell(r,true):cell(c,r)}</td>`).join('')}</tr>`).join('');
+  } else {
+    CAMPS.forEach(name=>{const cr=rs.filter(r=>r.name===name); if(!cr.length) return;
+      body+=cr.map((r,i)=>`<tr${trAttr(r)}>${cols.map(c=>`<td class="num">${c.k==='name'?(i>0?'':nameCell(r)):cell(c,r)}</td>`).join('')}</tr>`).join('');});
+  }
+  const a=agg(rs);
+  const tot={b:a.budget,s:a.spend,left:a.budget-a.bSpend,imp:a.imp,clk:a.clk,ctr:a.ctr,cpc:a.cpc,tv:a.tv||null,wv:a.wv||null,wu:a.wu||null,mail:a.mail||null,rimp:a.rimp||null};
+  const totRow=`<tr class="tot">${cols.map(c=>`<td class="num">${c.k==='name'?'Total':['sub','m','start','reach'].includes(c.k)?'':cell(c,tot)}</td>`).join('')}</tr>`;
+  $("#tbl").innerHTML=`<thead><tr>${cols.map(c=>`<th scope="col"><button type="button" data-k="${c.k}" ${key===c.k?`data-dir="${dir>0?'▲':'▼'}"`:''}>${c.h}</button></th>`).join('')}</tr></thead><tbody>${body}${totRow}</tbody>`;
+}
+$("#tbl").addEventListener('click',e=>{const b=e.target.closest('th button'); if(!b) return; const k=b.dataset.k;
+  if(state.sort.key===k){ if(state.sort.dir===-1) state.sort={key:null,dir:1}; else state.sort.dir=-1; } else state.sort={key:k,dir:['name','m','sub'].includes(k)?1:-1};
+  renderTable();});
+
+/* ---------- ads: gallery + viewer ---------- */
+const CRE = camp => (M.creatives||[]).filter(c=>c.camp===camp);
+const TYPE_LBL = {image:"Image", video:"Video", audio:"Audio"};
+function thumbOf(list){ const c=list.find(x=>x.type==='image')||list.find(x=>x.poster); return c? {src:c.type==='image'?c.src:c.poster, wide:!!c.wide} : null; }
+const MATCH = c => M.matched && c in M.matched ? M.matched[c] : null;
+const MUNIT = c => (M.matchedUnit&&M.matchedUnit[c])||'sale';
+function matchLine(c, spend){ const n=MATCH(c); if(n==null) return ''; const u=MUNIT(c), lbl=u==='sale'?`matching sale${n===1?'':'s'}`:`${u}${n===1?'':'s'}`;
+  return `<span class="match num"><b>${fmtN(n)}</b> ${lbl}${n&&spend?` · ${fmt$(spend/n)} ad spend each`:''}</span>`; }
+/* ---------- ad votes (shared through the page's db) ---------- */
+const VOTE={db:null, uid:null, canWrite:false, tally:{}, mine:{}, state:'loading', chain:Promise.resolve()};
+const vk=(kind,name)=>(M.key+'_'+kind+'_'+name).replace(/[^A-Za-z0-9]+/g,'_');
+function voteBar(key){
+  const t=VOTE.tally[key]||{up:0,down:0}, m=VOTE.mine[key]||0, dis=!VOTE.canWrite;
+  const tip = VOTE.state==='off'?'Voting works when this report is opened on claude.ai': dis?'You can see votes, but voting needs Contributor access to this report':'';
+  return `<div class="votes" data-vk="${key}"><button type="button" class="vb up" data-vote="${key}" data-val="1" aria-pressed="${m===1}" aria-label="Thumbs up" ${dis?'disabled':''} ${tip?`title="${tip}"`:''}><span aria-hidden="true">👍</span><span class="num">${t.up}</span></button><button type="button" class="vb down" data-vote="${key}" data-val="-1" aria-pressed="${m===-1}" aria-label="Thumbs down" ${dis?'disabled':''} ${tip?`title="${tip}"`:''}><span aria-hidden="true">👎</span><span class="num">${t.down}</span></button></div>`;
+}
+function updateVoteBars(){
+  document.querySelectorAll('.votes[data-vk]').forEach(el=>{ el.outerHTML=voteBar(el.dataset.vk); });
+  const n=$("#voteNote"); if(!n) return;
+  n.textContent = VOTE.state==='off'? 'Thumbs up or down on each ad. Votes are shared with everyone viewing this report on claude.ai.'
+    : VOTE.state==='error'? 'Votes could not be loaded right now. Reload the page to try again.'
+    : VOTE.canWrite? 'Give each ad a thumbs up or down. Everyone viewing the report sees the totals, and you can change your vote anytime.'
+    : 'You can see how people voted. Voting needs Contributor access to this report; ask the report owner if you want to vote.';
+}
+async function castVote(key,val){
+  if(!VOTE.canWrite||!VOTE.db||!VOTE.uid) return;
+  const next={...VOTE.mine}; if((next[key]||0)===val) delete next[key]; else next[key]=val;
+  VOTE.mine=next; updateVoteBars();
+  VOTE.chain = VOTE.chain.then(()=>VOTE.db.doc('votes/'+VOTE.uid).set({v:VOTE.mine})).catch(e=>{ if(e&&e.code==='invalid_argument'){ VOTE.canWrite=false; updateVoteBars(); } });
+}
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-vote]'); if(!b) return; e.stopPropagation(); castVote(b.dataset.vote, +b.dataset.val); }, true);
+(async()=>{
+  const C=window.claude; if(!C||!C.use){ VOTE.state='off'; updateVoteBars(); return; }
+  const [db,user]=await Promise.all([C.use('db'),C.use('user')]);
+  if(!db){ VOTE.state='off'; updateVoteBars(); return; }
+  VOTE.db=db;
+  if(user){ VOTE.uid=await user.id(); const cw=await user.can('data.write'); VOTE.canWrite=!!VOTE.uid && cw!==false; }
+  db.collection('votes').onSnapshot(s=>{
+    const t={}; let mine=null;
+    s.docs.forEach(d=>{ const v=((d.data()||{}).v)||{}; if(d.id===VOTE.uid) mine=v;
+      for(const k in v){ const x=t[k]||(t[k]={up:0,down:0}); if(v[k]===1) x.up++; else if(v[k]===-1) x.down++; } });
+    VOTE.tally=t; if(mine&&!s.metadata.hasPendingWrites) VOTE.mine={...mine}; VOTE.state='on'; updateVoteBars();
+  }, ()=>{ VOTE.state='error'; updateVoteBars(); });
+})();
+
+/* ---------- anonymous open counter (no names or account ids) ---------- */
+(async()=>{
+  const C=window.claude; if(!C||!C.use) return;
+  const [db,user]=await Promise.all([C.use('db'),C.use('user')]); if(!db) return;
+  const owner = user? await user.isOwner() : false, editor = user? await user.canEdit() : false;
+  if(!owner){
+    let seen=false, b=null;
+    try{ seen=sessionStorage.getItem('rdOpened')==='1'; }catch(e){}
+    try{ b=localStorage.getItem('rdBrowser'); if(!b){ b=Math.random().toString(36).slice(2,12); localStorage.setItem('rdBrowser',b); } }catch(e){}
+    let ref=null;
+    if(!seen){ try{ ref=await db.collection('views').add({d:new Date().toISOString().slice(0,10), b:b||'unknown', sec:0}); try{ sessionStorage.setItem('rdOpened','1'); }catch(e){} }catch(e){} }
+    if(ref){
+      // time on screen: counts only while the report is visible; saved when the viewer switches away or closes it
+      let active=0, since=document.visibilityState==='visible'?Date.now():null, saved=0, chain=Promise.resolve();
+      const flush=()=>{ if(since!=null){ active+=Date.now()-since; since=null; }
+        const sec=Math.min(7200, Math.round(active/1000)); if(sec===saved) return; saved=sec;
+        chain=chain.then(()=>ref.update({sec})).catch(()=>{}); };
+      document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden') flush(); else since=Date.now(); });
+      addEventListener('pagehide',flush);
+    }
+  }
+  if(owner||editor){
+    try{ const s=await db.collection('views').limit(1000).get(); const docs=s.docs.map(d=>d.data()||{});
+      const n=docs.length, br=new Set(docs.map(x=>x.b).filter(x=>x&&x!=='unknown')).size, last=docs.map(x=>x.d).sort().pop();
+      const timed=docs.filter(x=>x.sec>0), avg=timed.length? sum(timed,x=>x.sec)/timed.length : null;
+      const fmtT=s=> s<60? `${Math.round(s)} sec` : `${Math.round(s/60)} min`;
+      const el=$("#viewCount"); if(el){ el.hidden=false; el.textContent = n? `Opened ${n.toLocaleString()} time${n===1?'':'s'} by others · about ${br} browser${br===1?'':'s'} · last ${new Date(last+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'})}${avg!=null?` · avg ${fmtT(avg)} per visit`:''}` : 'No one else has opened this report yet'; }
+    }catch(e){}
+  }
+})();
+
+/* ---------- medium icons ---------- */
+const ICON_PATHS = {
+  "Meta - Static":'<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M21 15l-5-5L5 19"/>',
+  "Meta - Video":'<rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10l6-3.5v11L15 14z"/>',
+  "YouTube":'<rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/>',
+  "TikTok":'<path d="M16 4c.6 1.2 1.6 2.2 2.8 2.8V12c-1.9 0-3.7-.6-5.2-1.7v5.5a5.8 5.8 0 1 1-5.8-5.8c.3 0 .7 0 1 .1v3a2.8 2.8 0 1 0 2 2.7V4h2.2z"/>',
+  "Reddit":'<circle cx="12" cy="12" r="8"/><circle cx="15" cy="9" r="1.5" fill="currentColor"/><path d="M8 13.5c1 1.2 2.4 1.8 4 1.8s3-.6 4-1.8"/>',
+  "Snapchat":'<path d="M12 3.5c2.8 0 4.5 1.8 4.5 4.3v5.8c0 .9.9 1.6 1.8 2.1l-.9 2.2c-1.7-.5-2.8-1.4-3.6-2.6-.8 1.2-1.9 2.1-3.6 2.6l-.9-2.2c.9-.5 1.8-1.2 1.8-2.1V7.8c0-2.5 1.7-4.3 4.5-4.3z"/>',
+  "Pinterest":'<circle cx="12" cy="12" r="9"/><path d="M12 6c-2.2 0-3.5 1.5-3.5 3.2 0 1.2.7 2 1.7 2.4-.2.9-.5 1.9-.8 2.8 1.8-.2 3.2-1.2 3.8-2.8-.8-.3-1.2-.9-1.2-1.7 0-1.1.9-1.9 2.2-1.9.8 0 1.5.3 1.5.8 0 .4-.4.7-.9.7-.3 0-.6-.1-.7-.3"/>',
+  "X":'<path d="M6 6l12 12M18 6L6 18"/>',
+  "Nextdoor":'<path d="M4.5 12.5L12 5l7.5 7.5V20H4.5z"/><rect x="10.5" y="14" width="3" height="6"/>',
+  "AET":'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+  "AET - Streaming TV":'<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 21h8M12 18v3M9 3l3 3 3-3"/>',
+  "AET - Streaming Radio":'<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>',
+  "Radio":'<rect x="3" y="9" width="18" height="11" rx="2"/><circle cx="16" cy="14.5" r="2.5"/><path d="M6 13h5M6 16h5M7 9l10-5"/>',
+  "Direct Mail":'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  "Website":'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+};
+function medIcon(k){ const m=MED[k]; if(!m) return ''; const p=ICON_PATHS[k]||'<circle cx="12" cy="12" r="6"/>';
+  return `<span class="mi" style="--c:var(${m.c})" title="${m.label}" role="img" aria-label="${m.label}"><svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg></span>`; }
+function medIcons(camp){ const ms=MEDIUMS.filter(m=>rows.some(r=>r.name===camp&&r.m===m.k&&(r.s||r.imp||r.clk||r.wv||r.mail||r.rimp)));
+  return ms.length? `<span class="micons">${ms.map(m=>medIcon(m.k)).join('')}</span>` : ''; }
+
+function renderGallery(){
+  const camps = CAMPS.filter(c=>scoped(c) && CRE(c).length)
+    .map(c=>({c, a:agg(rows.filter(r=>r.name===c))})).sort((x,y)=>y.a.spend-x.a.spend);
+  const others = state.camp==="all"? (M.others||[]).map((o,i)=>({...o,i})).filter(metaOK) : [];
+  $("#matchNote").hidden = !M.matched; updateVoteBars();
+  const usedMeds = MEDIUMS.filter(m=>(M.creatives||[]).length && rows.some(r=>r.m===m.k && CRE(r.name).length));
+  $("#medKey").innerHTML = usedMeds.length? `<span class="mk-l">Ran on</span>`+usedMeds.map(m=>`<span class="mk">${medIcon(m.k)}${m.label}</span>`).join('') : '';
+  $("#adsPanel").hidden = !(M.creatives||[]).length && !(M.others||[]).length;
+  $("#gallery").innerHTML = camps.length? camps.map(({c,a})=>{
+    const list=CRE(c), th=thumbOf(list), types=[...new Set(list.map(x=>x.type))];
+    const stat = a.mail? `${fmt$(a.spend)} · ${fmtN(a.mail)} mailers` : a.clk? `${fmt$(a.spend)} · ${fmtN(a.clk)} clicks · ${fmtP(a.ctr)} CTR` : a.wv? `${fmtN(a.wv)} page views` : fmt$(a.spend);
+    return `<div class="acell"><button type="button" class="acard" data-open="${esc(c)}"><div class="athumb${th&&th.wide?' wide':''}">${th?`<img src="${th.src}" alt="" loading="lazy">`:'<span class="noimg">Audio only</span>'}
+      <div class="badges">${list.length>1?`<span class="badge">${list.length} pieces</span>`:''}${types.filter(t=>t!=='image').map(t=>`<span class="badge">${TYPE_LBL[t]}</span>`).join('')}</div></div>
+      <div class="ameta"><span class="an">${esc(c)}</span>${medIcons(c)}<span class="as num">${stat}</span>${matchLine(c,a.spend)}</div></button>${voteBar(vk('c',c))}</div>`; }).join('')
+    : `<div class="empty">${(M.creatives||[]).length?'No artwork for this filter.':'No artwork added for this month yet.'}</div>`;
+  $("#othersWrap").hidden = !others.length;
+  $("#others").innerHTML = others.map(o=>`<div class="acell"><button type="button" class="acard" data-other="${o.i}"><div class="athumb"><img src="${o.src}" alt="" loading="lazy"></div><div class="ameta"><span class="an">${esc(o.title)}</span><span class="as">${esc(o.offer)}</span>${o.match!=null?`<span class="match num"><b>${fmtN(o.match)}</b> matching sale${o.match===1?'':'s'}</span>`:''}</div></button>${voteBar(vk('o',o.title))}</div>`).join('');
+}
+const viewer=$("#viewer"); let vState=null;
+function openViewer(camp, sub, med){
+  const list=CRE(camp); if(!list.length) return;
+  let i = list.findIndex(c=>sub&&c.sub===sub&&(!med||c.meds.includes(med)));
+  if(i<0) i=list.findIndex(c=>sub&&c.sub===sub);
+  if(i<0&&med) i=list.findIndex(c=>c.meds.includes(med));
+  vState={camp,list,i:Math.max(0,i),sub,med};
+  drawViewer(); if(!viewer.open) viewer.showModal();
+}
+function openOther(i){ const o=M.others[i]; vState={other:o,list:[{type:'image',src:o.src,title:o.offer}],i:0}; drawViewer(); if(!viewer.open) viewer.showModal(); }
+function drawViewer(){
+  const {list,i}=vState, c=list[i];
+  const media = c.type==='image'? `<img src="${c.src}" alt="${esc(c.title)}">`
+    : c.type==='video'? `<video src="${c.src}" ${c.poster?`poster="${c.poster}"`:''} controls playsinline preload="metadata"></video>`
+    : `<div class="audiocard"><div class="ic" aria-hidden="true">♪</div><div>${esc(c.title)}</div><audio src="${c.src}" controls preload="metadata"></audio></div>`;
+  $("#vMedia").innerHTML = media + (list.length>1? `<div class="vthumbs">${list.map((x,j)=>`<button type="button" class="vthumb" data-vi="${j}" aria-pressed="${j===i}">${esc(x.title)}</button>`).join('')}</div>`:'');
+  if(vState.other){
+    $("#vInfo").innerHTML=`<div class="vhead"><div><div class="eyebrow">Other offer · ${M.label}</div><h2 id="vTitle">${esc(vState.other.title)}</h2></div><button type="button" class="vclose" data-close aria-label="Close">×</button></div>${voteBar(vk('o',vState.other.title))}
+      <div>${esc(vState.other.offer)}</div>
+      ${vState.other.match!=null?`<div class="vstats"><div class="vstat"><div class="k">Matching sales</div><div class="v num">${fmtN(vState.other.match)}</div></div></div>`:''}
+      <div class="pending">${vState.other.match!=null?'Spend, impressions and clicks for this offer aren\'t in the campaign spreadsheet, so cost per sale can\'t be shown.':`No results were tracked for this offer in the ${M.label.split(' ')[0]} spreadsheet.`}</div>
+      ${vState.other.match!=null?'<div class="note">Matching sales are sales of the advertised model with the matching deal type. The ad may also have brought in buyers who chose a different vehicle or financing, so treat this as a conservative count.</div>':''}`; return; }
+  const camp=vState.camp, rs=rows.filter(r=>r.name===camp), a=agg(rs), d=deptOf(camp);
+  const hit = r => c.meds.includes(r.m) && (!c.sub || r.sub===c.sub);
+  const ca = agg(rs.filter(hit));
+  const st=(k,v)=>`<div class="vstat"><div class="k">${k}</div><div class="v num">${v}</div></div>`;
+  const statsAll=[st('Spend',fmt$(a.spend)), a.mail?st('Mailers',fmtN(a.mail)):st('Impressions',fmtK(a.imp||0)), a.mail?st('Per piece',fmt$(a.spend/a.mail,2)):st('Clicks',fmtN(a.clk))];
+  const mn=MATCH(camp);
+  const mu=MUNIT(camp);
+  if(mn!=null){ statsAll.unshift(st(mu==='sale'?'Matching sales':`${mu}s from campaign`,fmtN(mn)), st(mu==='sale'?'Spend per match':`Spend per ${mu}`,mn?fmt$(a.spend/mn,2):'—')); }
+  if(!a.mail){ statsAll.push(st('CTR',fmtP(a.ctr)), st('Cost per click',a.cpc!=null?fmt$(a.cpc,2):'—'), a.tv?st('TrueViews',fmtN(a.tv)):st('Web views',fmtN(a.wv))); }
+  const rowsH = rs.map(r=>`<tr class="${hit(r)?'cur':''}"><td style="text-align:left">${r.sub?esc(r.sub)+' · ':''}<span class="mdot" style="--c:${col(r.m)}"></span>${MED[r.m].label}${r.vendor?' · '+esc(r.vendor):''}</td><td class="num">${r.s!=null?fmt$(r.s):'—'}</td><td class="num">${r.clk!=null?fmtN(r.clk):'—'}</td><td class="num">${r.imp&&r.clk!=null?fmtP(r.clk/r.imp*100):r.wv?fmtN(r.wv)+' views':r.mail?fmtN(r.mail)+' sent':r.rimp?fmtN(r.rimp)+' spots':'—'}</td></tr>`).join('');
+  const usedOn = rs.filter(hit).map(r=>MED[r.m].label);
+  $("#vInfo").innerHTML=`<div class="vhead"><div><div class="eyebrow">${M.label}${d?` · ${esc(d.d)}`:''}</div><h2 id="vTitle">${esc(camp)}</h2></div><button type="button" class="vclose" data-close aria-label="Close">×</button></div>${voteBar(vk('c',camp))}
+    <div class="as" style="color:var(--ink-2)"><b>${esc(c.title)}</b>${usedOn.length?` · ran on ${[...new Set(usedOn)].join(', ')}${ca.spend?` · ${fmt$(ca.spend)} spend`:''}${ca.clk?` · ${fmtN(ca.clk)} clicks`:''}`:' · no results row for this piece'}</div>
+    <div class="vstats">${statsAll.join('')}</div>
+    <div class="tablewrap"><table class="vtable"><thead><tr><th scope="col" style="text-align:left">Ad · medium</th><th scope="col">Spend</th><th scope="col">Clicks</th><th scope="col">CTR</th></tr></thead><tbody>${rowsH}</tbody></table></div>
+    <div class="note">Highlighted rows are where the piece shown ran.${mn!=null&&mu!=='sale'?` These are the ${mu}s you attributed to this campaign.`:''}${mn!=null&&mu==='sale'?' Matching sales are sales of the advertised make and model with the matching deal type (leases to lease ads, retail to APR offers). The ad may also have brought in buyers who chose a different vehicle or financing, so treat this as a conservative count.':''}</div>`;
+}
+viewer.addEventListener('click',e=>{
+  if(e.target===viewer||e.target.closest('[data-close]')){ viewer.close(); return; }
+  const b=e.target.closest('[data-vi]'); if(b){ vState.i=+b.dataset.vi; drawViewer(); }
+});
+viewer.addEventListener('close',()=>{ $("#vMedia").innerHTML=''; });
+document.addEventListener('click',e=>{
+  if(viewer.contains(e.target)) return;
+  const o=e.target.closest('[data-open]'); if(o){ openViewer(o.dataset.open, o.dataset.sub||null, o.dataset.med||null); return; }
+  const x=e.target.closest('[data-other]'); if(x){ openOther(+x.dataset.other); return; }
+  const tr=e.target.closest('tr[data-row]'); if(tr&&!e.target.closest('th')){ openViewer(tr.dataset.row, tr.dataset.sub||null, tr.dataset.med||null); }
+});
+const adName = (name) => CRE(name).length? `<button type="button" class="adlink" data-open="${esc(name)}">${esc(name)}</button>` : esc(name);
+
+/* ---------- tooltip ---------- */
+const tip=$("#tip");
+document.addEventListener('pointermove',e=>{
+  const t=e.target.closest('[data-tip]');
+  if(!t){tip.hidden=true;return;}
+  tip.innerHTML=decodeURIComponent(t.dataset.tip); tip.hidden=false;
+  const w=tip.offsetWidth,h=tip.offsetHeight;
+  let x=e.clientX+14,y=e.clientY+14;
+  if(x+w>innerWidth-8) x=e.clientX-w-14; if(y+h>innerHeight-8) y=e.clientY-h-14;
+  tip.style.left=Math.max(8,x)+'px'; tip.style.top=Math.max(8,y)+'px';
+});
+document.addEventListener('pointerleave',()=>tip.hidden=true);
+addEventListener('scroll',()=>tip.hidden=true,{passive:true});
+
+/* ---------- trends ---------- */
+const SHORT = m => m.short || m.label.slice(0,3);
+const pctChg = (a,b) => (a==null||b==null||!b)? null : (a-b)/b*100;
+const chgTxt = (cur,prev,P) => { const d=pctChg(cur,prev); if(d==null) return ''; return `<span class="chg">${Math.abs(d)<0.5?'No change':(d>0?'▲ ':'▼ ')+Math.abs(d).toFixed(0)+'%'} vs ${P}</span>`; };
+const BRAND_LBL = {GM:'Chevrolet & GMC', Toyota:'Toyota', 'Honda Nissan':'Honda & Nissan'};
+const DORDER_T=['Sales','Service','Quick Lube','Body Shop','Detail','Car Wash','Rydell Buys'], SORDER_T=['GM','Toyota','Honda Nissan','Market Wide'];
+function tRows(m){ return m.rows.filter(r=>campOK(r.name)); }
+function tDepts(m){ return (m.depts||[]).filter(deptOK); }
+/* Live events: add {month:'2026-10', name:'Trick or Treat', kind:'community'} entries; month matches a MONTHS key */
+const EVENTS = [
+  {month:'2026-09', name:'UND hockey', imp:18000, sample:true},
+];
+function renderMediumGrid(){
+  const meds=MEDIUMS.filter(md=>MONTHS.some(m=>tRows(m).some(r=>r.m===md.k)));
+  const vals=meds.map(md=>MONTHS.map(m=>sum(tRows(m).filter(r=>r.m===md.k),r=>r.s)));
+  const mx=Math.max(1,...vals.flat());
+  const tip=s=>encodeURIComponent(s).replace(/'/g,'%27');
+  const head=`<div></div>`+MONTHS.map(m=>{const n=meds.filter(md=>tRows(m).some(r=>r.m===md.k)).length;return `<div class="mgh">${m.label}<small>${n} of ${meds.length} mediums</small></div>`}).join('');
+  const body=meds.map((md,i)=>`<div class="mgl"><i style="--c:var(${md.c})"></i>${md.label}</div>`+MONTHS.map((m,j)=>{
+    const rs=tRows(m).filter(r=>r.m===md.k); if(!rs.length) return `<div class="mgc"></div>`;
+    const v=vals[i][j], d=Math.round(16+40*Math.sqrt(v/mx));
+    const t=`<b>${md.label}</b><br>${m.label}<br>${v>0?fmt$(v):'No spend'} &middot; ${rs.length} ad${rs.length===1?'':'s'}`;
+    return `<div class="mgc">${v>0?`<div class="bub" data-tip="${tip(t)}" style="--c:var(${md.c});width:${d}px;height:${d}px">${d>=36?fmtK(v):''}</div>`:`<div class="bub zero" data-tip="${tip(t)}" style="--c:var(${md.c})"></div>`}</div>`;}).join('')).join('');
+  const evRow=`<div class="evband" style="display:contents"><div class="mgl">&#9670; Live events</div>`+MONTHS.map(m=>{const es=EVENTS.filter(e=>e.month===m.key);
+    return `<div class="mgc"><div class="ev">${es.length?es.map(e=>`<span data-tip="${tip(`<b>${e.name}</b><br>${m.label}<br>${fmtN(e.imp)} impressions${e.sample?' (sample figure)':''}<br>No ad spend attached`)}">${e.name} &middot; ${fmtK(e.imp)}</span>`).join(''):'<small style="color:var(--ink-3)">&ndash;</small>'}</div></div>`}).join('')+`</div>`;
+  $("#tMedGrid").innerHTML=`<div class="mg" style="grid-template-columns:150px repeat(${MONTHS.length},minmax(90px,1fr))">${head}${body}${evRow}</div>`
+    +(EVENTS.length?(EVENTS.some(e=>e.sample)?`<div class="note" style="margin-top:8px">Sample events and impression figures for illustration only. Replace them with real numbers in the EVENTS list.</div>`:''):`<div class="note" style="margin-top:8px">No live events logged yet. Add them to the EVENTS list and they appear in their month.</div>`);
+}
+function renderTrends(){
+  const N=MONTHS.length, last=MONTHS[N-1], prev=N>1?MONTHS[N-2]:null, P=prev?SHORT(prev):'';
+  $("#title").textContent='Campaign Trends'; $("#source").textContent='Sources: '+MONTHS.map(m=>m.source).join('; ')+'.'; $("#period").textContent=`${MONTHS[0].label.split(' ')[0]} – ${last.label}`;
+  document.querySelectorAll('.vbl').forEach(e=>e.textContent={store:'store',brand:'brand',dept:'department'}[state.vb]);
+  document.querySelectorAll('.viewby button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.vb===state.vb));
+  // KPIs
+  const per = MONTHS.map(m=>{ const rs=tRows(m), ds=tDepts(m), sd=ds.filter(d=>d.kind==='sales');
+    return {m, spend:sum(rs,r=>r.s), opp: sd.length?sum(sd,d=>d.opp):null, sale: sd.some(d=>d.sale!=null)?sum(sd.filter(d=>d.sale!=null),d=>d.sale):null,
+      allOpp: ds.some(d=>d.opp!=null)? sum(ds,d=>d.opp):null}; });
+  per.forEach(x=>x.cps = x.sale? x.spend/x.sale : null);
+  const tile=(k,key,f,note)=>{ const L=per[N-1][key], Pv=prev?per[N-2][key]:null;
+    return `<div class="kpi tkpi"><div class="k">${k}</div><div class="v num">${L==null?'—':f(L)}</div>
+      <div class="mon num">${per.map(x=>`<span>${SHORT(x.m)} <b>${x[key]==null?'—':f(x[key])}</b></span>`).join('')}</div>${prev?chgTxt(L,Pv,P):''}<div class="s">${note}</div></div>`; };
+  $("#tKpis").innerHTML = tile('Media spend','spend',v=>fmt$(v),'All ad spend in the current filter')
+    + tile('Sales opportunities','opp',fmtN,'Sales departments in the current filter')
+    + tile('Vehicle sales','sale',fmtN,'Sales departments in the current filter')
+    + tile('Ad spend per vehicle sale','cps',v=>fmt$(v),'All ad spend ÷ vehicle sales');
+  renderMediumGrid();
+  // spend by medium (stacked columns)
+  const meds = MEDIUMS.filter(md=>MONTHS.some(m=>tRows(m).some(r=>r.m===md.k&&r.s)));
+  const mt = MONTHS.map(m=>{ const rs=tRows(m); return {m, segs:meds.map(md=>({md, v:sum(rs.filter(r=>r.m===md.k),r=>r.s)})), tot:sum(rs,r=>r.s)}; });
+  const mx = niceMax(Math.max(1,...mt.map(x=>x.tot)));
+  $("#tMedLeg").innerHTML = meds.map(md=>`<span><i style="--c:var(${md.c})"></i>${md.label}</span>`).join('');
+  $("#tSpendMed").innerHTML = `<div class="cols">${mt.map(x=>`<div class="col"><span class="cv num">${fmt$(x.tot)}</span><div class="stk" style="height:${x.tot/mx*85}%">${x.segs.filter(s=>s.v>0).map(s=>`<i style="--c:var(${s.md.c});flex:${s.v} 0 0" data-tip="${encodeURIComponent(`<b>${x.m.label}</b><br>${s.md.label}: ${fmt$(s.v,2)} (${(s.v/x.tot*100).toFixed(0)}%)`)}"></i>`).join('')}</div></div>`).join('')}</div>
+    <div class="colx">${mt.map(x=>`<span>${x.m.label}</span>`).join('')}</div>`;
+  $("#tSpendMedTbl").innerHTML = `<thead><tr><th scope="col">Medium</th>${MONTHS.map(m=>`<th scope="col">${SHORT(m)}</th>`).join('')}${prev?'<th scope="col">Change</th>':''}</tr></thead><tbody>`+
+    meds.map(md=>{ const v=mt.map(x=>x.segs.find(s=>s.md===md).v); const a=v[N-1], b=prev?v[N-2]:null;
+      return `<tr><td><span class="mdot" style="--c:var(${md.c})"></span>${md.label}</td>${v.map(x=>`<td class="num">${x?fmt$(x):'<span class="dash">—</span>'}</td>`).join('')}${prev?`<td class="num">${!b&&a?'New':pctChg(a,b)==null?'—':(pctChg(a,b)>0?'▲ ':'▼ ')+Math.abs(pctChg(a,b)).toFixed(0)+'%'}</td>`:''}</tr>`; }).join('')+
+    `<tr class="tot"><td>Total</td>${mt.map(x=>`<td class="num">${fmt$(x.tot)}</td>`).join('')}${prev?`<td class="num">${chgTxt(mt[N-1].tot,mt[N-2].tot,P).replace(/<[^>]+>/g,'').replace(' vs '+P,'')}</td>`:''}</tr></tbody>`;
+  // spend by group
+  const gkey = r => { const m=META[r.name]||{}; return state.vb==='store'? m.store||'Other' : state.vb==='brand'? (m.brand||'No specific brand') : (m.dept||'Other'); };
+  const ord = state.vb==='store'?SORDER_T: state.vb==='dept'?DORDER_T:['Chevrolet','GMC','Toyota','Honda','Nissan','No specific brand'];
+  const gs = [...new Set(MONTHS.flatMap(m=>tRows(m).map(gkey)))].sort((a,b)=>(ord.indexOf(a)+1||99)-(ord.indexOf(b)+1||99));
+  const gv = gs.map(g=>({g, v:MONTHS.map(m=>sum(tRows(m).filter(r=>gkey(r)===g),r=>r.s))}));
+  const gmx = Math.max(1,...gv.flatMap(x=>x.v));
+  $("#tSpendGrp").innerHTML = gv.length? gv.map(x=>`<div class="mcard"><div class="mt">${esc(x.g)}</div>
+    <div class="mbars">${x.v.map((v,i)=>`<div class="mgrp"><i style="--c:var(--accent);height:${v/gmx*100}%;width:28px" data-tip="${encodeURIComponent(`<b>${esc(x.g)}</b><br>${MONTHS[i].label}: ${fmt$(v,2)}`)}"></i></div>`).join('')}</div>
+    <div class="mlab">${MONTHS.map(m=>`<span>${SHORT(m)}</span>`).join('')}</div>
+    <div class="mnums num">${x.v.map((v,i)=>`<span>${SHORT(MONTHS[i])} <b>${v?fmt$(v):'—'}</b></span>`).join('')}${prev?chgTxt(x.v[N-1],x.v[N-2],P):''}</div></div>`).join('') : '<div class="empty">No ad spend for this filter.</div>';
+  // leads + sales small multiples per department
+  const keyOf = d => d.store+'|'+d.type;
+  const all = new Map();
+  MONTHS.forEach((m,i)=>tDepts(m).forEach(d=>{ if(state.vb==='brand'&&d.type!=='Sales') return; const k=keyOf(d); if(!all.has(k)) all.set(k,{k,store:d.store,type:d.type,name:d.d,by:Array(N).fill(null)}); const e=all.get(k); e.by[i]=d; e.name=d.d; }));
+  const items=[...all.values()];
+  const grpOf = e => state.vb==='store'? e.store : state.vb==='dept'? e.type : (BRAND_LBL[e.store]||e.store);
+  const gOrd = state.vb==='store'?SORDER_T: state.vb==='dept'?DORDER_T: Object.values(BRAND_LBL);
+  const groups=[...new Set(items.map(grpOf))].sort((a,b)=>(gOrd.indexOf(a)+1||99)-(gOrd.indexOf(b)+1||99));
+  const card = e => { const mx=Math.max(1,...e.by.flatMap(d=>d?[d.opp||0,d.sale||0,d.goal||0]:[])); const unit=(e.by.filter(Boolean).pop()||{}).unit||'results';
+    const L=e.by[N-1], Pd=prev?e.by[N-2]:null;
+    return `<div class="mcard"><div class="mt">${esc(e.name)}</div>
+      <div class="mbars">${e.by.map((d,i)=>`<div class="mgrp">${d?`<i style="--c:var(--opp);height:${(d.opp||0)/mx*100}%" data-tip="${encodeURIComponent(`<b>${esc(d.d)} · ${MONTHS[i].label}</b><br>${d.opp!=null?fmtN(d.opp)+' opportunities':'No opportunity count'}${d.goal?` (goal ${fmtN(d.goal)})`:''}`)}"></i><i style="--c:var(--sale);height:${(d.sale||0)/mx*100}%" data-tip="${encodeURIComponent(`<b>${esc(d.d)} · ${MONTHS[i].label}</b><br>${d.sale!=null?fmtN(d.sale)+' '+(d.unit||''):'No results reported'}`)}"></i>${d.goal?`<span class="gl" style="bottom:${d.goal/mx*100}%"></span>`:''}`:`<span class="ms" style="align-self:center">not reported</span>`}</div>`).join('')}</div>
+      <div class="mlab">${MONTHS.map(m=>`<span>${SHORT(m)}</span>`).join('')}</div>
+      <div class="mnums num">${e.by.map((d,i)=>`<span>${SHORT(MONTHS[i])} <b>${d&&d.opp!=null?fmtN(d.opp):'—'}</b> opps · <b>${d&&d.sale!=null?fmtN(d.sale):'—'}</b> ${unit}</span>`).join('')}
+        ${L&&Pd?chgTxt(L.opp,Pd.opp,P).replace('</span>',' opps</span>'):''}${L&&Pd?chgTxt(L.sale,Pd.sale,P).replace('</span>',` ${unit}</span>`):''}</div></div>`; };
+  $("#tLeads").innerHTML = items.length? groups.map(g=>`<div class="tgroup"><h3>${esc(g)}</h3><div class="mcards">${items.filter(e=>grpOf(e)===g).map(card).join('')}</div></div>`).join('') : '<div class="empty">No department results for this filter.</div>';
+  const missing = items.filter(e=>e.by.some(d=>!d)).map(e=>e.name);
+  $("#tLeadNote").textContent = `Each card has its own scale, because departments range from dozens to tens of thousands of opportunities; compare cards by their numbers.${state.vb==='brand'?' Opportunities and sales are reported by department, not by brand, so the brand view shows each store\'s sales department (Honda and Nissan are reported together). Service, parts and other departments aren\'t brand-specific.':''}${missing.length?` Not reported every month: ${missing.join(', ')}.`:''}`;
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{ state.tab=b.dataset.tab; try{ const h=state.tab==='trend'?'#trends':state.tab==='definitions'?'#definitions':location.pathname+location.search; history.replaceState(null,'',h); }catch(e){} render(); });
+document.querySelectorAll('.viewby button').forEach(b=>b.onclick=()=>{ state.vb=b.dataset.vb; render(); });
+if(location.hash==='#trends') state.tab='trend';
+if(location.hash==='#definitions') state.tab='definitions';
+
+function render(){
+  const tr = state.tab==='trend';
+  const def = state.tab==='definitions';
+  document.body.classList.toggle('trend', tr);
+  document.body.classList.toggle('definitions', def);
+  $("#viewTrend").hidden=!tr;
+  $("#viewMonth").hidden=tr||def;
+  $("#viewDefinitions").hidden=!def;
+  document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected', b.dataset.tab===state.tab));
+  if(tr){ syncFilters(); renderTrends(); return; }
+  if(def) return;
+  renderMonth();
+}
+const MSG = {
+  price:{label:'Payments and price promotions',tag:'Competitors run these too',def:'Lease, APR, payment and trade-assistance offers: the price is the hook.',c:'--m1'},
+  aware:{label:'Awareness of services',tag:'Competitors run these too',def:'Service, body shop and "we buy your vehicle": letting people know we offer it.',c:'--m3'},
+  diff:{label:'Differentiation',tag:'Only we say this',def:'What makes Rydell different from the competition and a reason to choose us.',c:'--m2'}};
+/* Main message per campaign (sorted from the ad creative and names). Edit here to reclassify. */
+const MSGMAP = {
+  'Chevy Silverado APR Offer':['price','0% APR for 5 years'],
+  'Chevy Silverado Lease':['price','LT $549/mo lease'],
+  'Toyota Tundra APR Offer':['price','0% APR for 72 months'],
+  'Toyota Camry PreOrder/Tires Offer':['price','Free winter tires with a Camry reservation'],
+  'Nissan Murano Lease':['price','Lease offer'],
+  'Nissan Combined APR Offer':['price','APR offer'],
+  'Chevy Traverse Lease':['price','$699/mo for 36 months'],
+  'Chevy Equinox Lease':['price','$499/mo for 36 months'],
+  'Honda Ridgeline Lease':['price','Lease offer'],
+  'Rydell Buys':['aware','We buy your vehicle: "No payoff hassles", "Safer than selling privately"'],
+  'Body Shop':['aware','Auto body and glass experts'],
+  'Multi Point Winter Inspection':['aware','Winter inspection mailer'],
+  'Get To Know A Sales Rep \u2013 Kevin':['diff','"Real People": meet the team'],
+};
+function renderMsg(){
+  const rs=filtered(), by={};
+  rs.forEach(r=>{const o=by[r.name]=by[r.name]||{name:r.name,s:0,webOnly:true}; o.s+=r.s||0; if(r.m!=='Website'||r.s) o.webOnly=false;});
+  const g={price:[],aware:[],diff:[]}, un=[]; let pages=0;
+  Object.values(by).forEach(o=>{ if(o.webOnly&&!o.s){pages++;return;} const m=MSGMAP[o.name]; m? g[m[0]].push({name:o.name,s:o.s,why:m[1]}) : un.push(o); });
+  if(state.camp==='all') (M.others||[]).forEach(o=>g.price.push({name:o.title,s:0,why:o.offer,nosp:true}));
+  const tot=sum(Object.values(g).flat(),x=>x.s), keys=Object.keys(MSG);
+  const sp=k=>sum(g[k],x=>x.s), pc=k=>tot?sp(k)/tot*100:0;
+  $("#msgSub").textContent=`Each ad sorted by its main message, with ${M.label} spend behind each one. Click an ad for its lifetime breadth, reach, and frequency.`;
+  $("#msgLeg").innerHTML=keys.map(k=>`<span><i style="--c:var(${MSG[k].c})"></i>${MSG[k].label}</span>`).join('');
+  $("#msgMix").innerHTML=keys.map(k=>`<i style="--c:var(${MSG[k].c});flex:${Math.max(pc(k),0.4)}" data-tip="${encodeURIComponent(`<b>${MSG[k].label}</b><br>${fmt$(sp(k))} &middot; ${fmtP(pc(k),0)} of spend`)}"></i>`).join('');
+  $("#msgCols").innerHTML=keys.map(k=>{const L=g[k].slice().sort((a,b)=>b.s-a.s), n=L.filter(x=>!x.nosp).length;
+    return `<div class="mcol" style="--c:var(${MSG[k].c})"><h3>${MSG[k].label}</h3><span class="tag">${MSG[k].tag}</span><div class="def">${MSG[k].def}</div>
+      <div class="big num">${fmt$(sp(k))}</div><div class="row"><span>${fmtP(pc(k),0)} of spend</span><span>${n} ad${n===1?'':'s'}</span></div>
+      <div class="meter"><i style="width:${pc(k)}%"></i></div>
+      ${L.map(x=>`<div class="it${x.nosp?' nosp':''}"><div>${x.nosp?x.name:`<a href="#" class="fl" data-camp="${encodeURIComponent(x.name)}">${x.name}</a>`}<small>${x.why}</small></div><span>${x.nosp?'No spend':fmt$(x.s)}</span></div>`).join('')||'<div class="it"><div style="color:var(--ink-3)">Nothing in this view</div></div>'}</div>`;}).join('');
+  $("#msgNote").textContent=`Each campaign is counted once, under its main message, with spend added up across media.`+(pages?` ${pages} specials webpage${pages===1?'':'s'} with no spend not listed.`:'')+(un.length?` Not yet sorted: ${un.map(o=>o.name+' ('+fmt$(o.s)+')').join(', ')}.`:'');
+}
+/* Lifetime saturation.
+   Depth is times seen over ROLL_DAYS, one line at a time. Never add reach or cume across lines.
+   Radio and AET audiences below are stand-ins a rate card or an AET account count can replace.
+   Meta and YouTube 7-day windows are Sample, built from the flight totals.
+   Spot counts and mailer quantities get no reliability tag. */
+const ROLL_DAYS = 7;
+const AET_FLIGHT_FREQ = 3;
+const RADIO_AUDIENCE = {
+  'KNOX-AM': {aqh:400, cume:4000},
+  'KYCK-FM': {aqh:900, cume:9000},
+  'KZGF-FM': {aqh:800, cume:8000},
+  'KZLT-FM': {aqh:700, cume:7000},
+  'KROX': {aqh:350, cume:3500}
+};
+const PRESENCE = {dailyPaperExtra:1, mailAfterInHome:7};
+const SEGMENT = {label:'Grand Forks area, men 25–64', size:50000, sample:true};
+const SOURCE_LBL = {platform:'Platform-measured', estimated:'Estimated', oem:'OEM data', third:'Third-party data', internal:'Internal'};
+const ATT_TIP = 'People at the event, not unique accounts who saw this ad. Not used for penetration.';
+const ROLL_TIP = '7-day running average: the mean of this line’s daily × figures over the last '+ROLL_DAYS+' days ending on the day you hover. We use a short moving window—not the whole-flight (Lifetime) average—so recent schedule changes show up, and quiet days early in the flight don’t dilute what saturation looks like right now. Radio uses spot-schedule days only; its day cells do not show a 7-day average on hover.';
+const MDN = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+const MONS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const isoDate = (y,m,d) => y+'-'+String(m).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+function parseMD(st, year){
+  if(!st) return null;
+  const mo=MDN[st.split(' ')[0]], day=parseInt(st.split(' ')[1],10);
+  return mo&&day ? isoDate(year, mo, day) : null;
+}
+function monthBounds(key){
+  const y=+key.slice(0,4), m=+key.slice(5), last=new Date(y, m, 0).getDate();
+  return {start:isoDate(y,m,1), end:isoDate(y,m,last)};
+}
+function addDays(iso, n){
+  const [y,m,d]=iso.split('-').map(Number);
+  const dt=new Date(y, m-1, d+n);
+  return isoDate(dt.getFullYear(), dt.getMonth()+1, dt.getDate());
+}
+function eachIso(a,b){
+  const o=[];
+  if(!a||!b||a>b) return o;
+  for(let d=a; d<=b; d=addDays(d,1)) o.push(d);
+  return o;
+}
+const pretty = iso => { const m=+iso.slice(5,7), d=+iso.slice(8); return MONS[m-1]+' '+d; };
+const dow = iso => { const [y,m,d]=iso.split('-').map(Number); return new Date(y, m-1, d).getDay(); };
+function sourceOf(medium){
+  if(medium==='Meta - Static'||medium==='Meta - Video'||medium==='YouTube'||medium==='TikTok'||medium==='Reddit'||medium==='Snapchat'||medium==='Pinterest'||medium==='X'||medium==='Nextdoor') return 'platform';
+  if(medium==='AET'||medium.startsWith('AET')||medium==='Radio'||medium==='Print Billboard'||medium==='Digital Billboard') return 'estimated';
+  if(medium==='Direct Mail'||medium==='Website') return 'internal';
+  return null;
+}
+function reachUnit(medium){
+  if(medium==='Radio') return 'estimated listeners';
+  if(medium==='Direct Mail') return 'households';
+  if(medium==='Print Billboard'||medium==='Digital Billboard') return 'estimated accounts';
+  return 'accounts';
+}
+const countOnly = m => m==='Radio' || m==='Direct Mail';
+
+const EVENT_RUNS = [
+  {name:'UND hockey', venue:'Ralph Engelstad Arena', team:'Fighting Hawks', dates:['2026-09-20'], attendance:18000, sample:true,
+    placements:[{campaign:'Chevy Silverado APR Offer', placementType:'Intermission video', description:'30-second video on the center-hung board during the 2nd intermission.', plays:2, duration:'30 seconds'}]}
+];
+
+const CATALOG = [
+  {group:'Radio', note:'A station leaves this list when the schedule names it. Owners still need a rep to confirm.', items:[
+    {label:'KNOX 1310/107.9', owner:'Leighton', station:'KNOX-AM'},
+    {label:'KZGF 94.7', owner:'Leighton', station:'KZGF-FM'},
+    {label:'KYCK 97.1', owner:'Leighton', station:'KYCK-FM'},
+    {label:'KGFK 1590/95.7', owner:'Leighton'},
+    {label:'KKXL-FM 92.9', owner:'iHeart'},
+    {label:'KKXL-AM 1440', owner:'iHeart'},
+    {label:'KJKJ 107.5', owner:'iHeart'},
+    {label:'KSNR 100.3', owner:'iHeart'},
+    {label:'KROX 1260', owner:'Owner unconfirmed', station:'KROX'},
+    {label:'KQHT 96.1', owner:'Owner unconfirmed'},
+    {label:'KZLT 104.3', owner:'Owner unconfirmed', station:'KZLT-FM'}
+  ]},
+  {group:'TV and streaming', note:'Fargo-market stations, to confirm with the rep.', items:[
+    {label:'WDAZ', owner:'Fargo market'},{label:'KVLY', owner:'Fargo market'},{label:'KBRR', owner:'Fargo market'},{label:'K30LR-D', owner:'Fargo market'},
+    {label:'AET Streaming TV', match:'AET - Streaming TV'},{label:'AET (August buy)', match:'AET'},{label:'Other streaming TV'}
+  ]},
+  {group:'Social and digital', items:[
+    {label:'Meta Static', match:'Meta - Static'},{label:'Meta Video', match:'Meta - Video'},{label:'YouTube', match:'YouTube'},{label:'TikTok', match:'TikTok'},
+    {label:'Reddit', match:'Reddit'},{label:'Snapchat', match:'Snapchat'},{label:'Pinterest', match:'Pinterest'},{label:'X', match:'X'},{label:'Nextdoor', match:'Nextdoor'},
+    {label:'AET Streaming Radio', match:'AET - Streaming Radio'}
+  ]},
+  {group:'Print', note:'A daily paper is on for the publication day and the day after. A weekly is on until the next issue.', items:[
+    {label:'Grand Forks Herald', owner:'Daily'},{label:'The Exponent', owner:'Weekly'},{label:'Tidbits'},{label:'High Plains Reader'},{label:'Dakota Student'},{label:'Red River Valley Women Today'}
+  ]},
+  {group:'Print billboards', note:'To confirm with the rep. Newman Outdoor sold Grand Forks boards. Lamar bought those assets, announced Nov 11, 2026. No face-by-face static list yet. A print board counts as on for the posted flight.', items:[
+    {label:'Newman Outdoor / Lamar', owner:'Print list to confirm'}
+  ]},
+  {group:'Digital billboards', note:'To confirm with the rep. Alluvit locations may overlap iDigital. A digital board counts as on for the days it is in the rotation. Audience figures are estimated.', items:[
+    {label:'1223 University Ave at N Washington', owner:'iDigital · 2 faces'},
+    {label:'817 1st Ave N at DeMers', owner:'iDigital · 2 faces'},
+    {label:'1844 S Washington at 19th Ave', owner:'iDigital · 2 faces'},
+    {label:'910 S Washington at 9th Ave S', owner:'iDigital · 2 faces'},
+    {label:'3901 S Washington at 40th Ave S', owner:'iDigital · 1 face'},
+    {label:'1212 N 47th St at US 2', owner:'iDigital'},
+    {label:'2209 Gateway Dr', owner:'iDigital'},
+    {label:'2422 DeMers Ave', owner:'Alluvit · may overlap'},
+    {label:'1401 S Washington', owner:'Alluvit · may overlap'},
+    {label:'1210 S Washington', owner:'Alluvit · may overlap'},
+    {label:'2475 S Washington', owner:'Alluvit · may overlap'},
+    {label:'41st Ave S and Washington', owner:'Alluvit · may overlap'},
+  ]},
+  {group:'Mail', items:[{label:'Direct mail', match:'Direct Mail'}]}
+];
+
+function buildLifetime(){
+  const by={};
+  MONTHS.forEach(mo=>{
+    const b=monthBounds(mo.key), year=+mo.key.slice(0,4);
+    mo.rows.forEach(r=>{
+      const c=by[r.name]=by[r.name]||{name:r.name, runs:[]};
+      const fold = r.m==='Radio' || r.days || r.live;
+      let run=c.runs.find(x=>x.medium===r.m && (fold || (x.vendor||'')===(r.vendor||'')));
+      if(!run){
+        run={medium:r.m, vendor:fold?null:(r.vendor||null), label:(MED[r.m]&&MED[r.m].label)||r.m, color:(MED[r.m]&&MED[r.m].c)||'--ink-3',
+          subs:[], imp:0, reachRows:[], spots:0, mail:0, views:0, flights:[], months:[], daily:{}, lines:[], scheduled:false, issues:null, paper:null,
+          asOf:mo.label, asOfKey:mo.key, source:sourceOf(r.m), inHome:null, reconcile:null};
+        c.runs.push(run);
+      }
+      if(r.sub && !run.subs.includes(r.sub)) run.subs.push(r.sub);
+      run.imp += r.imp||0;
+      if(r.reach) run.reachRows.push(r.reach);
+      run.spots += r.rimp||0;
+      run.mail += r.mail||0;
+      run.views += r.wv||0;
+      if(!run.months.includes(mo.key)) run.months.push(mo.key);
+      if(r.days || r.live){
+        run.scheduled=true;
+        run.lines.push({vendor:r.vendor||null, note:r.note||'', sub:r.sub||null, days:r.days||null, live:r.live||null, imp:r.imp||0, reach:r.reach||null, start:r.sd||null, end:r.ed||null, windows:{}});
+        if(r.days) Object.entries(r.days).forEach(([d,n])=>{
+          if(!n) return;
+          const rec=run.daily[d]=run.daily[d]||{spots:0, parts:[]};
+          rec.spots+=n;
+          rec.parts.push({vendor:r.vendor||'', note:r.note||'', n});
+        });
+        if(r.live) Object.entries(r.live).forEach(([d,n])=>{
+          if(!n) return;
+          const rec=run.daily[d]=run.daily[d]||{spots:0, parts:[], imp:0};
+          rec.imp=(rec.imp||0)+n;
+        });
+      } else {
+        const start=r.sd || parseMD(r.start, year);
+        const end=r.ed || (start ? b.end : null);
+        if(start && end) run.flights.push({start, end});
+        run.lines.push({vendor:r.vendor||null, note:r.note||'', sub:r.sub||null, days:null, live:null, imp:r.imp||0, reach:r.reach||null, start, end, windows:{}});
+      }
+      if(mo.key>=run.asOfKey){ run.asOf=mo.label; run.asOfKey=mo.key; }
+    });
+  });
+  const silver=by['Chevy Silverado APR Offer'];
+  if(silver){
+    const radio=silver.runs.find(r=>r.medium==='Radio');
+    if(radio && radio.spots===442) radio.reconcile='This schedule adds to 442 spots. The earlier workbook said 640 for the Leighton buy. Check the invoice before treating either total as final.';
+  }
+  applyDepth(by);
+  return by;
+}
+function dayNoise(iso, salt){
+  let h=(salt|0)^0x9e3779b9;
+  for(let i=0;i<iso.length;i++) h=((h<<5)-h+iso.charCodeAt(i))|0;
+  return ((h>>>0)%1000)/1000;
+}
+function fillPlatformWindow(line){
+  if(!(line.imp>0) || !(line.reach>0) || !line.start || !line.end) return;
+  const dates=eachIso(line.start, line.end);
+  if(!dates.length) return;
+  /* Sample daily delivery: weekday-heavy with day-to-day wobble so sandbox depth isn't flat. Still sums to flight impressions. */
+  const salt=(line.imp|0)^((line.reach|0)<<1)^(line.sub?line.sub.length:0);
+  const weights=dates.map(d=>{
+    const wd=dow(d), weekend=(wd===0||wd===6)?0.5:1;
+    const midweek=wd===2||wd===3?1.15:1;
+    return weekend*midweek*(0.55+0.9*dayNoise(d, salt));
+  });
+  const sumW=weights.reduce((a,b)=>a+b,0)||1;
+  const alloc={};
+  let left=line.imp;
+  dates.forEach((d,i)=>{
+    if(i===dates.length-1){ alloc[d]=Math.max(0,left); return; }
+    const remain=dates.length-1-i;
+    const n=Math.max(0, Math.round(line.imp*weights[i]/sumW));
+    alloc[d]=Math.min(n, Math.max(0, left-remain));
+    left-=alloc[d];
+  });
+  const reachOf=imp=> Math.min(line.reach, line.reach*Math.sqrt(Math.max(imp,1)/line.imp));
+  dates.forEach(d=>{
+    const dayImp=alloc[d]||0;
+    if(!dayImp) return;
+    const dayReach=reachOf(dayImp);
+    if(dayReach<=0) return;
+    const start=addDays(d, -(ROLL_DAYS-1));
+    const winStart=start<line.start ? line.start : start;
+    let windowImp=0, days=0;
+    for(let x=winStart; x<=d; x=addDays(x,1)){ windowImp+=alloc[x]||0; days++; }
+    const windowReach=reachOf(windowImp);
+    line.windows[d]={windowImp, windowReach, days, dayImp, dayReach, sample:true, sub:line.sub||null};
+  });
+}
+function applyDepth(by){
+  Object.values(by).forEach(c=>c.runs.forEach(run=>{
+    const platform=run.medium==='Meta - Static'||run.medium==='Meta - Video'||run.medium==='YouTube'||run.medium==='TikTok'||run.medium==='Reddit'||run.medium==='Snapchat'||run.medium==='Pinterest'||run.medium==='X'||run.medium==='Nextdoor';
+    run.lines.forEach(line=>{
+      if(platform) fillPlatformWindow(line);
+      if(line.live){
+        const total=Object.values(line.live).reduce((a,n)=>a+(+n||0),0);
+        line.unique=total>0 ? total/AET_FLIGHT_FREQ : null;
+      }
+    });
+  }));
+}
+function spotsBetween(run, vendor, start, end){
+  let n=0;
+  run.lines.forEach(l=>{
+    if((l.vendor||'')!==vendor || !l.days) return;
+    for(let d=start; d<=end; d=addDays(d,1)) n+=l.days[d]||0;
+  });
+  return n;
+}
+function mediumDepthAvg(run, day, axisStart, winDays=ROLL_DAYS){
+  const rawStart=addDays(day, -(winDays-1));
+  const start=axisStart && rawStart<axisStart ? axisStart : rawStart;
+  if(start>day) return null;
+  const freqs=[];
+  let kind=null, detail='';
+  for(let d=start; d<=day; d=addDays(d,1)){
+    const hit=mediumDepth(run, d, axisStart, 1);
+    if(!hit) continue;
+    freqs.push(hit.freq);
+    kind=hit.kind;
+    if(hit.detail) detail=hit.detail;
+  }
+  if(!freqs.length) return null;
+  return {freq:freqs.reduce((a,b)=>a+b,0)/freqs.length, label:run.label, detail, kind:kind||'estimated', days:freqs.length};
+}
+function mediumDepth(run, day, axisStart, winDays=ROLL_DAYS){
+  const rawStart=addDays(day, -(winDays-1));
+  const start=axisStart && rawStart<axisStart ? axisStart : rawStart;
+  if(start>day) return null;
+  let best=null;
+  const keep=(freq, detail, kind, days)=>{
+    if(!(freq>0)) return;
+    if(!best || freq>best.freq) best={freq, label:run.label, detail:detail||'', kind, days:days||winDays};
+  };
+  if(run.medium==='Radio'){
+    const vendors=[...new Set(run.lines.map(l=>l.vendor).filter(v=>RADIO_AUDIENCE[v]))];
+    vendors.forEach(v=>{
+      if(!spotsBetween(run, v, day, day)) return;
+      const aud=RADIO_AUDIENCE[v];
+      const spots=spotsBetween(run, v, start, day);
+      if(!spots) return;
+      keep(spots*aud.aqh/aud.cume, v, 'estimated', eachIso(start, day).length);
+    });
+    return best;
+  }
+  run.lines.forEach(line=>{
+    if(line.live){
+      if(!(line.live[day]>0) || !(line.unique>0)) return;
+      let imp=0;
+      for(let d=start; d<=day; d=addDays(d,1)) imp+=line.live[d]||0;
+      if(!imp) return;
+      keep(imp/line.unique, line.sub||'', 'estimated', eachIso(start, day).length);
+      return;
+    }
+    const w=line.windows && line.windows[day];
+    if(!w) return;
+    if(winDays===1){
+      if(!(w.dayReach>0) || !(w.dayImp>0)) return;
+      keep(w.dayImp/w.dayReach, w.sub||'', 'sample', 1);
+      return;
+    }
+    if(!(w.windowReach>0)) return;
+    keep(w.windowImp/w.windowReach, w.sub||'', 'sample', w.days||ROLL_DAYS);
+  });
+  return best;
+}
+function rowDepth(run, axisStart){
+  const days=new Set();
+  run.flights.forEach(f=>eachIso(f.start, f.end).forEach(d=>days.add(d)));
+  Object.keys(run.daily).forEach(d=>days.add(d));
+  run.lines.forEach(l=>Object.keys(l.windows||{}).forEach(d=>days.add(d)));
+  const list=[...days].filter(d=>!axisStart || d>=axisStart).sort();
+  for(let i=list.length-1;i>=0;i--){
+    const hit=mediumDepth(run, list[i], axisStart);
+    if(hit) return Object.assign({day:list[i]}, hit);
+  }
+  return null;
+}
+const LIFE = buildLifetime();
+
+function presenceDates(run){
+  const s=new Set();
+  if(run.issues && run.issues.length){
+    const sorted=[...run.issues].sort();
+    sorted.forEach((d,i)=>{
+      const end = run.paper==='weekly'
+        ? (sorted[i+1] ? addDays(sorted[i+1], -1) : addDays(d, 6))
+        : addDays(d, PRESENCE.dailyPaperExtra);
+      eachIso(d, end).forEach(x=>s.add(x));
+    });
+    return s;
+  }
+  if(run.medium==='Direct Mail'){
+    if(run.inHome) eachIso(run.inHome, addDays(run.inHome, PRESENCE.mailAfterInHome-1)).forEach(d=>s.add(d));
+    return s;
+  }
+  if(run.scheduled){
+    Object.entries(run.daily).forEach(([d, rec])=>{ if(rec && (rec.spots||rec.imp)) s.add(d); });
+    return s;
+  }
+  run.flights.forEach(f=>eachIso(f.start, f.end).forEach(d=>s.add(d)));
+  return s;
+}
+const bestReach = run => {
+  if(run.reachRows.length) return Math.max(...run.reachRows);
+  if(run.medium.startsWith('AET')){
+    const fromLive=run.lines.map(l=>l.unique).filter(u=>u>0);
+    if(fromLive.length) return Math.round(Math.max(...fromLive));
+    const fromImp=run.lines.map(l=>l.imp>0 ? l.imp/AET_FLIGHT_FREQ : 0).filter(u=>u>0);
+    if(fromImp.length) return Math.round(Math.max(...fromImp));
+  }
+  return null;
+};
+function rollingOn(run){
+  const days=Object.entries(run.daily).filter(([,r])=>r && r.windowReach>0 && r.windowImp!=null);
+  if(!days.length) return null;
+  days.sort((a,b)=> a[0]<b[0] ? 1 : -1);
+  return {day:days[0][0], freq:days[0][1].windowImp/days[0][1].windowReach};
+}
+function axisFor(camp){
+  const c=LIFE[camp]; if(!c) return [];
+  const dates=[];
+  c.runs.forEach(r=>{
+    r.flights.forEach(f=>{ dates.push(f.start, f.end); });
+    Object.keys(r.daily).forEach(d=>dates.push(d));
+    (r.issues||[]).forEach(d=>dates.push(d));
+    if(r.inHome) dates.push(r.inHome, addDays(r.inHome, PRESENCE.mailAfterInHome-1));
+  });
+  if(!dates.length) c.runs.forEach(r=>r.months.forEach(k=>{ const b=monthBounds(k); dates.push(b.start, b.end); }));
+  if(!dates.length) return [];
+  return eachIso(dates.reduce((x,y)=>x<y?x:y), dates.reduce((x,y)=>x>y?x:y));
+}
+function linkedEvents(camp, axis){
+  if(!axis.length) return [];
+  const a0=axis[0], a1=axis[axis.length-1], rows=[];
+  EVENT_RUNS.forEach(ev=>{
+    ev.placements.filter(p=>p.campaign===camp).forEach(p=>{
+      const dates=ev.dates.filter(d=>d>=a0 && d<=a1);
+      if(dates.length) rows.push({ev, p, dates});
+    });
+  });
+  return rows;
+}
+
+let FL=null;
+const enc = s => encodeURIComponent(s).replace(/'/g,'%27');
+function openFlight(camp){
+  if(!LIFE[camp]) return;
+  FL={camp};
+  $("#fTitle").textContent=camp;
+  $("#fDay").hidden=true;
+  $("#flt").hidden=false;
+  renderFlight();
+}
+const SEGMENT_MEDIA = new Set(['Meta - Static','Meta - Video','TikTok','Reddit','Snapchat','Pinterest','X','Nextdoor','AET','AET - Streaming TV','AET - Streaming Radio']);
+function depthTag(hit){
+  if(!hit) return '';
+  return `<span class="fxn">${hit.freq.toFixed(1)}×</span>`;
+}
+function summaryHTML(run, axisStart){
+  const mail=run.medium==='Direct Mail', radio=run.medium==='Radio', web=run.medium==='Website';
+  const reach=bestReach(run), seen=rowDepth(run, axisStart);
+  let top;
+  if(mail) top=run.mail?`<span class="fsub">${fmtN(run.mail)} mailers</span>`:'';
+  else if(radio) top=`${run.spots?`<span class="fsub">${fmtN(run.spots)} spots</span>`:''}${depthTag(seen)}`;
+  else if(web) top=run.views?`<span class="fsub">${fmtN(run.views)} page views</span>`:'';
+  else if(run.scheduled){
+    const served=Object.values(run.daily).filter(d=>d.imp);
+    const per=served.length? Math.round(served.reduce((a,d)=>a+d.imp,0)/served.length) : 0;
+    top=`${depthTag(seen)}${served.length?`<span class="fsub">${fmtN(per)} imp. / day</span>`:''}`;
+  }
+  else if(seen) top=depthTag(seen);
+  else top='';
+  const mid = (mail||web||reach==null) ? '' : `<span class="fsub">${fmtN(reach)} ${reachUnit(run.medium)}</span>`;
+  const life = !mail && !radio && !web && run.imp ? `<span class="fsub">${fmtN(run.imp)} imp.</span>` : '';
+  return `${top}${mid}${life}`;
+}
+function peakSaturation(axis, runs, on){
+  if(axis.length<ROLL_DAYS) return null;
+  let best=null;
+  axis.forEach(end=>{
+    const start=addDays(end, -(ROLL_DAYS-1));
+    if(start<axis[0]) return;
+    const media=new Set();
+    runs.forEach(r=>{
+      for(let d=start; d<=end; d=addDays(d,1)){ if(on.get(r).has(d)){ media.add(r.medium); break; } }
+    });
+    let depth=null, depthDay=null, radioSpots=0, radioStations=0;
+    runs.forEach(r=>{
+      for(let d=start; d<=end; d=addDays(d,1)){
+        const rec=r.daily[d];
+        if(rec && rec.windowReach>0 && rec.windowImp!=null){
+          const f=rec.windowImp/rec.windowReach;
+          if(depth==null || f>depth){ depth=f; depthDay=d; }
+        }
+        if(r.medium==='Radio' && rec && rec.spots>radioSpots){
+          radioSpots=rec.spots;
+          radioStations=new Set((rec.parts||[]).map(p=>p.vendor).filter(Boolean)).size;
+        }
+      }
+    });
+    const row={end, start, breadth:media.size, depth, depthDay, radioSpots, radioStations};
+    if(!best || row.breadth>best.breadth || (row.breadth===best.breadth && (row.depth||0)>(best.depth||0))) best=row;
+  });
+  return best;
+}
+function breadthEventsOnDay(evRows, day){
+  const events=new Set();
+  evRows.forEach(({ev,dates})=>{ if(dates.includes(day)) events.add(ev.name); });
+  return events.size;
+}
+function saturationSeries(axis, runs, on, evRows=[]){
+  return axis.map((day,i)=>{
+    const breadth=runs.reduce((n,r)=>n+(on.get(r).has(day)?1:0),0) + breadthEventsOnDay(evRows, day);
+    let depth=null;
+    if(i>=ROLL_DAYS-1){
+      runs.forEach(r=>{
+        const hit=mediumDepth(r, day, axis[0]);
+        if(hit && (!depth || hit.freq>depth.freq)) depth=hit;
+      });
+    }
+    let windowBreadth=null;
+    const start=addDays(day, -(ROLL_DAYS-1));
+    if(start>=axis[0]){
+      const media=new Set();
+      runs.forEach(r=>{
+        for(let d=start; d<=day; d=addDays(d,1)) if(on.get(r).has(d)){ media.add(r.medium); break; }
+      });
+      evRows.forEach(({ev,dates})=>{
+        for(let d=start; d<=day; d=addDays(d,1)){
+          if(dates.includes(d)){ media.add('ev:'+ev.name); break; }
+        }
+      });
+      windowBreadth=media.size;
+    }
+    return {day, breadth, depth, windowBreadth};
+  });
+}
+function peakFrom(series){
+  let best=null;
+  series.forEach(row=>{
+    if(row.windowBreadth==null) return;
+    const score=row.depth ? row.depth.freq : 0;
+    const bestScore=best && best.depth ? best.depth.freq : 0;
+    if(!best || row.windowBreadth>best.windowBreadth || (row.windowBreadth===best.windowBreadth && score>bestScore)) best=row;
+  });
+  return best;
+}
+function radioDepths(run, day, axisStart){
+  const start=addDays(day, -(ROLL_DAYS-1));
+  if(axisStart && start<axisStart) return [];
+  return [...new Set(run.lines.map(l=>l.vendor).filter(v=>RADIO_AUDIENCE[v]))].map(v=>{
+    if(!spotsBetween(run, v, day, day)) return null;
+    const aud=RADIO_AUDIENCE[v];
+    return {vendor:v, freq:spotsBetween(run, v, start, day)*aud.aqh/aud.cume};
+  }).filter(Boolean).sort((a,b)=>b.freq-a.freq);
+}
+function niceTicks(max, want){
+  if(!(max>0)) return [0,1];
+  const rough=max/Math.max(1,want-1);
+  const pow=Math.pow(10, Math.floor(Math.log10(rough)));
+  const step=[1,2,2.5,5,10].map(m=>m*pow).find(s=>s>=rough) || pow*10;
+  const top=Math.ceil(max/step)*step;
+  const ticks=[];
+  for(let v=0; v<=top+1e-9; v+=step) ticks.push(+v.toFixed(6));
+  return ticks;
+}
+function trendHTML(series){
+  if(!series.length) return '';
+  const COL=34, n=series.length, H=148, top=14, bot=128;
+  const W=n*COL;
+  const x=i=> i*COL+COL/2;
+  const maxB=Math.max(1, ...series.map(s=>s.breadth));
+  const ticksB=niceTicks(maxB, 4).map(v=>Math.round(v));
+  const topB=ticksB[ticksB.length-1]||1;
+  const band=bot-top;
+  const yOf=v=> top+(band)*(1-v/topB);
+  const tickTop=v=> ((yOf(v)-top)/band*100).toFixed(1);
+  const left=ticksB.map(v=>`<span style="top:${tickTop(v)}%">${v}</span>`).join('');
+  const grid=ticksB.map(v=>`<line x1="0" y1="${yOf(v).toFixed(1)}" x2="${W}" y2="${yOf(v).toFixed(1)}" stroke="var(--grid)" stroke-width="1"/>`).join('');
+  let b='';
+  series.forEach((s,i)=>{
+    const X=x(i).toFixed(1), Y=yOf(s.breadth).toFixed(1);
+    b+= i===0 ? `M ${X} ${Y}` : ` H ${X} V ${Y}`;
+  });
+  const xLabels=series.map((s,i)=>{
+    const day=+s.day.slice(8), show=day===1 || i===0;
+    const X=x(i).toFixed(1);
+    const label=show ? pretty(s.day).split(' ')[0] : String(day);
+    return `<text x="${X}" y="${H-4}" text-anchor="middle" font-size="9" fill="var(--ink-3)">${label}</text>`;
+  }).join('');
+  const cols=series.map((s,i)=>{
+    const tip=`<b>${pretty(s.day)}</b><br>${s.breadth} media on this day`;
+    return `<rect x="${i*COL}" y="${top}" width="${COL}" height="${bot-top}" fill="transparent" data-tip="${enc(tip)}"></rect>`;
+  }).join('');
+  return `<div class="fg trend" style="grid-template-columns:176px repeat(${n},34px) 120px 176px"><div class="fl0 ystick l" style="height:${H}px"><div class="ystick-cap" style="height:${top}px"><b>Media</b></div><div class="ystick-ticks" style="height:${band}px">${left}</div></div><div class="plot" style="grid-column:2 / span ${n}"><svg width="${W}" height="${H}" role="img" aria-label="Media on each day of the flight">${grid}<path d="${b}" fill="none" stroke="var(--m10)" stroke-width="2.5" stroke-linejoin="round"/>${xLabels}${cols}</svg></div><div class="fr2" style="height:${H}px"></div><div class="ystick r" style="height:${H}px"></div></div>`;
+}
+function sparkHTML(dailySeries, avgSeries, axisDates, color, label){
+  const vals=dailySeries.map(s=>s && s.freq>0 ? s.freq : null);
+  const known=vals.filter(v=>v!=null);
+  if(!known.length) return '';
+  const n=vals.length, W=96, H=34, pad=3;
+  const max=Math.max(...known);
+  const x=i=> n<=1 ? W/2 : pad+i*(W-2*pad)/(n-1);
+  const y=v=> pad+(H-2*pad)*(1-v/Math.max(max,1e-6));
+  let d='', pen=false;
+  vals.forEach((v,i)=>{
+    if(v==null){ pen=false; return; }
+    const X=x(i).toFixed(1), Y=y(v).toFixed(1);
+    d+= pen ? ` L ${X} ${Y}` : `M ${X} ${Y}`;
+    pen=true;
+  });
+  const colW=n<=1 ? W : (W-2*pad)/(n-1);
+  const hits=vals.map((v,i)=>{
+    const avg=avgSeries && avgSeries[i];
+    const day=axisDates[i];
+    if(v==null && !avg) return '';
+    const left=n<=1 ? 0 : Math.max(0, x(i)-colW/2);
+    const width=n<=1 ? W : Math.min(W-left, colW);
+    const bits=[`<b>${esc(label)}</b>`, pretty(day)];
+    if(v!=null) bits.push(`${v.toFixed(1)}× that day`);
+    if(avg && avg.freq>0) bits.push(`${avg.freq.toFixed(1)}× 7-day running average`);
+    else if(v!=null) bits.push('No 7-day average yet');
+    return `<rect x="${left.toFixed(1)}" y="0" width="${width.toFixed(1)}" height="${H}" fill="transparent" data-tip="${enc(bits.join('<br>'))}"></rect>`;
+  }).join('');
+  return `<span class="spark"><svg width="${W}" height="${H}" role="img" aria-label="Daily times seen"><path d="${d}" fill="none" stroke="var(${color})" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round"/>${hits}</svg></span>`;
+}
+function renderFlight(){
+  const camp=FL.camp, c=LIFE[camp];
+  const axis=axisFor(camp);
+  const runs=c.runs.filter(r=>r.imp||r.spots||r.mail||r.views||r.reachRows.length||r.flights.length)
+    .sort((a,b)=>MEDIUMS.findIndex(m=>m.k===a.medium)-MEDIUMS.findIndex(m=>m.k===b.medium));
+  const evRows=linkedEvents(camp, axis);
+  const on=new Map(runs.map(r=>[r, presenceDates(r)]));
+  const wk=iso=>[0,6].includes(dow(iso))?' wk':'';
+  const series=saturationSeries(axis, runs, on, evRows);
+  $("#fDefs").innerHTML =
+    `<div><b>Breadth</b> — how many media this ad ran on that day (the Media line).</div>`+
+    `<div><b>Depth</b> — how many times an account saw the ad (e.g. <b>1.6×</b>). Day cells = that day (hover digital lines for the <b>7-day</b> running average<span class="q" data-tip="${enc(ROLL_TIP)}">?</span>; radio shows that day only); Lifetime = this whole flight.</div>`;
+  $("#fStats").innerHTML = '';
+  $("#fTrend").innerHTML = trendHTML(series);
+  $("#fSub").textContent = axis.length ? `${pretty(axis[0])} – ${pretty(axis[axis.length-1])}` : '';
+  $("#fSeg").hidden = true;
+
+  const D=axis.length;
+  let g = D ? `<div class="fg" style="grid-template-columns:176px repeat(${D},34px) 120px 176px"><div class="fl0 fhd"></div>` : '';
+  axis.forEach(d=>{
+    const day=+d.slice(8), show=day===1 || d===axis[0];
+    g+=`<div class="fhd${wk(d)}">${show? pretty(d).replace(' ','<br>') : day}</div>`;
+  });
+  if(D) g+=`<div class="fhd fr2">7-day <span class="q" data-tip="${enc(ROLL_TIP)}">?</span></div><div class="fhd fr">Lifetime</div>`;
+  runs.forEach(r=>{
+    const radio=r.medium==='Radio';
+    const label=r.label+(r.vendor?' · '+r.vendor:'');
+    g+=`<div class="fl0 wrap" style="--c:var(${r.color})"><i></i><span>${esc(label)}</span></div>`;
+    const canSat = radio || r.medium.startsWith('AET') || r.medium.startsWith('Meta') || r.medium==='YouTube' || r.medium==='TikTok' || r.medium==='Reddit' || r.medium==='Snapchat' || r.medium==='Pinterest' || r.medium==='X' || r.medium==='Nextdoor';
+    const showSpark = canSat && !radio;
+    axis.forEach(d=>{
+      const active=on.get(r).has(d);
+      const hit = canSat && active ? mediumDepth(r, d, axis[0], 1) : null;
+      const avg7 = hit && !radio ? mediumDepthAvg(r, d, axis[0], ROLL_DAYS) : null;
+      let inn='';
+      if(hit) inn=`<span class="spot">${hit.freq.toFixed(1)}</span>`;
+      else if(active && !canSat) inn=`<i class="on" style="--c:var(${r.color})"></i>`;
+      const tip = hit
+        ? ` data-tip="${enc('<b>'+esc(label)+'</b><br>'+pretty(d)+'<br>'+hit.freq.toFixed(1)+'× that day'+(avg7?'<br>'+avg7.freq.toFixed(1)+'× 7-day running average':'') )}"`
+        : active && !canSat ? ` data-tip="${enc('<b>'+esc(label)+'</b><br>'+pretty(d))}"` : '';
+      const cls=[wk(d).trim(), radio?'clk':''].filter(Boolean).join(' ');
+      const attr = radio ? ` data-cell="${esc(r.medium+'||'+d)}"` : '';
+      g+=`<div class="${cls}"${attr}${tip}>${inn}</div>`;
+    });
+    const dailySeries = showSpark ? axis.map(d=> mediumDepth(r, d, axis[0], 1)) : null;
+    const avgSeries = showSpark ? axis.map(d=> mediumDepthAvg(r, d, axis[0], ROLL_DAYS)) : null;
+    g+=`<div class="fr2">${dailySeries?sparkHTML(dailySeries, avgSeries, axis, r.color, label):''}</div><div class="fr">${summaryHTML(r, axis[0])}</div>`;
+  });
+  evRows.forEach(({ev,p,dates})=>{
+    const set=new Set(dates);
+    g+=`<div class="fl0 wrap" style="--c:var(--accent)"><i></i><span>${esc(ev.name)}</span></div>`;
+    axis.forEach(d=>{
+      if(!set.has(d)){ g+=`<div class="${wk(d).trim()}"></div>`; return; }
+      const att = ev.attendance!=null ? `<span class="att">${fmtN(ev.attendance)}</span>` : '';
+      const key=esc('ev|'+ev.name+'|'+d);
+      g+=`<div class="${wk(d).trim()} clk" data-cell="${key}" data-tip="${enc('<b>'+esc(ev.name)+'</b><br>'+pretty(d))}">${att}</div>`;
+    });
+    g+=`<div class="fr2"></div><div class="fr"></div>`;
+  });
+  if(D) g+=`</div>`;
+  else g=`<div class="empty">No days to chart for this ad.</div>`;
+  $("#fChart").innerHTML=g;
+
+  const runningKeys=new Set(runs.map(r=>r.medium));
+  const runningStations=new Set(runs.flatMap(r=>(r.lines||[]).map(l=>l.vendor).filter(Boolean)));
+  const stillOff=it=> !(it.match && runningKeys.has(it.match)) && !(it.station && runningStations.has(it.station));
+  const groups=CATALOG.map(group=>{
+    const items=group.items.filter(stillOff);
+    if(!items.length) return '';
+    return `<div class="catg"><h3>${esc(group.group)}</h3><ul>${items.map(it=>`<li><b>${esc(it.label)}</b>${it.owner?' · '+esc(it.owner):''}</li>`).join('')}</ul></div>`;
+  }).join('');
+  const hiddenCount=CATALOG.reduce((n,group)=>n+group.items.filter(stillOff).length,0);
+  $("#fCat").innerHTML=`<summary><span>Not running <span class="fsub">${hiddenCount} options</span></span><span class="cat-toggle" aria-hidden="true"><i></i><span class="off">Show</span><span class="on">Hide</span></span></summary><div class="catbody">${groups}</div>`;
+
+  $("#fNote").textContent='';
+  closeDay();
+}
+let dayKey=null;
+function closeDay(){
+  dayKey=null;
+  $("#fDay").hidden=true;
+}
+function dayHead(title){
+  return `<div class="fdh"><h3>${title}</h3><button type="button" class="fx" id="fDayClose">Close</button></div>`;
+}
+function openCell(key){
+  if(key.startsWith('ev|')){
+    const [, name, day]=key.split('|');
+    const ev=EVENT_RUNS.find(e=>e.name===name);
+    const p=ev&&ev.placements.find(x=>x.campaign===FL.camp);
+    if(!ev||!p) return;
+    const bits=[`<p><b>${esc(p.placementType)}</b><br>${esc(p.description)}</p>`];
+    if(p.plays||p.duration) bits.push(`<p>${[p.plays? p.plays+' plays':'' , p.duration||''].filter(Boolean).join(' · ')}</p>`);
+    if(ev.attendance!=null) bits.push(`<p>${fmtN(ev.attendance)} attendance</p>`);
+    if(ev.venue) bits.push(`<p>${esc(ev.venue)}${ev.team?' · '+esc(ev.team):''}</p>`);
+    dayKey=key;
+    $("#fDay").hidden=false;
+    $("#fDay").innerHTML=`${dayHead(esc(ev.name)+' · '+pretty(day))}${bits.join('')}`;
+    return;
+  }
+  const [medium, vendor, day]=key.split('|');
+  const run=LIFE[FL.camp].runs.find(r=>r.medium===medium && (r.vendor||'')===(vendor||''));
+  if(!run) return;
+  const rec=run.daily[day];
+  const label=`${run.label} · ${pretty(day)}`;
+  const parts = rec && rec.parts && rec.parts.length
+    ? `<ul>${rec.parts.map(p=>`<li><b>${esc(p.vendor||'Station')}</b>${p.note?' · '+esc(p.note):''} · ${p.n} spots</li>`).join('')}</ul><p>${rec.spots} spots this day.</p>`
+    : `<p>No spots this day.</p>`;
+  const depths=radioDepths(run, day, axisFor(FL.camp)[0]);
+  const seen=depths.length ? `<p>${depths.map(s=>`<b>${esc(s.vendor)}</b> · ${s.freq.toFixed(1)}×`).join('<br>')}</p>` : '';
+  dayKey=key;
+  $("#fDay").hidden=false;
+  $("#fDay").innerHTML=`${dayHead(esc(label))}${parts}${seen}`;
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a.fl');
+  if(a){ e.preventDefault(); openFlight(decodeURIComponent(a.dataset.camp)); return; }
+  if(e.target.closest('#fDayClose')){ closeDay(); return; }
+  const cell=e.target.closest('[data-cell]');
+  if(cell && FL && !$("#flt").hidden){
+    if(cell.dataset.cell===dayKey) closeDay();
+    else openCell(cell.dataset.cell);
+    return;
+  }
+  if(e.target.id==='flt' || e.target.closest('#fClose')) $("#flt").hidden=true;
+});
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape') return;
+  if(!$("#fDay").hidden){ closeDay(); return; }
+  $("#flt").hidden=true;
+});
+function renderMonth(){syncFilters();renderMsg();renderGallery();renderKPIs();renderHighlights();renderDepts();renderBench();renderSpend();renderClicks();renderWeb();renderEff();renderTable();}
+buildFilters(); render();
+
+</script>
+
+</body></html>

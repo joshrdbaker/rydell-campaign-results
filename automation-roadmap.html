@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data automation notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f5f8;--surface:#fff;--line:#dde2ea;--ink:#111722;--ink-2:#4a5363;--ink-3:#6f7888;--accent:#1f4e8c;--warn:#b25e00;--warn-bg:#fff3e0;--display:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-family:var(--display);font-size:34px;line-height:1.1;margin:0 0 8px}
+h2{font-family:var(--display);font-size:22px;margin:0}
+a{color:var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.warn{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:10px 12px}
+ol{padding-left:1.2em;display:flex;flex-direction:column;gap:14px}
+li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ul{margin:6px 0 0;padding-left:1.1em}
+pre{background:var(--bg);border-radius:8px;padding:10px 12px;overflow:auto;font-size:12px;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Rydell · Not built yet</div>
+  <h1>How the numbers would arrive later</h1>
+  <p class="warn">Nothing here sends email. No vendor note, no digest, and no message to Ben or Morgan is created or sent from this page. Josh sends those himself when he wants to.</p>
+  <p><a href="index.html">Back to campaign results</a></p>
+  <ol>
+    <li>
+      <h2>What can feed itself</h2>
+      A later pass can check Meta, Google Ads, YouTube, and GA4 for a real export, and ask what AET can deliver on a schedule. Radio and the other vendors are more likely to stay on emailed schedules and affidavits than on a live feed.
+    </li>
+    <li>
+      <h2>Questions for vendors</h2>
+      Notes for Josh to send when he chooses. Not drafted and not sent from here.
+      <ul>
+        <li>What the schedule and the affidavit look like, and how often they arrive.</li>
+        <li>Whether each station, daypart, and day is listed.</li>
+        <li>Whether reach is measured or projected, and the method behind it.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>A mailbox that files the reports</h2>
+      Later, a mail worker or a Zoho check could read vendor files and file them. That is a design note only. This build does not connect to a mailbox and does not send mail.
+    </li>
+    <li>
+      <h2>Expected cadence</h2>
+      Each source would have an expected rhythm. The dashboard would show “no data since” on the row when that rhythm slips. That flag is not built yet, and it would stay on the page rather than going out as email.
+    </li>
+    <li>
+      <h2>Booked versus aired</h2>
+      Compare the order with the affidavit and show only the exceptions, such as three spots booked and two aired. Spot counts themselves stay unmarked. This check is not built yet.
+    </li>
+    <li>
+      <h2>Meta and Google, when someone signs in mid-flight</h2>
+      Not built. No Worker yet. The page would read one file, and that file would be marked Sample until a read-only pull replaces it.
+      <ul>
+        <li>Meta Insights: one call for the whole flight (do not add daily reach together), then a separate call for the single day and a separate call for the last 7 days. Impressions, reach, and frequency. A frequency breakdown is in Meta’s docs and is not confirmed for these ads. Insights does not work on a sandbox where ads do not serve.</li>
+        <li>Google Ads video: unique users and average impression frequency for up to 92 days, and counts of people reached 2 through 10 or more times for up to 31 days. Reach can be suppressed. The definition changed on June 2, 2026. Test accounts return empty serving numbers.</li>
+        <li>Setup, done by Josh or Morgan: read-only access to the ad accounts, a Meta app with Marketing API access, and a Google developer token.</li>
+        <li>The file shape the page would read, one object per ad and medium:</li>
+      </ul>
+      <pre>{
+  "campaign": "Chevy Silverado APR Offer",
+  "medium": "Meta - Static",
+  "sample": true,
+  "asOf": "2026-09-28",
+  "flight": {"imp": 0, "reach": 0, "frequency": 0},
+  "day": {"date": "2026-09-28", "imp": 0, "reach": 0, "frequency": 0},
+  "window7": {"end": "2026-09-28", "imp": 0, "reach": 0, "frequency": 0}
+}</pre>
+      <p>Radio spots and AET daily impressions already come from the schedule file. They are not Sample. Meta and YouTube stay without a depth number until a file like this exists. Nothing here fetches an account or sends a message.</p>
+    </li>
+    <li>
+      <h2>Files instead of numbers buried in the page</h2>
+      The snapshot already keeps a lifetime record per ad (medium runs, source, as-of date, and any daily series). A later step can load that from files instead of from the script in the page.
+    </li>
+  </ol>
+  <p>Households that own a given make are a separate question for Ben and Morgan. The mail row stays breadth-only until that answer exists. This page does not ask them.</p>
+</div>
+</body>
+</html>
