@@ -496,6 +496,28 @@ footer a{color:var(--accent)}
   <section class="kpis" id="kpis" aria-label="Totals"></section>
   <section class="highlights" id="hls" aria-label="Highlights"></section>
 
+  <section class="panel" id="satPanel" aria-label="Saturation Snapshot">
+<style>
+.satwrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.sattable{width:100%;border-collapse:collapse;min-width:640px}
+.sattable th,.sattable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.sattable th{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);background:var(--surface-2)}
+.sattable tr:last-child td{border-bottom:none}
+.sattable .campbtn{font:inherit;font-weight:600;color:var(--accent);background:none;border:none;padding:0;cursor:pointer;text-align:left}
+.sattable .campbtn:hover{text-decoration:underline}
+.sattable .satb{font-variant-numeric:tabular-nums;font-weight:600}
+.sattable .satd{display:flex;flex-direction:column;gap:2px}
+.sattable .satd .x{font-variant-numeric:tabular-nums;font-weight:600}
+.sattable .satd .med{color:var(--ink-2);font-size:13px}
+.sattable .satd .acc{color:var(--ink-3);font-size:12.5px}
+.sattable .empty{color:var(--ink-3);font-size:13px}
+</style>
+    <div><h2>Saturation Snapshot</h2>
+      <div class="sub">Every ad that ran this month. Max breadth is the most media that ad ran on in one day (channels plus linked events). Max depth is the strongest 7-day times-seen on a single line, with the medium and accounts reached.</div>
+    </div>
+    <div class="satwrap"><table class="sattable" id="satSnap"><thead><tr><th>Ad</th><th>Max breadth</th><th>Max depth</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
   <section class="panel msg" id="msgPanel" aria-label="Spend by message type">
 <style>
 .msg .mix{display:flex;height:34px;border-radius:8px;overflow:hidden;gap:2px;background:var(--surface-2)}
@@ -1609,25 +1631,26 @@ function mediumDepthAvg(run, day, axisStart, winDays=ROLL_DAYS){
   const start=axisStart && rawStart<axisStart ? axisStart : rawStart;
   if(start>day) return null;
   const freqs=[];
-  let kind=null, detail='';
+  let kind=null, detail='', accounts=null;
   for(let d=start; d<=day; d=addDays(d,1)){
     const hit=mediumDepth(run, d, axisStart, 1);
     if(!hit) continue;
     freqs.push(hit.freq);
     kind=hit.kind;
     if(hit.detail) detail=hit.detail;
+    if(hit.accounts!=null) accounts=hit.accounts;
   }
   if(!freqs.length) return null;
-  return {freq:freqs.reduce((a,b)=>a+b,0)/freqs.length, label:run.label, detail, kind:kind||'estimated', days:freqs.length};
+  return {freq:freqs.reduce((a,b)=>a+b,0)/freqs.length, label:run.label, detail, kind:kind||'estimated', days:freqs.length, accounts};
 }
 function mediumDepth(run, day, axisStart, winDays=ROLL_DAYS){
   const rawStart=addDays(day, -(winDays-1));
   const start=axisStart && rawStart<axisStart ? axisStart : rawStart;
   if(start>day) return null;
   let best=null;
-  const keep=(freq, detail, kind, days)=>{
+  const keep=(freq, detail, kind, days, accounts)=>{
     if(!(freq>0)) return;
-    if(!best || freq>best.freq) best={freq, label:run.label, detail:detail||'', kind, days:days||winDays};
+    if(!best || freq>best.freq) best={freq, label:run.label, detail:detail||'', kind, days:days||winDays, accounts:accounts!=null?accounts:null};
   };
   if(run.medium==='Radio'){
     const vendors=[...new Set(run.lines.map(l=>l.vendor).filter(v=>RADIO_AUDIENCE[v]))];
@@ -1636,7 +1659,7 @@ function mediumDepth(run, day, axisStart, winDays=ROLL_DAYS){
       const aud=RADIO_AUDIENCE[v];
       const spots=spotsBetween(run, v, start, day);
       if(!spots) return;
-      keep(spots*aud.aqh/aud.cume, v, 'estimated', eachIso(start, day).length);
+      keep(spots*aud.aqh/aud.cume, v, 'estimated', eachIso(start, day).length, aud.cume);
     });
     return best;
   }
@@ -1646,18 +1669,18 @@ function mediumDepth(run, day, axisStart, winDays=ROLL_DAYS){
       let imp=0;
       for(let d=start; d<=day; d=addDays(d,1)) imp+=line.live[d]||0;
       if(!imp) return;
-      keep(imp/line.unique, line.sub||'', 'estimated', eachIso(start, day).length);
+      keep(imp/line.unique, line.sub||'', 'estimated', eachIso(start, day).length, Math.round(line.unique));
       return;
     }
     const w=line.windows && line.windows[day];
     if(!w) return;
     if(winDays===1){
       if(!(w.dayReach>0) || !(w.dayImp>0)) return;
-      keep(w.dayImp/w.dayReach, w.sub||'', 'sample', 1);
+      keep(w.dayImp/w.dayReach, w.sub||'', 'sample', 1, Math.round(w.dayReach));
       return;
     }
     if(!(w.windowReach>0)) return;
-    keep(w.windowImp/w.windowReach, w.sub||'', 'sample', w.days||ROLL_DAYS);
+    keep(w.windowImp/w.windowReach, w.sub||'', 'sample', w.days||ROLL_DAYS, Math.round(w.windowReach));
   });
   return best;
 }
@@ -1842,6 +1865,67 @@ function peakFrom(series){
     if(!best || row.windowBreadth>best.windowBreadth || (row.windowBreadth===best.windowBreadth && score>bestScore)) best=row;
   });
   return best;
+}
+function monthAxis(camp){
+  const full=axisFor(camp);
+  const b=monthBounds(M.key);
+  return full.filter(d=>d>=b.start && d<=b.end);
+}
+function campPeakBreadth(camp, runs, on, axis, evRows){
+  let max=0, day=null;
+  axis.forEach(d=>{
+    const n=runs.reduce((c,r)=>c+(on.get(r).has(d)?1:0),0)+breadthEventsOnDay(evRows, d);
+    if(n>max){ max=n; day=d; }
+  });
+  return {breadth:max, day};
+}
+function campPeakDepth(runs, axis, axisStart){
+  if(!axis.length) return null;
+  let best=null;
+  runs.forEach(r=>{
+    axis.forEach(d=>{
+      const hit=mediumDepth(r, d, axisStart, ROLL_DAYS);
+      if(!hit) return;
+      if(!best || hit.freq>best.freq) best=Object.assign({medium:r.medium, color:r.color}, hit);
+    });
+  });
+  return best;
+}
+function renderSatSnap(){
+  const names=[...new Set(filtered().map(r=>r.name))].sort((a,b)=>a.localeCompare(b));
+  const tb=$("#satSnap").querySelector('tbody');
+  if(!names.length){
+    tb.innerHTML=`<tr><td colspan="3" class="empty">No ads ran under the current filters.</td></tr>`;
+    return;
+  }
+  tb.innerHTML=names.map(name=>{
+    const c=LIFE[name];
+    if(!c) return `<tr><td>${esc(name)}</td><td class="empty">—</td><td class="empty">—</td></tr>`;
+    const full=axisFor(name);
+    const axis=monthAxis(name);
+    const runs=c.runs.filter(r=>state.meds.has(r.medium) && (r.imp||r.spots||r.mail||r.views||r.reachRows.length||r.flights.length||Object.keys(r.daily).length));
+    const on=new Map(runs.map(r=>[r, presenceDates(r)]));
+    const evRows=linkedEvents(name, axis.length?axis:full);
+    const peakB=campPeakBreadth(name, runs, on, axis, evRows);
+    const peakD=campPeakDepth(runs, axis, full[0]||(axis[0]||null));
+    const bCell=peakB.breadth
+      ? `<span class="satb">${peakB.breadth}</span> <span class="empty">media${peakB.day?' · '+pretty(peakB.day):''}</span>`
+      : `<span class="empty">—</span>`;
+    let dCell=`<span class="empty">—</span>`;
+    if(peakD){
+      const med=peakD.detail ? `${peakD.label} · ${peakD.detail}` : peakD.label;
+      const kindLbl=peakD.kind==='sample'?'Actual':'Estimated';
+      const unit=reachUnit(peakD.medium);
+      const acc=peakD.accounts!=null
+        ? `${fmtN(peakD.accounts)} ${unit} (${kindLbl})`
+        : kindLbl;
+      dCell=`<div class="satd"><span class="x">${peakD.freq.toFixed(1)}×</span><span class="med">${esc(med)}</span><span class="acc">${esc(acc)}</span></div>`;
+    }
+    return `<tr><td><button type="button" class="campbtn" data-camp="${esc(name)}">${esc(name)}</button></td><td>${bCell}</td><td>${dCell}</td></tr>`;
+  }).join('');
+  tb.querySelectorAll('.campbtn').forEach(btn=>{
+    btn.onclick=()=>openFlight(btn.dataset.camp);
+  });
 }
 function radioDepths(run, day, axisStart){
   const start=addDays(day, -(ROLL_DAYS-1));
@@ -2053,7 +2137,7 @@ document.addEventListener('keydown',e=>{
   if(!$("#fDay").hidden){ closeDay(); return; }
   $("#flt").hidden=true;
 });
-function renderMonth(){syncFilters();renderMsg();renderGallery();renderKPIs();renderHighlights();renderDepts();renderBench();renderSpend();renderClicks();renderWeb();renderEff();renderTable();}
+function renderMonth(){syncFilters();renderMsg();renderGallery();renderKPIs();renderHighlights();renderSatSnap();renderDepts();renderBench();renderSpend();renderClicks();renderWeb();renderEff();renderTable();}
 buildFilters(); render();
 
 </script>
